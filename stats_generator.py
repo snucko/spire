@@ -3,6 +3,7 @@
 
 import json
 import re
+import gzip
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
@@ -65,6 +66,25 @@ def parse_run_line(line: str) -> dict | None:
     
     return run if run.get('seed') else None
 
+def load_log_file() -> list[str]:
+    """Load log file, handling both compressed and uncompressed."""
+    log_path = Path('logs/run_history.log')
+    log_gz_path = Path('logs/run_history.log.gz')
+    
+    lines = []
+    
+    # Try gzip first
+    if log_gz_path.exists():
+        with gzip.open(log_gz_path, 'rt') as f:
+            lines.extend(f.readlines())
+    
+    # Also read uncompressed if exists
+    if log_path.exists():
+        with open(log_path, 'r') as f:
+            lines.extend(f.readlines())
+    
+    return lines
+
 def generate_stats(runs: list[dict]) -> dict:
     """Generate aggregate statistics."""
     if not runs:
@@ -106,20 +126,20 @@ def generate_stats(runs: list[dict]) -> dict:
     return stats
 
 def main():
-    log_path = Path('logs/run_history.log')
     output_path = Path('docs/stats.json')
     
-    if not log_path.exists():
-        print(f"Error: {log_path} not found")
+    # Load log lines
+    lines = load_log_file()
+    if not lines:
+        print("Error: No log files found")
         return
     
     # Parse all runs
     runs = []
-    with open(log_path, 'r') as f:
-        for line in f:
-            run = parse_run_line(line)
-            if run:
-                runs.append(run)
+    for line in lines:
+        run = parse_run_line(line)
+        if run:
+            runs.append(run)
     
     print(f"Parsed {len(runs)} runs")
     
