@@ -30,15 +30,16 @@
    git push
    ```
 
-5. **Enable GitHub Pages (Settings → Pages):**
-   - Source: `Deploy from branch`
-   - Branch: `main`
-   - Folder: `/docs` ← **Important: use /docs folder**
-   - Public URL: `https://snucko.github.io/spire/`
+5. **Deploy via Cloudflare Pages (FREE for private repos):**
+   - Go to Cloudflare Dashboard → Pages
+   - Click "Create a project" → "Connect to Git"
+   - Select `snucko/spire` (private repo works!)
+   - Build command: `python3 stats_generator.py`
+   - Build output directory: `docs`
+   - Deploy!
+   - Public URL: `https://spire.<your-cloudflare-domain>.pages.dev`
 
-6. **Optional: Add Cloudflare:**
-   - Add CNAME: `snucko.github.io/spire`
-   - Enable caching
+**Note:** GitHub Pages requires GitHub Pro for private repos. Cloudflare Pages is FREE and works with private repos.
 
 ## Features
 
