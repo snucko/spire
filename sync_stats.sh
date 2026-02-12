@@ -13,7 +13,16 @@ mkdir -p "$SPIRE_REPO"
 
 # Compress run_history.log
 echo "📦 Compressing logs..."
-gzip -c "$BOT_LOGS/run_history.log" > "$SPIRE_REPO/logs/run_history.log.gz"
+if [ -f "$BOT_LOGS/run_history.log" ]; then
+    gzip -c "$BOT_LOGS/run_history.log" > "$SPIRE_REPO/logs/run_history.log.gz"
+fi
+
+# Archive and compress runs folder
+if [ -d "$BOT_LOGS/runs" ] && [ "$(ls -A $BOT_LOGS/runs)" ]; then
+    echo "📦 Archiving runs folder (this may take a while)..."
+    tar -czf "$SPIRE_REPO/logs/runs.tar.gz" -C "$BOT_LOGS" runs
+    echo "   Compressed $(ls -1 $BOT_LOGS/runs | wc -l) run files"
+fi
 
 # Push to GitHub
 echo "📤 Pushing to GitHub..."
@@ -24,9 +33,10 @@ git add logs/
 git commit -m "chore: sync bot logs $(date +%Y-%m-%d)" || echo "No changes"
 git push
 
-# Delete local uncompressed copy to free space
+# Delete local uncompressed copies to free space
 echo "🗑️  Deleting local uncompressed logs..."
 rm -f "$BOT_LOGS/run_history.log"
+rm -rf "$BOT_LOGS/runs"
 
 echo "✅ Done! Logs compressed and synced to GitHub"
 echo "   GitHub: $SPIRE_REPO/logs/run_history.log.gz"
