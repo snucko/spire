@@ -2,12 +2,11 @@
 
 ## Setup (Private Repo + Public Pages)
 
-1. **Create private repo:**
+1. **Clone your private repo:**
    ```bash
-   # Create snucko/bottled_ai (PRIVATE)
-   # Clone it locally
-   git clone https://github.com/snucko/bottled_ai.git
-   cd bottled_ai
+   # snucko/spire (PRIVATE)
+   git clone https://github.com/snucko/spire.git
+   cd spire
    ```
 
 2. **Copy files from this repo:**
@@ -35,10 +34,10 @@
    - Source: `Deploy from branch`
    - Branch: `main`
    - Folder: `/docs` ← **Important: use /docs folder**
-   - Public URL: `https://snucko.github.io/bottled_ai/`
+   - Public URL: `https://snucko.github.io/spire/`
 
 6. **Optional: Add Cloudflare:**
-   - Add CNAME: `snucko.github.io/bottled_ai`
+   - Add CNAME: `snucko.github.io/spire`
    - Enable caching
 
 ## Features
