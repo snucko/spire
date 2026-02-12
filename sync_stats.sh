@@ -17,12 +17,8 @@ if [ -f "$BOT_LOGS/run_history.log" ]; then
     gzip -c "$BOT_LOGS/run_history.log" > "$SPIRE_REPO/logs/run_history.log.gz"
 fi
 
-# Archive and compress runs folder
-if [ -d "$BOT_LOGS/runs" ] && [ "$(ls -A $BOT_LOGS/runs)" ]; then
-    echo "📦 Archiving runs folder (this may take a while)..."
-    tar -czf "$SPIRE_REPO/logs/runs.tar.gz" -C "$BOT_LOGS" runs
-    echo "   Compressed $(ls -1 $BOT_LOGS/runs | wc -l) run files"
-fi
+# Note: runs/ folder is too large for GitHub (900MB+)
+# Just delete it to free space - the aggregate data is in run_history.log
 
 # Push to GitHub
 echo "📤 Pushing to GitHub..."
