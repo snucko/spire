@@ -1,5 +1,8 @@
 .idea/
 /logs/default.log
+/logs/runs/
+/logs/webhook_errors.log
+/logs/calculator_missing_enums.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
