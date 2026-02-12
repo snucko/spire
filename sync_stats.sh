@@ -15,9 +15,6 @@ mkdir -p "$SPIRE_REPO"
 echo "📦 Compressing logs..."
 gzip -c "$BOT_LOGS/run_history.log" > "$SPIRE_REPO/logs/run_history.log.gz"
 
-# Keep uncompressed for local use (optional - remove if want to save space)
-# cp "$BOT_LOGS/run_history.log" "$SPIRE_REPO/logs/run_history.log"
-
 # Push to GitHub
 echo "📤 Pushing to GitHub..."
 cd "$SPIRE_REPO"
@@ -27,5 +24,10 @@ git add logs/
 git commit -m "chore: sync bot logs $(date +%Y-%m-%d)" || echo "No changes"
 git push
 
-echo "✅ Done! Logs synced to spire repo"
-echo "   Compressed: $SPIRE_REPO/logs/run_history.log.gz"
+# Delete local uncompressed copy to free space
+echo "🗑️  Deleting local uncompressed logs..."
+rm -f "$BOT_LOGS/run_history.log"
+
+echo "✅ Done! Logs compressed and synced to GitHub"
+echo "   GitHub: $SPIRE_REPO/logs/run_history.log.gz"
+echo "   Local: Deleted to free space"
