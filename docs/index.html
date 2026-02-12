@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slay the Spire Bot Stats</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #ffd700; margin-bottom: 30px; font-size: 2.5em; }
+        .search-box {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        input, select, button {
+            padding: 10px 15px;
+            border: 1px solid #444;
+            background: #2a2a2a;
+            color: #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background: #ffd700;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+        }
+        button:hover { background: #ffed4e; }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+        }
+        .stat-label { font-size: 12px; color: #aaa; text-transform: uppercase; }
+        .stat-value { font-size: 28px; font-weight: bold; color: #ffd700; }
+        .stat-sub { font-size: 12px; color: #999; margin-top: 5px; }
+        
+        .runs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .runs-table thead {
+            background: #2a2a2a;
+            border-bottom: 2px solid #ffd700;
+        }
+        .runs-table th {
+            padding: 12px;
+            text-align: left;
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .runs-table td {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+        }
+        .runs-table tr:hover {
+            background: #333;
+        }
+        .win { color: #4ade80; }
+        .loss { color: #ef4444; }
+        .filter-tag {
+            display: inline-block;
+            background: #444;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 4px 4px 4px 0;
+            cursor: pointer;
+        }
+        .filter-tag:hover { background: #555; }
+        .loading { text-align: center; color: #999; padding: 40px; }
+        .info { background: #2a2a2a; padding: 15px; border-radius: 4px; margin-bottom: 20px; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚔️ Slay the Spire Bot Analytics</h1>
+        
+        <div class="info">
+            Tracking performance across <span id="total-runs">-</span> runs on <span id="total-strategies">-</span> strategies
+        </div>
+        
+        <div class="search-box">
+            <select id="strategy-filter">
+                <option value="">All Strategies</option>
+            </select>
+            <input type="text" id="seed-search" placeholder="Search by seed...">
+            <input type="number" id="min-score" placeholder="Min score" min="0">
+            <input type="number" id="max-score" placeholder="Max score" min="0">
+            <button onclick="resetFilters()">Reset</button>
+        </div>
+        
+        <div class="stats-grid" id="stats-container"></div>
+        
+        <div id="runs-container">
+            <div class="loading">Loading data...</div>
+        </div>
+    </div>
+
+    <script>
+        let allRuns = [];
+        let allStats = {};
+        
+        async function loadData() {
+            try {
+                const resp = await fetch('stats.json');
+                const data = await resp.json();
+                allRuns = data.runs || [];
+                allStats = data.stats || {};
+                
+                renderStats();
+                populateStrategyFilter();
+                renderRuns(allRuns);
+                
+                document.getElementById('total-runs').textContent = allRuns.length;
+                document.getElementById('total-strategies').textContent = 
+                    Object.keys(allStats.by_strategy || {}).length;
+            } catch (e) {
+                document.getElementById('runs-container').innerHTML = 
+                    '<div class="loading">Error loading data: ' + e.message + '</div>';
+            }
+        }
+        
+        function renderStats() {
+            const container = document.getElementById('stats-container');
+            const strategies = Object.entries(allStats.by_strategy || {})
+                .sort((a, b) => b[1].win_rate - a[1].win_rate);
+            
+            container.innerHTML = strategies.map(([strategy, stats]) => `
+                <div class="stat-card" onclick="filterByStrategy('${strategy}')">
+                    <div class="stat-label">${strategy}</div>
+                    <div class="stat-value">${stats.win_rate}%</div>
+                    <div class="stat-sub">${stats.wins}/${stats.runs} wins • ${stats.avg_score} avg</div>
+                </div>
+            `).join('');
+        }
+        
+        function populateStrategyFilter() {
+            const select = document.getElementById('strategy-filter');
+            Object.keys(allStats.by_strategy || {})
+                .sort()
+                .forEach(strategy => {
+                    const opt = document.createElement('option');
+                    opt.value = strategy;
+                    opt.textContent = strategy;
+                    select.appendChild(opt);
+                });
+        }
+        
+        function getFilters() {
+            const strategy = document.getElementById('strategy-filter').value;
+            const seed = document.getElementById('seed-search').value.toUpperCase();
+            const minScore = parseInt(document.getElementById('min-score').value) || 0;
+            const maxScore = parseInt(document.getElementById('max-score').value) || Infinity;
+            
+            return { strategy, seed, minScore, maxScore };
+        }
+        
+        function filterRuns() {
+            const { strategy, seed, minScore, maxScore } = getFilters();
+            
+            let filtered = allRuns.filter(run => {
+                if (strategy && run.strategy !== strategy) return false;
+                if (seed && !run.seed.includes(seed)) return false;
+                if (run.score < minScore || run.score > maxScore) return false;
+                return true;
+            });
+            
+            renderRuns(filtered);
+        }
+        
+        function renderRuns(runs) {
+            const container = document.getElementById('runs-container');
+            if (runs.length === 0) {
+                container.innerHTML = '<div class="loading">No runs match filters</div>';
+                return;
+            }
+            
+            const rows = runs
+                .slice(-500) // Last 500 runs
+                .reverse() // Most recent first
+                .map(run => {
+                    const statusClass = run.won ? 'win' : 'loss';
+                    const status = run.won ? '✓ WIN' : `✗ ${run.died_to}`;
+                    return `
+                        <tr>
+                            <td><strong>${run.seed}</strong></td>
+                            <td>${run.strategy}</td>
+                            <td class="${statusClass}">${status}</td>
+                            <td>${run.floor}</td>
+                            <td><strong>${run.score}</strong></td>
+                            <td>${(run.bosses || []).slice(0, 2).join(', ')}</td>
+                        </tr>
+                    `;
+                }).join('');
+            
+            container.innerHTML = `
+                <table class="runs-table">
+                    <thead>
+                        <tr>
+                            <th>Seed</th>
+                            <th>Strategy</th>
+                            <th>Result</th>
+                            <th>Floor</th>
+                            <th>Score</th>
+                            <th>Bosses</th>
+                        </tr>
+                    </thead>
+                    <tbody>${rows}</tbody>
+                </table>
+                <div class="stat-sub" style="margin-top: 15px; text-align: center;">
+                    Showing last ${Math.min(500, runs.length)} of ${runs.length} runs
+                </div>
+            `;
+        }
+        
+        function filterByStrategy(strategy) {
+            document.getElementById('strategy-filter').value = strategy;
+            filterRuns();
+        }
+        
+        function resetFilters() {
+            document.getElementById('strategy-filter').value = '';
+            document.getElementById('seed-search').value = '';
+            document.getElementById('min-score').value = '';
+            document.getElementById('max-score').value = '';
+            renderRuns(allRuns);
+        }
+        
+        // Event listeners
+        document.getElementById('strategy-filter').addEventListener('change', filterRuns);
+        document.getElementById('seed-search').addEventListener('input', filterRuns);
+        document.getElementById('min-score').addEventListener('input', filterRuns);
+        document.getElementById('max-score').addEventListener('input', filterRuns);
+        
+        // Load on page load
+        loadData();
+    </script>
+</body>
+</html>

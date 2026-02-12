@@ -1,0 +1,35 @@
+name: Generate Stats
+
+on:
+  push:
+    paths:
+      - 'logs/run_history.log'
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Generate stats
+        run: python3 stats_generator.py
+      
+      - name: Deploy to Pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: stats-site
+          path: docs/
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/stats.json
+          git commit -m "chore: update stats" || true
+          git push || true
