@@ -8,6 +8,9 @@ on:
     - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -17,19 +20,13 @@ jobs:
         with:
           python-version: '3.11'
       
-      - name: Generate stats
+      - name: Generate stats from logs
         run: python3 stats_generator.py
       
-      - name: Deploy to Pages
-        uses: actions/upload-artifact@v4
-        with:
-          name: stats-site
-          path: docs/
-      
-      - name: Commit changes
+      - name: Commit and push stats
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add docs/stats.json
-          git commit -m "chore: update stats" || true
-          git push || true
+          git commit -m "chore: regenerate stats" || exit 0
+          git push
