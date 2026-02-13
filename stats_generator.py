@@ -8,18 +8,24 @@ from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 
-def parse_run_line(line: str, log_date: str = None) -> dict | None:
+def parse_run_line(line: str, seed_to_date: dict = None) -> dict | None:
     """Parse a single run line from log file."""
     if not line.startswith("Seed:"):
         return None
     
     run = {}
-    run['date'] = log_date or datetime.now().strftime('%Y-%m-%d')
     
     # Seed
     match = re.search(r'Seed:(\w+)', line)
     if match:
         run['seed'] = match.group(1)
+        # Look up date from seed-to-date mapping
+        if seed_to_date and run['seed'] in seed_to_date:
+            run['date'] = seed_to_date[run['seed']]
+        else:
+            run['date'] = datetime.now().strftime('%Y-%m-%d')
+    else:
+        return None
     
     # Floor
     match = re.search(r'Floor:(\d+)', line)
@@ -107,20 +113,27 @@ def generate_stats(runs: list[dict]) -> dict:
     stats['by_strategy'] = dict(stats['by_strategy'])
     return stats
 
-def get_log_date() -> str:
-    """Get the date from the log file timestamp."""
-    log_path = Path('logs/run_history.log')
-    log_gz_path = Path('logs/run_history.log.gz')
+def build_seed_to_date_mapping() -> dict:
+    """Extract timestamps from individual run files.
+    Filenames: 2025-11-09-15-20-54--SEED.log.gz"""
+    seed_to_date = {}
+    runs_dir = Path('logs/runs')
     
-    # Prefer uncompressed (newer)
-    if log_path.exists():
-        stat = log_path.stat()
-        return datetime.fromtimestamp(stat.st_mtime).strftime('%Y-%m-%d')
-    elif log_gz_path.exists():
-        stat = log_gz_path.stat()
-        return datetime.fromtimestamp(stat.st_mtime).strftime('%Y-%m-%d')
+    if not runs_dir.exists():
+        return seed_to_date
     
-    return datetime.now().strftime('%Y-%m-%d')
+    for log_file in runs_dir.glob('*.log*'):
+        # Extract date from filename: YYYY-MM-DD-HH-MM-SS--SEED
+        match = re.match(r'(\d{4})-(\d{2})-(\d{2})', log_file.name)
+        if match:
+            date_str = f"{match.group(1)}-{match.group(2)}-{match.group(3)}"
+            # Extract seed from filename
+            seed_match = re.search(r'--(\w+)\.log', log_file.name)
+            if seed_match:
+                seed = seed_match.group(1)
+                seed_to_date[seed] = date_str
+    
+    return seed_to_date
 
 def main():
     log_path = Path('logs/run_history.log')
@@ -131,7 +144,9 @@ def main():
         print("Error: No log files found")
         return
     
-    log_date = get_log_date()
+    # Build seed-to-date mapping from individual run files
+    seed_to_date = build_seed_to_date_mapping()
+    print(f"Found {len(seed_to_date)} individual run files with timestamps")
     
     # Parse all runs
     runs = []
@@ -140,7 +155,7 @@ def main():
     if log_gz_path.exists():
         with gzip.open(log_gz_path, 'rt') as f:
             for line in f:
-                run = parse_run_line(line, log_date)
+                run = parse_run_line(line, seed_to_date)
                 if run:
                     runs.append(run)
     
@@ -148,7 +163,7 @@ def main():
     if log_path.exists():
         with open(log_path, 'r') as f:
             for line in f:
-                run = parse_run_line(line, log_date)
+                run = parse_run_line(line, seed_to_date)
                 if run:
                     runs.append(run)
     
