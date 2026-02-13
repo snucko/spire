@@ -107,6 +107,15 @@
             <input type="text" id="seed-search" placeholder="Search by seed...">
             <input type="number" id="min-score" placeholder="Min score" min="0">
             <input type="number" id="max-score" placeholder="Max score" min="0">
+            <select id="sort-by">
+                <option value="date-desc">Date (Newest)</option>
+                <option value="date-asc">Date (Oldest)</option>
+                <option value="score-desc">Score (High to Low)</option>
+                <option value="score-asc">Score (Low to High)</option>
+                <option value="floor-desc">Floor (High to Low)</option>
+                <option value="floor-asc">Floor (Low to High)</option>
+                <option value="seed">Seed (A-Z)</option>
+            </select>
             <button onclick="resetFilters()">Reset</button>
         </div>
         
@@ -176,6 +185,22 @@
             return { strategy, seed, minScore, maxScore };
         }
         
+        function getSortFn() {
+            const sortBy = document.getElementById('sort-by').value;
+            
+            const sorters = {
+                'date-desc': (a, b) => new Date(b.date) - new Date(a.date),
+                'date-asc': (a, b) => new Date(a.date) - new Date(b.date),
+                'score-desc': (a, b) => b.score - a.score,
+                'score-asc': (a, b) => a.score - b.score,
+                'floor-desc': (a, b) => b.floor - a.floor,
+                'floor-asc': (a, b) => a.floor - b.floor,
+                'seed': (a, b) => a.seed.localeCompare(b.seed)
+            };
+            
+            return sorters[sortBy] || sorters['date-desc'];
+        }
+        
         function filterRuns() {
             const { strategy, seed, minScore, maxScore } = getFilters();
             
@@ -185,6 +210,9 @@
                 if (run.score < minScore || run.score > maxScore) return false;
                 return true;
             });
+            
+            // Apply sort
+            filtered.sort(getSortFn());
             
             renderRuns(filtered);
         }
@@ -246,7 +274,8 @@
             document.getElementById('seed-search').value = '';
             document.getElementById('min-score').value = '';
             document.getElementById('max-score').value = '';
-            renderRuns(allRuns);
+            document.getElementById('sort-by').value = 'date-desc';
+            filterRuns();
         }
         
         // Event listeners
@@ -254,6 +283,7 @@
         document.getElementById('seed-search').addEventListener('input', filterRuns);
         document.getElementById('min-score').addEventListener('input', filterRuns);
         document.getElementById('max-score').addEventListener('input', filterRuns);
+        document.getElementById('sort-by').addEventListener('change', filterRuns);
         
         // Load on page load
         loadData();
