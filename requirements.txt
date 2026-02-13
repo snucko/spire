@@ -1,0 +1,2 @@
+# No external dependencies - uses only stdlib
+# Python 3.9+ built-ins: json, re, gzip, pathlib, collections, datetime
