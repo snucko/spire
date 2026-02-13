@@ -3,6 +3,7 @@
 
 import json
 import re
+import gzip
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
