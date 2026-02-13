@@ -7,12 +7,13 @@ from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 
-def parse_run_line(line: str) -> dict | None:
+def parse_run_line(line: str, log_date: str = None) -> dict | None:
     """Parse a single run line from log file."""
     if not line.startswith("Seed:"):
         return None
     
     run = {}
+    run['date'] = log_date or datetime.now().strftime('%Y-%m-%d')
     
     # Seed
     match = re.search(r'Seed:(\w+)', line)
@@ -105,21 +106,50 @@ def generate_stats(runs: list[dict]) -> dict:
     stats['by_strategy'] = dict(stats['by_strategy'])
     return stats
 
+def get_log_date() -> str:
+    """Get the date from the log file timestamp."""
+    log_path = Path('logs/run_history.log')
+    log_gz_path = Path('logs/run_history.log.gz')
+    
+    # Prefer uncompressed (newer)
+    if log_path.exists():
+        stat = log_path.stat()
+        return datetime.fromtimestamp(stat.st_mtime).strftime('%Y-%m-%d')
+    elif log_gz_path.exists():
+        stat = log_gz_path.stat()
+        return datetime.fromtimestamp(stat.st_mtime).strftime('%Y-%m-%d')
+    
+    return datetime.now().strftime('%Y-%m-%d')
+
 def main():
     log_path = Path('logs/run_history.log')
+    log_gz_path = Path('logs/run_history.log.gz')
     output_path = Path('docs/stats.json')
     
-    if not log_path.exists():
-        print(f"Error: {log_path} not found")
+    if not log_path.exists() and not log_gz_path.exists():
+        print("Error: No log files found")
         return
+    
+    log_date = get_log_date()
     
     # Parse all runs
     runs = []
-    with open(log_path, 'r') as f:
-        for line in f:
-            run = parse_run_line(line)
-            if run:
-                runs.append(run)
+    
+    # Read compressed log first
+    if log_gz_path.exists():
+        with gzip.open(log_gz_path, 'rt') as f:
+            for line in f:
+                run = parse_run_line(line, log_date)
+                if run:
+                    runs.append(run)
+    
+    # Read uncompressed log (newer entries)
+    if log_path.exists():
+        with open(log_path, 'r') as f:
+            for line in f:
+                run = parse_run_line(line, log_date)
+                if run:
+                    runs.append(run)
     
     print(f"Parsed {len(runs)} runs")
     
