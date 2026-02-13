@@ -17,8 +17,16 @@ if [ -f "$BOT_LOGS/run_history.log" ]; then
     gzip -c "$BOT_LOGS/run_history.log" > "$SPIRE_REPO/logs/run_history.log.gz"
 fi
 
-# Note: runs/ folder is too large for GitHub (900MB+)
-# Just delete it to free space - the aggregate data is in run_history.log
+# Compress individual run files locally (don't push - too large for GitHub)
+if [ -d "$BOT_LOGS/runs" ] && [ "$(ls -A $BOT_LOGS/runs)" ]; then
+    echo "📦 Compressing individual run files locally..."
+    find "$BOT_LOGS/runs" -name "*.log" -type f | while read logfile; do
+        if [ ! -f "${logfile}.gz" ]; then
+            gzip "$logfile"
+        fi
+    done
+    echo "   Compressed $(ls -1 $BOT_LOGS/runs/*.gz 2>/dev/null | wc -l) run files"
+fi
 
 # Push to GitHub
 echo "📤 Pushing to GitHub..."
@@ -30,10 +38,10 @@ git commit -m "chore: sync bot logs $(date +%Y-%m-%d)" || echo "No changes"
 git push
 
 # Delete local uncompressed copies to free space
-echo "🗑️  Deleting local uncompressed logs..."
+echo "🗑️  Cleaning up uncompressed files..."
 rm -f "$BOT_LOGS/run_history.log"
-rm -rf "$BOT_LOGS/runs"
+find "$BOT_LOGS/runs" -name "*.log" -type f -delete 2>/dev/null || true
 
-echo "✅ Done! Logs compressed and synced to GitHub"
+echo "✅ Done! Logs synced to GitHub and compressed locally"
 echo "   GitHub: $SPIRE_REPO/logs/run_history.log.gz"
-echo "   Local: Deleted to free space"
+echo "   Local: Compressed .gz files in logs/runs/ (~95% size reduction)"
