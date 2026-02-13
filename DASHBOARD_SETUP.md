@@ -59,9 +59,11 @@ bottled_ai (bot code, private)
 ### 2. Parsing (stats_generator.py)
 ```python
 - Reads logs/run_history.log or logs/run_history.log.gz
-- Extracts: seed, floor, score, strategy, died_to, won, bosses, elites, relics, date
+- Extracts dates from individual run file names: YYYY-MM-DD-HH-MM-SS--SEED.log.gz
+- Parses run data: seed, floor, score, strategy, died_to, won, bosses, elites, relics
 - Calculates: win rates, avg scores, high/low scores by strategy
 - Outputs: docs/stats.json (5000+ runs = ~1.7MB)
+- Handles: gzip compressed logs + uncompressed logs
 ```
 
 ### 3. Sync to GitHub (sync_stats.sh)
@@ -189,11 +191,18 @@ du -sh "/Users/unknown1/Library/Application Support/Steam/steamapps/common/SlayT
 1. Check cron ran: `tail ~/spire-sync.log`
 2. Manual push: `./sync_stats.sh`
 3. Verify GitHub: `cd /tmp/spire && git log --oneline`
-4. Vercel rebuilds automatically - check deployment status
+4. Vercel rebuilds automatically - check deployment status at https://spire-eta.vercel.app
+
+### Dates showing wrong?
+- Parser extracts dates from run file names: `YYYY-MM-DD-HH-MM-SS--SEED.log.gz`
+- If a run shows as 2026-02-13, it means no matching run file found
+- This should not happen if `logs/runs/` folder exists with individual run files
+- Check: `ls logs/runs/ | head` should show dated filenames
 
 ### Disk space still high?
 - Run script: `./sync_stats.sh`
-- Check: `ls -lh logs/ | grep -v ".gz"`
+- Check: `du -sh logs/runs/` (should be <1GB after compression)
+- Verify compressed: `ls -lh logs/runs/*.gz | head` should show .gz files
 - Delete any uncompressed: `find logs -name "*.log" ! -name "*.gz" -delete`
 
 ### Stats not parsing?
@@ -201,8 +210,13 @@ du -sh "/Users/unknown1/Library/Application Support/Steam/steamapps/common/SlayT
 # Test parser
 python3 stats_generator.py
 
+# Should show:
+# Found 5285 individual run files with timestamps
+# Parsed 5228 runs
+# Saved to docs/stats.json
+
 # Check output
-head -20 docs/stats.json
+cat docs/stats.json | jq '.runs[:3][] | {seed, date}'
 ```
 
 ### Can't push to GitHub?
@@ -215,9 +229,15 @@ git config user.name   # Should be Shawn
 cd /tmp/spire && git push
 ```
 
+### Vercel build errors?
+- Check requirements.txt exists (can be empty - uses only stdlib)
+- Check gzip imported: `grep "import gzip" stats_generator.py`
+- View logs at https://vercel.com → spire project → Deployments
+
 ## Key Stats (as of 2026-02-13)
 
 - **Total runs:** 5,228
+- **Date range:** 2025-11-09 to 2026-02-13
 - **Top strategies:**
   - PEACEFUL_PUMMELING_HEART: 934 runs, 26.9% WR
   - SHIV_THE_HEART: 1085 runs, 18.5% WR
@@ -225,6 +245,7 @@ cd /tmp/spire && git push
 - **High scores:** 800+ (SHIVS_AND_GIGGLES)
 - **Avg score:** 300-560 pts depending on strat
 - **Data size:** 5,228 runs in 1.7MB JSON
+- **Individual run files:** 5,285 compressed files in logs/runs/ (~884MB)
 
 ## Future Improvements
 
