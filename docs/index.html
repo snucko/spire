@@ -68,6 +68,21 @@
             text-align: left;
             color: #ffd700;
             font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+        .runs-table th:hover {
+            background: #333;
+        }
+        .sort-arrow {
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 11px;
+            opacity: 0.6;
+        }
+        .sort-arrow.active {
+            opacity: 1;
+            color: #ffed4e;
         }
         .runs-table td {
             padding: 12px;
@@ -129,6 +144,7 @@
     <script>
         let allRuns = [];
         let allStats = {};
+        let currentSort = 'date-desc'; // Track current sort
         
         async function loadData() {
             try {
@@ -201,8 +217,46 @@
             return sorters[sortBy] || sorters['date-desc'];
         }
         
+        function getSortArrow(column) {
+            const sortMap = {
+                'date': ['date-asc', 'date-desc'],
+                'seed': ['seed'],
+                'score': ['score-asc', 'score-desc'],
+                'floor': ['floor-asc', 'floor-desc']
+            };
+            
+            const relatedSorts = sortMap[column] || [];
+            if (!relatedSorts.includes(currentSort)) return '<span class="sort-arrow">⇅</span>';
+            
+            if (currentSort.includes('desc')) return '<span class="sort-arrow active">↓</span>';
+            if (currentSort.includes('asc')) return '<span class="sort-arrow active">↑</span>';
+            return '<span class="sort-arrow">⇅</span>';
+        }
+        
+        function columnClickSort(column) {
+            const sortMap = {
+                'date': ['date-desc', 'date-asc'],
+                'seed': ['seed', 'seed'],
+                'score': ['score-desc', 'score-asc'],
+                'floor': ['floor-desc', 'floor-asc']
+            };
+            
+            if (!sortMap[column]) return;
+            
+            // Toggle between asc/desc
+            if (currentSort === sortMap[column][0]) {
+                currentSort = sortMap[column][1];
+            } else {
+                currentSort = sortMap[column][0];
+            }
+            
+            document.getElementById('sort-by').value = currentSort;
+            filterRuns();
+        }
+        
         function filterRuns() {
             const { strategy, seed, minScore, maxScore } = getFilters();
+            currentSort = document.getElementById('sort-by').value;
             
             let filtered = allRuns.filter(run => {
                 if (strategy && run.strategy !== strategy) return false;
@@ -247,12 +301,12 @@
                 <table class="runs-table">
                     <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>Seed</th>
+                            <th onclick="columnClickSort('date')">Date${getSortArrow('date')}</th>
+                            <th onclick="columnClickSort('seed')">Seed${getSortArrow('seed')}</th>
                             <th>Strategy</th>
                             <th>Result</th>
-                            <th>Floor</th>
-                            <th>Score</th>
+                            <th onclick="columnClickSort('floor')">Floor${getSortArrow('floor')}</th>
+                            <th onclick="columnClickSort('score')">Score${getSortArrow('score')}</th>
                             <th>Bosses</th>
                         </tr>
                     </thead>
