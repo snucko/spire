@@ -23,7 +23,9 @@ def parse_run_line(line: str, seed_to_date: dict = None) -> dict | None:
         if seed_to_date and run['seed'] in seed_to_date:
             run['date'] = seed_to_date[run['seed']]
         else:
-            run['date'] = datetime.now().strftime('%Y-%m-%d')
+            # Don't use current date as fallback - use empty string
+            # This prevents wrong dates when seed mapping is incomplete
+            run['date'] = ""
     else:
         return None
     
@@ -114,26 +116,36 @@ def generate_stats(runs: list[dict]) -> dict:
     return stats
 
 def build_seed_to_date_mapping() -> dict:
-    """Extract timestamps from individual run files.
-    Filenames: 2025-11-09-15-20-54--SEED.log.gz"""
-    seed_to_date = {}
-    runs_dir = Path('logs/runs')
-    
-    if not runs_dir.exists():
-        return seed_to_date
-    
-    for log_file in runs_dir.glob('*.log*'):
-        # Extract date from filename: YYYY-MM-DD-HH-MM-SS--SEED
-        match = re.match(r'(\d{4})-(\d{2})-(\d{2})', log_file.name)
-        if match:
-            date_str = f"{match.group(1)}-{match.group(2)}-{match.group(3)}"
-            # Extract seed from filename
-            seed_match = re.search(r'--(\w+)\.log', log_file.name)
-            if seed_match:
-                seed = seed_match.group(1)
-                seed_to_date[seed] = date_str
-    
-    return seed_to_date
+     """Load seed-to-date mapping from seed_dates.json.
+     Falls back to individual run files if JSON doesn't exist."""
+     seed_to_date = {}
+     seed_dates_path = Path('seed_dates.json')
+     
+     # Try loading from committed JSON file first (works on Vercel)
+     if seed_dates_path.exists():
+         with open(seed_dates_path, 'r') as f:
+             seed_to_date = json.load(f)
+         print(f"Loaded {len(seed_to_date)} seed dates from seed_dates.json")
+         return seed_to_date
+     
+     # Fallback: Extract from individual run files (local development)
+     runs_dir = Path('logs/runs')
+     if not runs_dir.exists():
+         return seed_to_date
+     
+     for log_file in runs_dir.glob('*.log*'):
+         # Extract date from filename: YYYY-MM-DD-HH-MM-SS--SEED
+         match = re.match(r'(\d{4})-(\d{2})-(\d{2})', log_file.name)
+         if match:
+             date_str = f"{match.group(1)}-{match.group(2)}-{match.group(3)}"
+             # Extract seed from filename
+             seed_match = re.search(r'--(\w+)\.log', log_file.name)
+             if seed_match:
+                 seed = seed_match.group(1)
+                 seed_to_date[seed] = date_str
+     
+     print(f"Loaded {len(seed_to_date)} seed dates from run files")
+     return seed_to_date
 
 def main():
     log_path = Path('logs/run_history.log')
