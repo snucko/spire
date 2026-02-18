@@ -11,6 +11,40 @@ echo "🔄 Syncing logs to spire repo..."
 # Create spire directory if needed
 mkdir -p "$SPIRE_REPO"
 
+# Regenerate seed_dates.json with new run dates
+echo "📝 Updating seed date mappings..."
+python3 << 'PYTHON_EOF'
+import json
+import re
+from pathlib import Path
+
+seed_to_date = {}
+seed_dates_path = Path('seed_dates.json')
+
+# Load existing
+if seed_dates_path.exists():
+    with open(seed_dates_path, 'r') as f:
+        seed_to_date = json.load(f)
+
+# Extract from run files (find new ones)
+runs_dir = Path('logs/runs')
+if runs_dir.exists():
+    for log_file in runs_dir.glob('*.log*'):
+        match = re.match(r'(\d{4})-(\d{2})-(\d{2})', log_file.name)
+        if match:
+            date_str = f"{match.group(1)}-{match.group(2)}-{match.group(3)}"
+            seed_match = re.search(r'--(\w+)\.log', log_file.name)
+            if seed_match:
+                seed = seed_match.group(1)
+                if seed not in seed_to_date:
+                    seed_to_date[seed] = date_str
+
+with open(seed_dates_path, 'w') as f:
+    json.dump(seed_to_date, f)
+
+print(f"Updated seed_dates.json: {len(seed_to_date)} seeds total")
+PYTHON_EOF
+
 # Compress run_history.log
 echo "📦 Compressing logs..."
 if [ -f "$BOT_LOGS/run_history.log" ]; then
