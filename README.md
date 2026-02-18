@@ -32,3 +32,4 @@ See [SETUP.md](SETUP.md) for full Cloudflare Pages deployment guide.
 ✅ Search by seed  
 ✅ Filter by score  
 ✅ Auto-updates every 6 hours
+rebuilt at Wed Feb 18 10:04:00 EST 2026
