@@ -305,6 +305,7 @@
                 populateStrategyFilter();
                 renderSummaryStats();
                 renderCharts();
+                renderEliteAnalysis();
                 renderLeaderboards();
                 renderBossAnalysis();
                 renderHeatmap();
@@ -463,6 +464,73 @@
                     indexAxis: 'y',
                     responsive: true, 
                     maintainAspectRatio: false, 
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function renderEliteAnalysis() {
+            // Avg Elites: Wins vs Losses
+            const winsWithElites = [];
+            const lossesWithElites = [];
+            allRuns.forEach(r => {
+                const eliteCount = (r.elites || []).length;
+                if (r.won) winsWithElites.push(eliteCount);
+                else lossesWithElites.push(eliteCount);
+            });
+            
+            const avgWinElites = winsWithElites.length > 0 ? (winsWithElites.reduce((a, b) => a + b, 0) / winsWithElites.length).toFixed(1) : 0;
+            const avgLossElites = lossesWithElites.length > 0 ? (lossesWithElites.reduce((a, b) => a + b, 0) / lossesWithElites.length).toFixed(1) : 0;
+            
+            if (chartInstances.elites) chartInstances.elites.destroy();
+            chartInstances.elites = new Chart(document.getElementById('elitesChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Wins', 'Losses'],
+                    datasets: [{
+                        label: 'Avg Elites',
+                        data: [avgWinElites, avgLossElites],
+                        backgroundColor: ['#4ade80', '#ef4444']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+            });
+
+            // Relic Impact (Top 10)
+            const relicStats = {};
+            allRuns.forEach(r => {
+                (r.relics || []).forEach(relic => {
+                    if (!relicStats[relic]) relicStats[relic] = { wins: 0, total: 0 };
+                    relicStats[relic].total++;
+                    if (r.won) relicStats[relic].wins++;
+                });
+            });
+            
+            const topRelics = Object.entries(relicStats)
+                .map(([relic, data]) => ({
+                    relic,
+                    wr: data.total > 0 ? ((data.wins / data.total) * 100).toFixed(1) : 0,
+                    count: data.total
+                }))
+                .sort((a, b) => b.wr - a.wr)
+                .slice(0, 10);
+            
+            if (chartInstances.relic) chartInstances.relic.destroy();
+            chartInstances.relic = new Chart(document.getElementById('relicChart'), {
+                type: 'barH',
+                type: 'bar',
+                data: {
+                    labels: topRelics.map(r => r.relic.substring(0, 15)),
+                    datasets: [{
+                        label: 'Win Rate %',
+                        data: topRelics.map(r => r.wr),
+                        backgroundColor: '#06b6d4'
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
                     plugins: { legend: { display: false } }
                 }
             });
