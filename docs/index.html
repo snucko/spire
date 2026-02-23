@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slay the Spire Bot Stats</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -13,8 +14,9 @@
             padding: 20px;
             line-height: 1.6;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
+        .container { max-width: 1400px; margin: 0 auto; }
         h1 { color: #ffd700; margin-bottom: 30px; font-size: 2.5em; }
+        h2 { color: #ffd700; margin-top: 40px; margin-bottom: 20px; font-size: 1.5em; border-bottom: 2px solid #ffd700; padding-bottom: 10px; }
         .search-box {
             margin-bottom: 30px;
             display: flex;
@@ -40,19 +42,39 @@
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             margin-bottom: 30px;
         }
         .stat-card {
             background: #2a2a2a;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
             border-left: 4px solid #ffd700;
         }
-        .stat-label { font-size: 12px; color: #aaa; text-transform: uppercase; }
-        .stat-value { font-size: 28px; font-weight: bold; color: #ffd700; }
-        .stat-sub { font-size: 12px; color: #999; margin-top: 5px; }
+        .stat-label { font-size: 11px; color: #aaa; text-transform: uppercase; }
+        .stat-value { font-size: 24px; font-weight: bold; color: #ffd700; margin: 5px 0; }
+        .stat-sub { font-size: 11px; color: #999; }
+        
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            height: 350px;
+        }
+        .chart-title {
+            color: #ffd700;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
         
         .runs-table {
             width: 100%;
@@ -68,28 +90,107 @@
             text-align: left;
             color: #ffd700;
             font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+        .runs-table th:hover {
+            background: #333;
+        }
+        .sort-arrow {
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 11px;
+            opacity: 0.6;
+        }
+        .sort-arrow.active {
+            opacity: 1;
+            color: #ffed4e;
         }
         .runs-table td {
             padding: 12px;
             border-bottom: 1px solid #333;
+            font-size: 13px;
         }
         .runs-table tr:hover {
             background: #333;
         }
         .win { color: #4ade80; }
         .loss { color: #ef4444; }
-        .filter-tag {
-            display: inline-block;
-            background: #444;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin: 4px 4px 4px 0;
-            cursor: pointer;
-        }
-        .filter-tag:hover { background: #555; }
         .loading { text-align: center; color: #999; padding: 40px; }
         .info { background: #2a2a2a; padding: 15px; border-radius: 4px; margin-bottom: 20px; font-size: 13px; }
+        
+        .leaderboard {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .leaderboard-row {
+            display: grid;
+            grid-template-columns: 50px 200px 80px 80px 80px;
+            gap: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #333;
+            align-items: center;
+        }
+        .leaderboard-row:hover {
+            background: #333;
+        }
+        .rank { color: #ffd700; font-weight: bold; text-align: center; }
+        .strategy-name { font-weight: bold; }
+        .metric { text-align: right; font-size: 12px; }
+        
+        .heatmap {
+            display: inline-block;
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        .heatmap-table {
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        .heatmap-table td, .heatmap-table th {
+            padding: 8px;
+            border: 1px solid #444;
+            text-align: center;
+            width: 60px;
+        }
+        .heatmap-table th {
+            background: #333;
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .heatmap-label {
+            background: #333;
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .heatmap-hot { background: #4ade80; color: #000; font-weight: bold; }
+        .heatmap-warm { background: #84cc16; color: #000; }
+        .heatmap-cool { background: #ef4444; color: #fff; }
+        .heatmap-cold { background: #dc2626; color: #fff; font-weight: bold; }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            padding: 8px 16px;
+            background: #2a2a2a;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .tab-btn.active {
+            background: #ffd700;
+            color: #000;
+        }
     </style>
 </head>
 <body>
@@ -118,9 +219,67 @@
             </select>
             <button onclick="resetFilters()">Reset</button>
         </div>
-        
-        <div class="stats-grid" id="stats-container"></div>
-        
+
+        <!-- Summary Stats -->
+        <h2>📊 Summary Statistics</h2>
+        <div class="stats-grid" id="summary-stats"></div>
+
+        <!-- Charts Section -->
+        <h2>📈 Performance Trends</h2>
+        <div class="chart-grid">
+            <div class="chart-container">
+                <div class="chart-title">Win Rate Over Time (Last 100 Runs)</div>
+                <canvas id="winRateChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Floor Distribution</div>
+                <canvas id="floorChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Score Distribution</div>
+                <canvas id="scoreChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Average Score by Strategy</div>
+                <canvas id="avgScoreChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Leaderboards -->
+        <h2>🏆 Strategy Leaderboard</h2>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('all-time')">All Time</button>
+            <button class="tab-btn" onclick="switchTab('recent')">Last 100 Runs</button>
+        </div>
+        <div id="leaderboard-all-time" class="leaderboard"></div>
+        <div id="leaderboard-recent" class="leaderboard" style="display:none;"></div>
+
+        <!-- Boss Analysis -->
+        <h2>👹 Boss Difficulty Analysis</h2>
+        <div class="chart-container" style="max-width: 600px; height: auto; margin-bottom: 20px;">
+            <div class="chart-title">Win Rate by Boss</div>
+            <div id="boss-difficulty"></div>
+        </div>
+
+        <!-- Elite Analysis -->
+        <h2>⚔️ Elite & Performance Analysis</h2>
+        <div class="chart-grid">
+            <div class="chart-container">
+                <div class="chart-title">Avg Elites: Wins vs Losses</div>
+                <canvas id="elitesChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Relic Impact (Top 10)</div>
+                <canvas id="relicChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Win Rate Heatmap -->
+        <h2>🔥 Strategy vs Boss Win Rate Heatmap</h2>
+        <div class="heatmap" id="heatmap-container"></div>
+
+        <!-- Run History Table -->
+        <h2>📋 Run History</h2>
         <div id="runs-container">
             <div class="loading">Loading data...</div>
         </div>
@@ -129,7 +288,9 @@
     <script>
         let allRuns = [];
         let allStats = {};
-        
+        let currentSort = 'date-desc';
+        let chartInstances = {};
+
         async function loadData() {
             try {
                 const resp = await fetch('stats.json');
@@ -137,33 +298,378 @@
                 allRuns = data.runs || [];
                 allStats = data.stats || {};
                 
-                renderStats();
-                populateStrategyFilter();
-                renderRuns(allRuns);
-                
                 document.getElementById('total-runs').textContent = allRuns.length;
                 document.getElementById('total-strategies').textContent = 
                     Object.keys(allStats.by_strategy || {}).length;
+                
+                populateStrategyFilter();
+                renderSummaryStats();
+                renderCharts();
+                renderEliteAnalysis();
+                renderLeaderboards();
+                renderBossAnalysis();
+                renderHeatmap();
+                renderRuns(allRuns);
+                
             } catch (e) {
                 document.getElementById('runs-container').innerHTML = 
                     '<div class="loading">Error loading data: ' + e.message + '</div>';
             }
         }
-        
-        function renderStats() {
-            const container = document.getElementById('stats-container');
-            const strategies = Object.entries(allStats.by_strategy || {})
-                .sort((a, b) => b[1].win_rate - a[1].win_rate);
+
+        function renderSummaryStats() {
+            const stats = allStats.stats || {};
+            const totalWins = Object.values(allStats.by_strategy || {}).reduce((sum, s) => sum + s.wins, 0);
+            const totalRuns = allRuns.length;
+            const overallWR = totalRuns > 0 ? ((totalWins / totalRuns) * 100).toFixed(1) : 0;
             
-            container.innerHTML = strategies.map(([strategy, stats]) => `
-                <div class="stat-card" onclick="filterByStrategy('${strategy}')">
-                    <div class="stat-label">${strategy}</div>
-                    <div class="stat-value">${stats.win_rate}%</div>
-                    <div class="stat-sub">${stats.wins}/${stats.runs} wins • ${stats.avg_score} avg</div>
+            const avgScore = allRuns.length > 0 ? (allRuns.reduce((sum, r) => sum + r.score, 0) / allRuns.length).toFixed(0) : 0;
+            const avgFloor = allRuns.length > 0 ? (allRuns.reduce((sum, r) => sum + r.floor, 0) / allRuns.length).toFixed(1) : 0;
+            
+            // Win streak
+            let maxWinStreak = 0, currentStreak = 0;
+            for (let run of allRuns) {
+                if (run.won) {
+                    currentStreak++;
+                    maxWinStreak = Math.max(maxWinStreak, currentStreak);
+                } else {
+                    currentStreak = 0;
+                }
+            }
+            
+            const container = document.getElementById('summary-stats');
+            container.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Overall Win Rate</div>
+                    <div class="stat-value">${overallWR}%</div>
+                    <div class="stat-sub">${totalWins}/${totalRuns} wins</div>
                 </div>
-            `).join('');
+                <div class="stat-card">
+                    <div class="stat-label">Average Score</div>
+                    <div class="stat-value">${avgScore}</div>
+                    <div class="stat-sub">across all runs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Average Floor</div>
+                    <div class="stat-value">${avgFloor}</div>
+                    <div class="stat-sub">depth reached</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Max Win Streak</div>
+                    <div class="stat-value">${maxWinStreak}</div>
+                    <div class="stat-sub">consecutive wins</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Strategies</div>
+                    <div class="stat-value">${Object.keys(allStats.by_strategy || {}).length}</div>
+                    <div class="stat-sub">active strategies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">High Score</div>
+                    <div class="stat-value">${Math.max(...allRuns.map(r => r.score))}</div>
+                    <div class="stat-sub">max score</div>
+                </div>
+            `;
         }
-        
+
+        function renderCharts() {
+            // Win Rate Over Time (Last 100)
+            const recent = allRuns.slice(-100);
+            const winRateData = [];
+            let wins = 0;
+            recent.forEach((run, i) => {
+                if (run.won) wins++;
+                winRateData.push(((wins / (i + 1)) * 100).toFixed(1));
+            });
+            
+            if (chartInstances.winRate) chartInstances.winRate.destroy();
+            chartInstances.winRate = new Chart(document.getElementById('winRateChart'), {
+                type: 'line',
+                data: {
+                    labels: recent.map((r, i) => i + 1),
+                    datasets: [{
+                        label: 'Win Rate %',
+                        data: winRateData,
+                        borderColor: '#4ade80',
+                        backgroundColor: 'rgba(74, 222, 128, 0.1)',
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+            });
+
+            // Floor Distribution
+            const floorCounts = {};
+            allRuns.forEach(r => {
+                floorCounts[r.floor] = (floorCounts[r.floor] || 0) + 1;
+            });
+            const floors = Object.keys(floorCounts).map(Number).sort((a, b) => a - b);
+            
+            if (chartInstances.floor) chartInstances.floor.destroy();
+            chartInstances.floor = new Chart(document.getElementById('floorChart'), {
+                type: 'bar',
+                data: {
+                    labels: floors,
+                    datasets: [{
+                        label: 'Runs',
+                        data: floors.map(f => floorCounts[f]),
+                        backgroundColor: '#ffd700'
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+            });
+
+            // Score Distribution
+            const scoreBuckets = { '0-200': 0, '200-400': 0, '400-600': 0, '600-800': 0, '800+': 0 };
+            allRuns.forEach(r => {
+                if (r.score < 200) scoreBuckets['0-200']++;
+                else if (r.score < 400) scoreBuckets['200-400']++;
+                else if (r.score < 600) scoreBuckets['400-600']++;
+                else if (r.score < 800) scoreBuckets['600-800']++;
+                else scoreBuckets['800+']++;
+            });
+            
+            if (chartInstances.score) chartInstances.score.destroy();
+            chartInstances.score = new Chart(document.getElementById('scoreChart'), {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(scoreBuckets),
+                    datasets: [{
+                        label: 'Runs',
+                        data: Object.values(scoreBuckets),
+                        backgroundColor: '#84cc16'
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+            });
+
+            // Avg Score by Strategy
+            const strategyScores = Object.entries(allStats.by_strategy || {})
+                .sort((a, b) => b[1].avg_score - a[1].avg_score)
+                .slice(0, 10);
+            
+            if (chartInstances.avgScore) chartInstances.avgScore.destroy();
+            chartInstances.avgScore = new Chart(document.getElementById('avgScoreChart'), {
+                type: 'bar',
+                data: {
+                    labels: strategyScores.map(s => s[0].substring(0, 15)),
+                    datasets: [{
+                        label: 'Avg Score',
+                        data: strategyScores.map(s => s[1].avg_score),
+                        backgroundColor: '#06b6d4'
+                    }]
+                },
+                options: { 
+                    indexAxis: 'y',
+                    responsive: true, 
+                    maintainAspectRatio: false, 
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function renderEliteAnalysis() {
+            // Avg Elites: Wins vs Losses
+            const winsWithElites = [];
+            const lossesWithElites = [];
+            allRuns.forEach(r => {
+                const eliteCount = (r.elites || []).length;
+                if (r.won) winsWithElites.push(eliteCount);
+                else lossesWithElites.push(eliteCount);
+            });
+            
+            const avgWinElites = winsWithElites.length > 0 ? (winsWithElites.reduce((a, b) => a + b, 0) / winsWithElites.length).toFixed(1) : 0;
+            const avgLossElites = lossesWithElites.length > 0 ? (lossesWithElites.reduce((a, b) => a + b, 0) / lossesWithElites.length).toFixed(1) : 0;
+            
+            if (chartInstances.elites) chartInstances.elites.destroy();
+            chartInstances.elites = new Chart(document.getElementById('elitesChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Wins', 'Losses'],
+                    datasets: [{
+                        label: 'Avg Elites',
+                        data: [avgWinElites, avgLossElites],
+                        backgroundColor: ['#4ade80', '#ef4444']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+            });
+
+            // Relic Impact (Top 10)
+            const relicStats = {};
+            allRuns.forEach(r => {
+                (r.relics || []).forEach(relic => {
+                    if (!relicStats[relic]) relicStats[relic] = { wins: 0, total: 0 };
+                    relicStats[relic].total++;
+                    if (r.won) relicStats[relic].wins++;
+                });
+            });
+            
+            const topRelics = Object.entries(relicStats)
+                .map(([relic, data]) => ({
+                    relic,
+                    wr: data.total > 0 ? ((data.wins / data.total) * 100).toFixed(1) : 0,
+                    count: data.total
+                }))
+                .sort((a, b) => b.wr - a.wr)
+                .slice(0, 10);
+            
+            if (chartInstances.relic) chartInstances.relic.destroy();
+            chartInstances.relic = new Chart(document.getElementById('relicChart'), {
+                type: 'barH',
+                type: 'bar',
+                data: {
+                    labels: topRelics.map(r => r.relic.substring(0, 15)),
+                    datasets: [{
+                        label: 'Win Rate %',
+                        data: topRelics.map(r => r.wr),
+                        backgroundColor: '#06b6d4'
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function renderLeaderboards() {
+            const allTime = Object.entries(allStats.by_strategy || {})
+                .map(([strat, stats]) => ({ strat, ...stats }))
+                .sort((a, b) => b.win_rate - a.win_rate);
+            
+            const recent100 = allRuns.slice(-100);
+            const recentStats = {};
+            recent100.forEach(r => {
+                if (!recentStats[r.strategy]) {
+                    recentStats[r.strategy] = { runs: 0, wins: 0, scores: [], floors: [] };
+                }
+                recentStats[r.strategy].runs++;
+                if (r.won) recentStats[r.strategy].wins++;
+                recentStats[r.strategy].scores.push(r.score);
+                recentStats[r.strategy].floors.push(r.floor);
+            });
+            
+            const recentLeaderboard = Object.entries(recentStats)
+                .map(([strat, data]) => ({
+                    strat,
+                    runs: data.runs,
+                    wins: data.wins,
+                    win_rate: data.runs > 0 ? ((data.wins / data.runs) * 100).toFixed(1) : 0,
+                    avg_score: (data.scores.reduce((a, b) => a + b, 0) / data.runs).toFixed(0)
+                }))
+                .sort((a, b) => b.win_rate - a.win_rate);
+            
+            const renderBoard = (data, containerId) => {
+                const container = document.getElementById(containerId);
+                container.innerHTML = data.map((s, i) => `
+                    <div class="leaderboard-row">
+                        <div class="rank">#${i + 1}</div>
+                        <div class="strategy-name">${s.strat}</div>
+                        <div class="metric">${s.win_rate}%</div>
+                        <div class="metric">${s.runs}r</div>
+                        <div class="metric">${s.avg_score}</div>
+                    </div>
+                `).join('');
+            };
+            
+            renderBoard(allTime, 'leaderboard-all-time');
+            renderBoard(recentLeaderboard, 'leaderboard-recent');
+        }
+
+        function renderBossAnalysis() {
+            const bosses = {};
+            allRuns.forEach(r => {
+                (r.bosses || []).forEach(boss => {
+                    if (!bosses[boss]) bosses[boss] = { wins: 0, total: 0 };
+                    bosses[boss].total++;
+                    if (r.won) bosses[boss].wins++;
+                });
+            });
+            
+            const bossData = Object.entries(bosses)
+                .map(([boss, data]) => ({
+                    boss,
+                    wr: data.total > 0 ? ((data.wins / data.total) * 100).toFixed(1) : 0,
+                    count: data.total
+                }))
+                .sort((a, b) => a.wr - b.wr)
+                .slice(0, 15);
+            
+            const container = document.getElementById('boss-difficulty');
+            container.innerHTML = `<table class="runs-table" style="background: transparent; width: 100%; margin: 0;">
+                <thead><tr><th>Boss</th><th>Win Rate</th><th>Encounters</th></tr></thead>
+                <tbody>
+                ${bossData.map(b => `
+                    <tr>
+                        <td>${b.boss}</td>
+                        <td style="color: ${b.wr < 40 ? '#ef4444' : '#4ade80'}">${b.wr}%</td>
+                        <td>${b.count}</td>
+                    </tr>
+                `).join('')}
+                </tbody>
+            </table>`;
+        }
+
+        function renderHeatmap() {
+            const strategies = Object.keys(allStats.by_strategy || {}).sort();
+            const bosses = {};
+            allRuns.forEach(r => {
+                (r.bosses || []).forEach(boss => {
+                    if (!bosses[boss]) bosses[boss] = {};
+                    strategies.forEach(strat => {
+                        if (!bosses[boss][strat]) bosses[boss][strat] = { wins: 0, total: 0 };
+                    });
+                });
+            });
+            
+            allRuns.forEach(r => {
+                (r.bosses || []).forEach(boss => {
+                    if (bosses[boss] && bosses[boss][r.strategy]) {
+                        bosses[boss][r.strategy].total++;
+                        if (r.won) bosses[boss][r.strategy].wins++;
+                    }
+                });
+            });
+            
+            const topBosses = Object.entries(bosses)
+                .map(([boss, data]) => ({
+                    boss,
+                    total: Object.values(data).reduce((sum, d) => sum + d.total, 0)
+                }))
+                .sort((a, b) => b.total - a.total)
+                .slice(0, 12)
+                .map(b => b.boss);
+            
+            const heatmapHtml = `
+                <table class="heatmap-table">
+                    <tr>
+                        <th></th>
+                        ${strategies.slice(0, 8).map(s => `<th>${s.substring(0, 8)}</th>`).join('')}
+                    </tr>
+                    ${topBosses.map(boss => `
+                        <tr>
+                            <td class="heatmap-label">${boss.substring(0, 12)}</td>
+                            ${strategies.slice(0, 8).map(strat => {
+                                const data = bosses[boss] && bosses[boss][strat];
+                                const wr = data && data.total > 0 ? ((data.wins / data.total) * 100) : -1;
+                                let color = 'heatmap-cool';
+                                if (wr >= 60) color = 'heatmap-hot';
+                                else if (wr >= 40) color = 'heatmap-warm';
+                                else if (wr < 0) color = '';
+                                return `<td class="${color}">${wr >= 0 ? wr.toFixed(0) : '-'}%</td>`;
+                            }).join('')}
+                        </tr>
+                    `).join('')}
+                </table>
+            `;
+            
+            document.getElementById('heatmap-container').innerHTML = heatmapHtml;
+        }
+
         function populateStrategyFilter() {
             const select = document.getElementById('strategy-filter');
             Object.keys(allStats.by_strategy || {})
@@ -175,7 +681,43 @@
                     select.appendChild(opt);
                 });
         }
+
+        function getSortArrow(column) {
+            const sortMap = {
+                'date': ['date-asc', 'date-desc'],
+                'seed': ['seed'],
+                'score': ['score-asc', 'score-desc'],
+                'floor': ['floor-asc', 'floor-desc']
+            };
+            
+            const relatedSorts = sortMap[column] || [];
+            if (!relatedSorts.includes(currentSort)) return '<span class="sort-arrow">⇅</span>';
+            
+            if (currentSort.includes('desc')) return '<span class="sort-arrow active">↓</span>';
+            if (currentSort.includes('asc')) return '<span class="sort-arrow active">↑</span>';
+            return '<span class="sort-arrow">⇅</span>';
+        }
         
+        function columnClickSort(column) {
+            const sortMap = {
+                'date': ['date-desc', 'date-asc'],
+                'seed': ['seed', 'seed'],
+                'score': ['score-desc', 'score-asc'],
+                'floor': ['floor-desc', 'floor-asc']
+            };
+            
+            if (!sortMap[column]) return;
+            
+            if (currentSort === sortMap[column][0]) {
+                currentSort = sortMap[column][1];
+            } else {
+                currentSort = sortMap[column][0];
+            }
+            
+            document.getElementById('sort-by').value = currentSort;
+            filterRuns();
+        }
+
         function getFilters() {
             const strategy = document.getElementById('strategy-filter').value;
             const seed = document.getElementById('seed-search').value.toUpperCase();
@@ -203,6 +745,7 @@
         
         function filterRuns() {
             const { strategy, seed, minScore, maxScore } = getFilters();
+            currentSort = document.getElementById('sort-by').value;
             
             let filtered = allRuns.filter(run => {
                 if (strategy && run.strategy !== strategy) return false;
@@ -211,9 +754,7 @@
                 return true;
             });
             
-            // Apply sort
             filtered.sort(getSortFn());
-            
             renderRuns(filtered);
         }
         
@@ -225,8 +766,8 @@
             }
             
             const rows = runs
-                .slice(-500) // Last 500 runs
-                .reverse() // Most recent first
+                .slice(-500)
+                .reverse()
                 .map(run => {
                     const statusClass = run.won ? 'win' : 'loss';
                     const status = run.won ? '✓ WIN' : `✗ ${run.died_to}`;
@@ -247,12 +788,12 @@
                 <table class="runs-table">
                     <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>Seed</th>
+                            <th onclick="columnClickSort('date')">Date${getSortArrow('date')}</th>
+                            <th onclick="columnClickSort('seed')">Seed${getSortArrow('seed')}</th>
                             <th>Strategy</th>
                             <th>Result</th>
-                            <th>Floor</th>
-                            <th>Score</th>
+                            <th onclick="columnClickSort('floor')">Floor${getSortArrow('floor')}</th>
+                            <th onclick="columnClickSort('score')">Score${getSortArrow('score')}</th>
                             <th>Bosses</th>
                         </tr>
                     </thead>
@@ -263,10 +804,12 @@
                 </div>
             `;
         }
-        
-        function filterByStrategy(strategy) {
-            document.getElementById('strategy-filter').value = strategy;
-            filterRuns();
+
+        function switchTab(tab) {
+            document.querySelectorAll('[id^="leaderboard-"]').forEach(el => el.style.display = 'none');
+            document.getElementById('leaderboard-' + tab).style.display = 'block';
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
         }
         
         function resetFilters() {
