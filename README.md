@@ -1,97 +1,224 @@
-# Bottled AI
-Customizable bot for roguelike deck-building game [Slay the Spire](https://store.steampowered.com/app/646570/Slay_the_Spire/).
+# Spire Dashboard
 
-## FAQ
-### Does it win a lot? Is it super smart?
-Depends on which character and strategy is in use. We've got a few different ones! Our current best is a watcher strategy with 52% winrate. You can see our most current [winrates here](docs/winrates.md).
+A real-time analytics dashboard for tracking [Slay the Spire](https://www.megacrit.com/) AI bot performance metrics, including win rates, average scores, and detailed run history across multiple AI strategies.
 
-### How does it work? Machine Learning? Gen AI?
-Nah, just good old-fashioned manually constructed automated decision-making. For example:
-- Selecting Cards, Boss Relics, and Upgrades works with a prioritized list, e.g. our strategy for Watcher might prefer taking Blasphemy over Tranquility.
-- Some decisions have specific conditions attached to them, like in the Shining Light event: take the damage for the 2 random upgrades... but not if we don't have much health left.
-- In combat, the bot figures out what the outcome would be for each of the different ways it could play its hand (with a graph traversal and a simulation we constructed). Then, the bot picks the outcome it likes best and plays the cards in that order.
-  - To decide what the best outcome is, the bot weighs about 40 different values against each other. Simple example: the bot prefers a turn where it defeats an enemy, but not if we will take a bunch of damage to make it happen.
+**Live Dashboard:** https://spire-dashboard.vercel.app
 
-### Does the bot have access to secret information, e.g. the outcomes of random rolls, or what it will draw next?
-No, it can only see what the player does.
+---
 
-### What are its current limitations/capabilities?
-See [capabilities.md](docs/capabilities.md).
+## Features
 
-### Do you make videos about the bot?
-Actually, yes. Check out the [YouTube channel](https://www.youtube.com/@BottledAI)!
+- 📊 **Strategy Performance**: Win rates, average floor, and score metrics by strategy
+- 🔍 **Run History**: Browse and filter individual runs with full details (seed, result, bosses, relics, etc.)
+- 🎯 **Advanced Filtering**: Filter by strategy, seed, score range, and sort by multiple criteria
+- 📅 **Date Tracking**: Every run is timestamped for historical analysis
+- 🚀 **Auto-Updates**: Data syncs every 6 hours via GitHub Actions
 
-## Setup
+---
 
-### Python Setup
-1) Have Python installed (min version 3.11.8).
-    - Windows: you will likely need to add Python to the Path Environmental Variable.
-    - MacOS: you need Python 3.11+ within xcode. This requires xcode 14.0+ (this applied for python 3.9+, might need to be higher now), which in turn requires macOS Monterey (lower versions won't work!).
-2) Have [PIP](https://pip.pypa.io/en/stable/installation/) (python package manager) installed.
+## Data Flow
 
-### Project Setup
-1) Clone this repository into the game's install folder, in a new folder: `\bottled_ai`.
-   - Windows example: ` E:\Steam\steamapps\common\SlayTheSpire\bottled_ai`
-   - MacOS example: Browse local files of StS via Steam -> Right click and Show Package Contents -> Resources -> bottled_ai
-2) Get/subscribe these mods via the Steam Workshop:
-    - [BaseMod](https://steamcommunity.com/sharedfiles/filedetails/?id=1605833019) 
-    - [StSLib](https://steamcommunity.com/sharedfiles/filedetails/?id=1609158507)
-    - [ModTheSpire](https://steamcommunity.com/sharedfiles/filedetails/?id=1605060445)
-    - [Communication Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2131373661)
-3) Run the game with the mods enabled - this will create your spire mod config files.
-4) Navigate to your CommunicationMod folder. How to find it:
-   - Windows: `%LOCALAPPDATA%\ModTheSpire\`
-   - MacOS: `~/Library/Preferences/ModTheSpire/`
-5) Modify `config.properties` in the CommunicationMod folder:
-    - Windows: Add `command=python .\\bottled_ai\\main.py` to the `config.properties` file there.
-    - MacOS: Add `command=python3 ./bottled_ai/main.py` to the `config.properties` file there.
+```
+Local Bot Runs
+    ↓
+logs/run_history.log & logs/runs/*.log
+    ↓
+seed_dates.json (maps seed → date)
+    ↓
+stats_generator.py (generates stats.json)
+    ↓
+sync_stats.sh (pushes to GitHub via cron)
+    ↓
+GitHub (snucko/spire)
+    ↓
+Vercel (auto-deploys dashboard)
+```
 
-### Running the bot
-Start the bot via the game's main menu:
-- → Mods
-- → Communication Mod
-- → Config (next to "Return")
-- → Start external process
+---
 
-You can configure some run settings in [main.py](main.py).
+## Repository Structure
 
-The process has a timeout of 10s so if you simply see that delay but nothing's happening - something isn't working.
-To debug, check the output in the ModTheSpire console, or the `communication_mod_errors.log` in the StS folder.
+```
+.
+├── docs/
+│   ├── index.html           # Dashboard UI (Vue.js)
+│   ├── stats.json           # Generated run data & aggregate stats
+│   └── ...                  # Other doc files
+├── seed_dates.json          # Seed → Date mapping (committed to GitHub)
+├── stats_generator.py       # Python script to parse runs & generate stats.json
+├── sync_stats.sh            # Cron script to push data to GitHub
+├── vercel.json              # Vercel deployment config
+└── README.md                # This file
+```
 
-## Making your own bot
-- See [how_to_make_your_own_bot.md](docs/how_to_make_your_own_bot.md).
+---
 
+## Setup (Local Development)
 
-## Contact
-Just use the Discussions feature here on GitHub. We're happy to discuss or support!
+### Prerequisites
+- Python 3.9+
+- Git
 
+### Installation
 
-## Tools
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/snucko/spire.git
+   cd spire
+   ```
 
-### Bot Controls
-- Adjust which bot strategy is used, the amount of runs, and the seed in [main.py](main.py).
-- Pause the bot in [run_controller.txt](run_controller.txt).
-- Adjust the speed of certain actions in [presentation_config.py](presentation_config.py).
+2. **Copy run logs** from your local bot installation:
+   ```bash
+   cp -r /path/to/bot/logs . 
+   ```
 
-### Tests
-- All tests can be found in the `/tests` directory.
-- They're VERY useful for checking bot behavior without needing to run the game.
+3. **Generate stats** (requires logs)
+   ```bash
+   python3 stats_generator.py
+   ```
 
+4. **Open the dashboard**
+   ```bash
+   open docs/index.html
+   ```
+   Or serve locally:
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+---
+
+## Automation Setup
+
+### Cron Job (Recommended)
+
+Add to your crontab to auto-sync data every 6 hours:
+
+```bash
+0 */6 * * * cd /path/to/spire && ./sync_stats.sh >> ~/spire-sync.log 2>&1
+```
+
+**Requirements:**
+- GitHub authentication configured (SSH key or token)
+- Run logs available locally
+
+---
+
+## Data Files
+
+### `seed_dates.json`
+Maps seed IDs to run dates. Committed to GitHub so Vercel can use it.
+
+```json
+{
+  "HC4CPTF3N4I1": "2025-11-09",
+  "KN742TKPEVI0": "2025-11-09",
+  ...
+}
+```
+
+### `docs/stats.json`
+Generated by `stats_generator.py`. Contains:
+- **runs**: Array of individual run objects with seeds, dates, scores, bosses, relics, etc.
+- **stats**: Aggregate statistics per strategy (win rate, avg floor, avg score, etc.)
+
+---
+
+## How It Works
+
+### Dashboard (index.html)
+- Vanilla JavaScript + Vue.js
+- Loads `stats.json` dynamically (no build step)
+- Client-side filtering and sorting
+- Displays last 500 runs by default
+
+### Stats Generation
+1. Reads `logs/run_history.log` (compressed or uncompressed)
+2. Parses run data with regex patterns
+3. Looks up dates from `seed_dates.json`
+4. Generates `docs/stats.json` with 10,000+ runs of data
+5. Calculates aggregate stats by strategy
+
+### Syncing to GitHub
+- `sync_stats.sh` updates `seed_dates.json` with new runs
+- Compresses individual run logs locally to save space
+- Pushes both to GitHub
+- Vercel rebuilds dashboard automatically
+
+---
+
+## Deployment
+
+The dashboard is deployed on **Vercel** (free tier). Deployment is automatic when you push to the `main` branch.
+
+**Environment**: Production  
+**Branch**: `main`  
+**Build**: Static (no build step needed)  
+**Output**: `docs/` directory
+
+---
+
+## Strategies Tracked
+
+- PEACEFUL_PUMMELING
+- PEACEFUL_PUMMELING_HEART
+- CLAW_IS_LAW
+- CLAW_IS_LAW_HEART
+- SHIVS_AND_GIGGLES
+- PWNDER_MY_ORBS
+- PWNDER_MY_ORBS_HEART
+- REQUESTED_STRIKE
+- REQUESTED_STRIKE_HEART
+
+---
+
+## Troubleshooting
+
+### Dashboard shows old dates
+- Ensure `seed_dates.json` is committed to GitHub
+- Run `python3 stats_generator.py` locally to regenerate stats
+- Check that Vercel has deployed the latest commit
+
+### Stats not updating
+- Verify `sync_stats.sh` has execute permissions: `chmod +x sync_stats.sh`
+- Check cron logs: `grep spire ~/spire-sync.log`
+- Manually run: `./sync_stats.sh`
+
+### Missing run data
+- Ensure log files exist in `logs/runs/` directory
+- Check log file format: `YYYY-MM-DD-HH-MM-SS--SEED.log`
+- Run `stats_generator.py` to parse and regenerate
+
+---
+
+## Performance
+
+- **Dashboard loads**: < 1 second
+- **Filters/sorts**: Instant (client-side)
+- **Data update**: Every 6 hours
+- **File sizes**: ~160KB seed_dates.json, ~2MB stats.json
+
+---
 
 ## Contributing
-We're happy to see you use this code for your own projects!
 
-We're also  happy to have you contribute to this repository! What we'd specifically love to see in _this_ project:
-- Any increased card / functionality coverage.
-- Performance improvements.
-- New handlers that add give strategies more options for effectiveness (like better potion handling for example).
-- Bugfixes!
+To modify the dashboard:
 
-See [capabilities.md](docs/capabilities.md) for a _rough_ overview of current functionality coverage.
+1. Edit `docs/index.html` (CSS/HTML/JS)
+2. Test locally: `python3 -m http.server 8000`
+3. Commit and push to `main`
+4. Vercel auto-deploys
 
-Please note:
-- We will be hesitant to integrate any new strategies - unless they bring in a particular new approach that would be beneficial for others to use / learn from. 
-- We normally will not accept major changes to the systems or code structure. If you'd like to do this, please fork the repo and share it with us so that we can see what you've created!
-- Please cover any new functionality with tests. If you're not sure how to do that, just submit your changes without tests anyway, and we can support you with adding them.
+To update the bot code, see the original [bottled_ai](https://github.com/xaved88/bottled_ai) repository.
 
-Just create a pull request with your changes, and we'll address them promptly. Thank you!# Updated Mon Feb 23 10:44:34 EST 2026
+---
+
+## License
+
+See [LICENSE.md](LICENSE.md)
+
+---
+
+**Last Updated:** 2026-02-23  
+**Runs Tracked:** 10,000+  
+**Date Range:** 2025-11-09 to 2026-02-23
