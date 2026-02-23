@@ -1,5 +1,3 @@
 {
-  "buildCommand": "python3 stats_generator.py",
-  "outputDirectory": "docs",
-  "installCommand": "pip install -r requirements.txt || true"
+  "outputDirectory": "docs"
 }
