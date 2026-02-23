@@ -116,8 +116,7 @@ def generate_stats(runs: list[dict]) -> dict:
     return stats
 
 def build_seed_to_date_mapping() -> dict:
-     """Load seed-to-date mapping from seed_dates.json.
-     Falls back to individual run files if JSON doesn't exist."""
+     """Load seed-to-date mapping from seed_dates.json and update with any new run files."""
      seed_to_date = {}
      seed_dates_path = Path('seed_dates.json')
      
@@ -126,13 +125,13 @@ def build_seed_to_date_mapping() -> dict:
          with open(seed_dates_path, 'r') as f:
              seed_to_date = json.load(f)
          print(f"Loaded {len(seed_to_date)} seed dates from seed_dates.json")
-         return seed_to_date
      
-     # Fallback: Extract from individual run files (local development)
+     # Always merge in dates from individual run files (local development)
      runs_dir = Path('logs/runs')
      if not runs_dir.exists():
          return seed_to_date
      
+     new_seeds = 0
      for log_file in runs_dir.glob('*.log*'):
          # Extract date from filename: YYYY-MM-DD-HH-MM-SS--SEED
          match = re.match(r'(\d{4})-(\d{2})-(\d{2})', log_file.name)
@@ -142,9 +141,17 @@ def build_seed_to_date_mapping() -> dict:
              seed_match = re.search(r'--(\w+)\.log', log_file.name)
              if seed_match:
                  seed = seed_match.group(1)
-                 seed_to_date[seed] = date_str
+                 if seed not in seed_to_date:
+                     seed_to_date[seed] = date_str
+                     new_seeds += 1
      
-     print(f"Loaded {len(seed_to_date)} seed dates from run files")
+     print(f"Loaded {len(seed_to_date)} total seed dates ({new_seeds} new)")
+     
+     # Save updated mapping back to seed_dates.json
+     with open(seed_dates_path, 'w') as f:
+         json.dump(seed_to_date, f)
+     print(f"Updated seed_dates.json with {new_seeds} new entries")
+     
      return seed_to_date
 
 def main():
