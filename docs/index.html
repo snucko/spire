@@ -9,14 +9,42 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #1a1a1a;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             color: #e0e0e0;
             padding: 20px;
             line-height: 1.6;
         }
         .container { max-width: 1400px; margin: 0 auto; }
-        h1 { color: #ffd700; margin-bottom: 30px; font-size: 2.5em; }
-        h2 { color: #ffd700; margin-top: 40px; margin-bottom: 20px; font-size: 1.5em; border-bottom: 2px solid #ffd700; padding-bottom: 10px; }
+        h1 { 
+            color: #ffd700; 
+            margin-bottom: 30px; 
+            font-size: 2.5em;
+            text-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+        }
+        h2 { 
+            color: #ffd700; 
+            margin-top: 40px; 
+            margin-bottom: 20px; 
+            font-size: 1.5em; 
+            border-bottom: 2px solid #ffd700; 
+            padding-bottom: 10px;
+        }
+        .strategy-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+            vertical-align: middle;
+            display: inline-block;
+            border-radius: 4px;
+        }
+        .strategy-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .strategy-label {
+            flex: 1;
+        }
         .search-box {
             margin-bottom: 30px;
             display: flex;
@@ -290,6 +318,26 @@
         let allStats = {};
         let currentSort = 'date-desc';
         let chartInstances = {};
+
+        // Map strategies to wiki character assets
+        const strategyToCharacter = {
+            'REQUESTED_STRIKE': { name: 'Ironclad', icon: 'https://slaythespire.wiki.gg/images/IroncladBanner.jpg' },
+            'REQUESTED_STRIKE_HEART': { name: 'Ironclad', icon: 'https://slaythespire.wiki.gg/images/IroncladBanner.jpg' },
+            'SHIVS_AND_GIGGLES': { name: 'Silent', icon: 'https://slaythespire.wiki.gg/images/SilentBanner.jpg' },
+            'SHIV_THE_HEART': { name: 'Silent', icon: 'https://slaythespire.wiki.gg/images/SilentBanner.jpg' },
+            'CLAW_IS_LAW': { name: 'Defect', icon: 'https://slaythespire.wiki.gg/images/DefectBanner.jpg' },
+            'CLAW_IS_LAW_HEART': { name: 'Defect', icon: 'https://slaythespire.wiki.gg/images/DefectBanner.jpg' },
+            'PEACEFUL_PUMMELING': { name: 'Watcher', icon: 'https://slaythespire.wiki.gg/images/WatcherBanner.jpg' },
+            'PEACEFUL_PUMMELING_HEART': { name: 'Watcher', icon: 'https://slaythespire.wiki.gg/images/WatcherBanner.jpg' },
+            'PWNDER_MY_ORBS': { name: 'Defect', icon: 'https://slaythespire.wiki.gg/images/DefectBanner.jpg' },
+            'PWNDER_MY_ORBS_HEART': { name: 'Defect', icon: 'https://slaythespire.wiki.gg/images/DefectBanner.jpg' }
+        };
+
+        function getStrategyIcon(strategyName) {
+            const char = strategyToCharacter[strategyName];
+            if (!char) return '';
+            return `<img src="${char.icon}" alt="${char.name}" class="strategy-icon" title="${char.name}">`;
+        }
 
         async function loadData() {
             try {
@@ -568,7 +616,10 @@
                 container.innerHTML = data.map((s, i) => `
                     <div class="leaderboard-row">
                         <div class="rank">#${i + 1}</div>
-                        <div class="strategy-name">${s.strat}</div>
+                        <div class="strategy-name">
+                            ${getStrategyIcon(s.strat)}
+                            <div class="strategy-label">${s.strat}</div>
+                        </div>
                         <div class="metric">${s.win_rate}%</div>
                         <div class="metric">${s.runs}r</div>
                         <div class="metric">${s.avg_score}</div>
@@ -775,7 +826,10 @@
                         <tr>
                             <td>${run.date}</td>
                             <td><strong>${run.seed}</strong></td>
-                            <td>${run.strategy}</td>
+                            <td style="display: flex; align-items: center; gap: 8px;">
+                                ${getStrategyIcon(run.strategy)}
+                                <span>${run.strategy}</span>
+                            </td>
                             <td class="${statusClass}">${status}</td>
                             <td>${run.floor}</td>
                             <td><strong>${run.score}</strong></td>
