@@ -62,13 +62,19 @@ if [ -d "$BOT_LOGS/runs" ] && [ "$(ls -A $BOT_LOGS/runs)" ]; then
     echo "   Compressed $(ls -1 $BOT_LOGS/runs/*.gz 2>/dev/null | wc -l) run files"
 fi
 
+# Copy seed_dates.json and stats to spire repo
+echo "📋 Copying seed_dates.json and stats..."
+mkdir -p "$SPIRE_REPO"
+cp seed_dates.json "$SPIRE_REPO/" 2>/dev/null || true
+cp docs/stats.json "$SPIRE_REPO/docs/" 2>/dev/null || true
+
 # Push to GitHub
 echo "📤 Pushing to GitHub..."
 cd "$SPIRE_REPO"
 git config user.email "$(git config --global user.email)"
 git config user.name "$(git config --global user.name)"
-git add logs/
-git commit -m "chore: sync bot logs $(date +%Y-%m-%d)" || echo "No changes"
+git add logs/ seed_dates.json docs/stats.json
+git commit -m "chore: sync bot logs and stats $(date +%Y-%m-%d)" || echo "No changes"
 git push
 
 # Delete local uncompressed copies to free space
