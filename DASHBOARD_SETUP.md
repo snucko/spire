@@ -35,6 +35,7 @@ bottled_ai (bot code, private)
 | File | Purpose |
 |------|---------|
 | `stats_generator.py` | Parses run_history.log → stats.json |
+| `seed_dates.json` | Maps seed → date (5,285 entries) |
 | `sync_stats.sh` | Compresses logs, pushes to GitHub, deletes local copies |
 | `docs/index.html` | Web dashboard (no backend needed) |
 | `docs/stats.json` | Generated stats (auto-created by parser) |
@@ -44,6 +45,7 @@ bottled_ai (bot code, private)
 | File | Purpose |
 |------|---------|
 | `stats_generator.py` | Same parser (handles .gz files) |
+| `seed_dates.json` | Maps seed → date (committed to GitHub for Vercel) |
 | `docs/index.html` | Dashboard |
 | `docs/stats.json` | Current stats |
 | `logs/run_history.log.gz` | Compressed archive from bot |
@@ -58,8 +60,9 @@ bottled_ai (bot code, private)
 
 ### 2. Parsing (stats_generator.py)
 ```python
+- Loads seed → date mapping from seed_dates.json (works on Vercel)
+- Falls back to individual run files if seed_dates.json missing (local dev)
 - Reads logs/run_history.log or logs/run_history.log.gz
-- Extracts dates from individual run file names: YYYY-MM-DD-HH-MM-SS--SEED.log.gz
 - Parses run data: seed, floor, score, strategy, died_to, won, bosses, elites, relics
 - Calculates: win rates, avg scores, high/low scores by strategy
 - Outputs: docs/stats.json (5000+ runs = ~1.7MB)
@@ -194,10 +197,26 @@ du -sh "/Users/unknown1/Library/Application Support/Steam/steamapps/common/SlayT
 4. Vercel rebuilds automatically - check deployment status at https://spire-eta.vercel.app
 
 ### Dates showing wrong?
-- Parser extracts dates from run file names: `YYYY-MM-DD-HH-MM-SS--SEED.log.gz`
-- If a run shows as 2026-02-13, it means no matching run file found
-- This should not happen if `logs/runs/` folder exists with individual run files
-- Check: `ls logs/runs/ | head` should show dated filenames
+- **FIXED** (2026-02-13): Parser now loads dates from `seed_dates.json` (committed to GitHub)
+- Fallback: Extracts dates from run file names: `YYYY-MM-DD-HH-MM-SS--SEED.log.gz`
+- If dates are still wrong: regenerate `seed_dates.json` locally and push to GitHub
+  ```bash
+  python3 -c "
+  import json, re
+  from pathlib import Path
+  seed_to_date = {}
+  for log_file in Path('logs/runs').glob('*.log*'):
+      m = re.match(r'(\d{4})-(\d{2})-(\d{2})', log_file.name)
+      if m:
+          date_str = f'{m.group(1)}-{m.group(2)}-{m.group(3)}'
+          s = re.search(r'--(\w+)\.log', log_file.name)
+          if s:
+              seed_to_date[s.group(1)] = date_str
+  with open('seed_dates.json', 'w') as f:
+      json.dump(seed_to_date, f)
+  print(f'Updated {len(seed_to_date)} seeds')
+  "
+  ```
 
 ### Disk space still high?
 - Run script: `./sync_stats.sh`
@@ -237,7 +256,7 @@ cd /tmp/spire && git push
 ## Key Stats (as of 2026-02-13)
 
 - **Total runs:** 5,228
-- **Date range:** 2025-11-09 to 2026-02-13
+- **Date range:** 2025-11-09 to 2026-02-12 (verified with seed_dates.json)
 - **Top strategies:**
   - PEACEFUL_PUMMELING_HEART: 934 runs, 26.9% WR
   - SHIV_THE_HEART: 1085 runs, 18.5% WR
@@ -246,6 +265,7 @@ cd /tmp/spire && git push
 - **Avg score:** 300-560 pts depending on strat
 - **Data size:** 5,228 runs in 1.7MB JSON
 - **Individual run files:** 5,285 compressed files in logs/runs/ (~884MB)
+- **Seed mapping:** 5,285 seeds with dates in seed_dates.json
 
 ## Future Improvements
 
@@ -263,13 +283,15 @@ cd /tmp/spire && git push
 - Bot logger: `rs/helper/logger.py` (writes to logs/)
 - Dashboard source: `docs/index.html`
 - Parser source: `stats_generator.py`
+- Seed dates: `seed_dates.json` (maps seed→date, 5,285 entries)
 - Sync script: `sync_stats.sh`
 - Cron config: `crontab -l`
 
 ## Contact / Notes
 
 - Dashboard: https://spire-eta.vercel.app
-- GitHub: https://github.com/snucko/spire
-- Domain: spire.tivnan.net
+- Custom domain: https://spire.tivnan.net
+- GitHub repo: https://github.com/snucko/spire (private)
 - Auto-sync: Every 6 hours via cron
 - Last updated: 2026-02-13
+- **Latest fix:** Added seed_dates.json to map seeds→dates for correct Vercel builds
