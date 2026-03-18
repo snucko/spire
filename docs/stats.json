@@ -16178,17 +16178,206 @@
         "Fusion Hammer"
       ],
       "date": "2026-03-17"
+    },
+    {
+      "seed": "I2U1VTMK36F5",
+      "floor": 33,
+      "score": 280,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Maw Bank",
+        "Centennial Puzzle",
+        "Horn Cleat",
+        "Odd Mushroom",
+        "Meal Ticket",
+        "Happy Flower",
+        "Violet Lotus",
+        "Red Mask",
+        "Bronze Scales"
+      ],
+      "date": "2026-03-18"
+    },
+    {
+      "seed": "CKFIPW2G3IWQ",
+      "floor": 55,
+      "score": 705,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Lantern",
+        "Vajra",
+        "Golden Idol",
+        "Tiny Chest",
+        "Runic Pyramid",
+        "Strawberry",
+        "Kunai",
+        "Toy Ornithopter",
+        "Philosopher's Stone",
+        "Pantograph",
+        "Oddly Smooth Stone",
+        "Damaru"
+      ],
+      "date": "2026-03-18"
+    },
+    {
+      "seed": "G3CEWTZPE3A5",
+      "floor": 51,
+      "score": 788,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Mad Gremlin Relics: Velvet Choker"
+      ],
+      "relics": [
+        "Velvet Choker",
+        "Meat on the Bone",
+        "Pen Nib",
+        "Snecko Eye",
+        "Juzu Bracelet",
+        "Anchor",
+        "Cursed Key",
+        "Gambling Chip",
+        "Turnip",
+        "Eternal Feather"
+      ],
+      "date": "2026-03-18"
+    },
+    {
+      "seed": "Q4RZZYYJ1PK3",
+      "floor": 33,
+      "score": 300,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Holy Water",
+        "Mercury Hourglass",
+        "Bag of Preparation",
+        "Shuriken",
+        "Centennial Puzzle",
+        "Bag of Marbles",
+        "Bottled Tornado",
+        "Ceramic Fish"
+      ],
+      "date": "2026-03-18"
+    },
+    {
+      "seed": "13CL3YWF4GPBI",
+      "floor": 51,
+      "score": 703,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "White Beast Statue",
+        "Vajra",
+        "Calipers",
+        "Slaver's Collar",
+        "Mutagenic Strength",
+        "Bronze Scales",
+        "Philosopher's Stone",
+        "Pear",
+        "Girya"
+      ],
+      "date": "2026-03-18"
+    },
+    {
+      "seed": "6ZQ0JRVE82WD",
+      "floor": 50,
+      "score": 488,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Ceramic Fish",
+        "Anchor",
+        "Kunai",
+        "Slaver's Collar",
+        "Red Mask",
+        "Mutagenic Strength",
+        "Vajra",
+        "Duality",
+        "Pen Nib",
+        "Snecko Eye",
+        "Bag of Marbles"
+      ],
+      "date": "2026-03-18"
+    },
+    {
+      "seed": "YBFFVNAPTFR4",
+      "floor": 16,
+      "score": 100,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Pure Water"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Strawberry",
+        "Orichalcum",
+        "Golden Idol",
+        "Ancient Tea Set",
+        "Meat on the Bone",
+        "Warped Tongs"
+      ],
+      "date": "2026-03-18"
     }
   ],
   "stats": {
-    "total_runs": 598,
+    "total_runs": 605,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 598,
-        "wins": 159,
+        "runs": 605,
+        "wins": 161,
         "win_rate": 26.6,
         "avg_floor": 43.6,
-        "avg_score": 513.8
+        "avg_score": 513.4
       }
     }
   }
