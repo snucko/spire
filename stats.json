@@ -17690,17 +17690,193 @@
         "Vajra"
       ],
       "date": "2026-03-19"
+    },
+    {
+      "seed": "PLUNPQGW6923",
+      "floor": 51,
+      "score": 756,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bronze Scales",
+        "Lantern",
+        "Philosopher's Stone",
+        "Pocketwatch",
+        "Pen Nib",
+        "Cursed Key",
+        "Meal Ticket",
+        "Captain's Wheel",
+        "Ice Cream"
+      ],
+      "date": "2026-03-19"
+    },
+    {
+      "seed": "GALMTLF5USAU",
+      "floor": 46,
+      "score": 503,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Repulsor",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Dream Catcher",
+        "Regal Pillow",
+        "Centennial Puzzle",
+        "Ectoplasm",
+        "Du-Vu Doll",
+        "Cursed Key",
+        "Omamori"
+      ],
+      "date": "2026-03-19"
+    },
+    {
+      "seed": "U0ITYVM0SY50",
+      "floor": 7,
+      "score": 53,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spike Slime (M)",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Pure Water"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Fossilized Helix"
+      ],
+      "date": "2026-03-19"
+    },
+    {
+      "seed": "QC1JSU3FF38K",
+      "floor": 50,
+      "score": 491,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Astrolabe",
+        "Horn Cleat",
+        "Art of War",
+        "Gremlin Horn",
+        "Slaver's Collar",
+        "Vajra",
+        "Ice Cream",
+        "Blue Candle",
+        "Violet Lotus",
+        "Lizard Tail",
+        "Bag of Preparation"
+      ],
+      "date": "2026-03-19"
+    },
+    {
+      "seed": "YSZQ6IZ2HF3H",
+      "floor": 22,
+      "score": 269,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Centurion",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L) Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Ginger",
+        "Incense Burner",
+        "Odd Mushroom",
+        "Fossilized Helix",
+        "Singing Bowl",
+        "Violet Lotus"
+      ],
+      "date": "2026-03-19"
+    },
+    {
+      "seed": "QJTCKZVNE8WY",
+      "floor": 33,
+      "score": 280,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bottled Lightning",
+        "Matryoshka",
+        "Pen Nib",
+        "Girya",
+        "Lantern",
+        "Meal Ticket",
+        "Philosopher's Stone",
+        "Membership Card",
+        "Whetstone",
+        "Golden Eye",
+        "Toy Ornithopter"
+      ],
+      "date": "2026-03-19"
+    },
+    {
+      "seed": "NSWQSFRX2ADL",
+      "floor": 33,
+      "score": 276,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Gremlin Nob Relics: Pure Water"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Pear",
+        "Ancient Tea Set",
+        "Philosopher's Stone",
+        "Red Mask",
+        "Blood Vial",
+        "Meal Ticket"
+      ],
+      "date": "2026-03-19"
     }
   ],
   "stats": {
-    "total_runs": 654,
+    "total_runs": 661,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 654,
-        "wins": 171,
-        "win_rate": 26.1,
+        "runs": 661,
+        "wins": 172,
+        "win_rate": 26.0,
         "avg_floor": 43.4,
-        "avg_score": 510.8
+        "avg_score": 509.4
       }
     }
   }
