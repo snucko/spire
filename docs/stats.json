@@ -17866,17 +17866,46 @@
         "Meal Ticket"
       ],
       "date": "2026-03-19"
+    },
+    {
+      "seed": "8QJWL9QU9LZ9",
+      "floor": 51,
+      "score": 728,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Art of War",
+        "Tiny Chest",
+        "Philosopher's Stone",
+        "Anchor",
+        "Pen Nib",
+        "Akabeko",
+        "Blood Vial",
+        "Snecko Eye",
+        "Bag of Marbles",
+        "Whetstone",
+        "Ink Bottle"
+      ],
+      "date": "2026-03-20"
     }
   ],
   "stats": {
-    "total_runs": 661,
+    "total_runs": 662,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 661,
-        "wins": 172,
-        "win_rate": 26.0,
+        "runs": 662,
+        "wins": 173,
+        "win_rate": 26.1,
         "avg_floor": 43.4,
-        "avg_score": 509.4
+        "avg_score": 509.7
       }
     }
   }
