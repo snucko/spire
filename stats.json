@@ -20262,17 +20262,290 @@
         "Bag of Marbles"
       ],
       "date": "2026-03-21"
+    },
+    {
+      "seed": "A361HLUNT9LD",
+      "floor": 50,
+      "score": 466,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Duality",
+        "Shovel",
+        "Mummified Hand",
+        "Sozu",
+        "Stone Calendar",
+        "Shuriken",
+        "Anchor",
+        "Fusion Hammer",
+        "Potion Belt",
+        "Calipers",
+        "The Boot",
+        "Orichalcum",
+        "Membership Card",
+        "Girya",
+        "Meal Ticket"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "DMXVKL6D7ZYS",
+      "floor": 55,
+      "score": 641,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Holy Water",
+        "Letter Opener",
+        "Bag of Preparation",
+        "Bronze Scales",
+        "Anchor",
+        "Pantograph",
+        "Bag of Marbles",
+        "Sozu",
+        "Strawberry",
+        "War Paint"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "ELESNPQHP874",
+      "floor": 51,
+      "score": 748,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bag of Preparation",
+        "Fossilized Helix",
+        "Letter Opener",
+        "Sozu",
+        "Red Mask",
+        "Eternal Feather",
+        "Kunai",
+        "Snecko Eye",
+        "Lizard Tail"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "S1JZVIU7KFKL",
+      "floor": 51,
+      "score": 861,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Incense Burner",
+        "Meat on the Bone",
+        "Meal Ticket",
+        "Girya",
+        "Runic Pyramid",
+        "Membership Card",
+        "Bag of Preparation",
+        "Tiny Chest",
+        "Bag of Marbles",
+        "Cursed Key",
+        "Art of War",
+        "Regal Pillow",
+        "Anchor",
+        "Centennial Puzzle"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "C5YJ7YSXXWN2",
+      "floor": 54,
+      "score": 743,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spire Shield",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry Relics: Holy Water"
+      ],
+      "relics": [
+        "Holy Water",
+        "Oddly Smooth Stone",
+        "Lantern",
+        "Mummified Hand",
+        "The Courier",
+        "Cursed Key",
+        "Thread and Needle"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "G4PHLDDUQ39A",
+      "floor": 6,
+      "score": 40,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Lagavulin",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Pure Water"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Blood Vial"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "11NLLJKFV4MX6",
+      "floor": 51,
+      "score": 747,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Ink Bottle",
+        "Pandora's Box",
+        "Pen Nib",
+        "Shuriken",
+        "Cursed Key",
+        "Mango",
+        "Vajra",
+        "Ice Cream"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "1370XAP1W0TBP",
+      "floor": 51,
+      "score": 726,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Eternal Feather",
+        "Matryoshka",
+        "Runic Pyramid",
+        "Meal Ticket",
+        "Strike Dummy",
+        "Oddly Smooth Stone",
+        "Regal Pillow",
+        "Omamori",
+        "Sacred Bark",
+        "Molten Egg",
+        "Stone Calendar",
+        "Pear"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "SPNJ05JM817M",
+      "floor": 51,
+      "score": 835,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Oddly Smooth Stone",
+        "Tungsten Rod",
+        "Anchor",
+        "Eternal Feather",
+        "Violet Lotus",
+        "Meat on the Bone",
+        "Art of War",
+        "War Paint",
+        "Girya",
+        "Slaver's Collar",
+        "Bag of Preparation",
+        "The Boot"
+      ],
+      "date": "2026-03-21"
+    },
+    {
+      "seed": "12F1EDU2V7EH6",
+      "floor": 33,
+      "score": 359,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L) Elites: Sentry"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Ancient Tea Set",
+        "Maw Bank",
+        "Centennial Puzzle",
+        "Sozu",
+        "Meat on the Bone",
+        "Toxic Egg"
+      ],
+      "date": "2026-03-21"
     }
   ],
   "stats": {
-    "total_runs": 751,
+    "total_runs": 761,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 751,
-        "wins": 201,
-        "win_rate": 26.8,
+        "runs": 761,
+        "wins": 206,
+        "win_rate": 27.1,
         "avg_floor": 43.2,
-        "avg_score": 506.8
+        "avg_score": 508.3
       }
     }
   }
