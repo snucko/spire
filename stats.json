@@ -42324,14 +42324,98 @@
         "Horn Cleat"
       ],
       "date": "2026-04-09"
+    },
+    {
+      "seed": "4MHLYE1UESG4",
+      "floor": 51,
+      "score": 703,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Tiny Chest",
+        "Girya",
+        "Odd Mushroom",
+        "Ornamental Fan",
+        "Shuriken",
+        "Philosopher's Stone",
+        "The Courier",
+        "Bronze Scales",
+        "Damaru",
+        "Mango",
+        "Ancient Tea Set",
+        "Snecko Eye",
+        "Unceasing Top",
+        "Bottled Lightning",
+        "Dream Catcher"
+      ],
+      "date": "2026-04-09"
+    },
+    {
+      "seed": "UAG8C95U0UAH",
+      "floor": 27,
+      "score": 223,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Sentry",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Lagavulin Relics: Pure Water"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "War Paint",
+        "Du-Vu Doll",
+        "Regal Pillow",
+        "Violet Lotus",
+        "Smiling Mask"
+      ],
+      "date": "2026-04-10"
+    },
+    {
+      "seed": "Z4PZYG8107DY",
+      "floor": 50,
+      "score": 518,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Orichalcum",
+        "Ornamental Fan",
+        "Mercury Hourglass",
+        "Sozu",
+        "Centennial Puzzle",
+        "Sundial",
+        "Teardrop Locket",
+        "Red Mask",
+        "Slaver's Collar",
+        "Membership Card"
+      ],
+      "date": "2026-04-10"
     }
   ],
   "stats": {
-    "total_runs": 1598,
+    "total_runs": 1601,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 1161,
-        "wins": 319,
+        "runs": 1164,
+        "wins": 320,
         "win_rate": 27.5,
         "avg_floor": 43.3,
         "avg_score": 508.8
