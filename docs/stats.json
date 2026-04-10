@@ -42141,17 +42141,200 @@
         "Slaver's Collar"
       ],
       "date": "2026-04-09"
+    },
+    {
+      "seed": "J8UB0EDWQ9SM",
+      "floor": 50,
+      "score": 563,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Teardrop Locket",
+        "Violet Lotus",
+        "Blood Vial",
+        "Ancient Tea Set",
+        "Sozu",
+        "Strawberry",
+        "Red Mask"
+      ],
+      "date": "2026-04-09"
+    },
+    {
+      "seed": "XCSSTDU1Q2LC",
+      "floor": 51,
+      "score": 705,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Horn Cleat",
+        "Eternal Feather",
+        "Snecko Eye",
+        "Blood Vial",
+        "Sozu"
+      ],
+      "date": "2026-04-09"
+    },
+    {
+      "seed": "Q30M2PHQ5M4Q",
+      "floor": 23,
+      "score": 241,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Slaver",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Sentry Relics: Pure Water"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Turnip",
+        "Smiling Mask",
+        "Meal Ticket",
+        "Calling Bell",
+        "Orichalcum",
+        "Strike Dummy",
+        "Nunchaku",
+        "Warped Tongs"
+      ],
+      "date": "2026-04-09"
+    },
+    {
+      "seed": "TIHHP4AMI1BU",
+      "floor": 51,
+      "score": 691,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Mango",
+        "Sundial",
+        "Golden Idol",
+        "Regal Pillow",
+        "Ectoplasm",
+        "Membership Card",
+        "Mutagenic Strength",
+        "Blood Vial",
+        "Meat on the Bone",
+        "Eternal Feather",
+        "Snecko Eye",
+        "Red Mask"
+      ],
+      "date": "2026-04-09"
+    },
+    {
+      "seed": "GXTHQSWFYGBQ",
+      "floor": 33,
+      "score": 272,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Lagavulin Relics: Pure Water"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Anchor",
+        "Oddly Smooth Stone",
+        "Astrolabe",
+        "Mutagenic Strength",
+        "Bag of Marbles",
+        "Juzu Bracelet",
+        "Regal Pillow"
+      ],
+      "date": "2026-04-09"
+    },
+    {
+      "seed": "ZX9R6JXRX21P",
+      "floor": 31,
+      "score": 300,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Pointy",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L) Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Velvet Choker",
+        "Bronze Scales",
+        "Mummified Hand",
+        "Peace Pipe",
+        "Happy Flower",
+        "Philosopher's Stone",
+        "Girya",
+        "Nunchaku",
+        "Art of War"
+      ],
+      "date": "2026-04-09"
+    },
+    {
+      "seed": "ZYSAER1R23JQ",
+      "floor": 47,
+      "score": 478,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Repulsor",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Dagger Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Omamori",
+        "Pantograph",
+        "Snecko Eye",
+        "Damaru",
+        "Pen Nib",
+        "Sozu",
+        "Gambling Chip",
+        "Meal Ticket",
+        "Red Mask",
+        "Horn Cleat"
+      ],
+      "date": "2026-04-09"
     }
   ],
   "stats": {
-    "total_runs": 1591,
+    "total_runs": 1598,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 1154,
-        "wins": 317,
+        "runs": 1161,
+        "wins": 319,
         "win_rate": 27.5,
         "avg_floor": 43.3,
-        "avg_score": 509.1
+        "avg_score": 508.8
       },
       "REQUESTED_STRIKE": {
         "runs": 437,
