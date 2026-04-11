@@ -42408,17 +42408,183 @@
         "Membership Card"
       ],
       "date": "2026-04-10"
+    },
+    {
+      "seed": "9JBEFBJUJM30",
+      "floor": 50,
+      "score": 527,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bronze Scales",
+        "Fusion Hammer",
+        "Lantern",
+        "Mutagenic Strength",
+        "Horn Cleat",
+        "Sacred Bark",
+        "Vajra"
+      ],
+      "date": "2026-04-10"
+    },
+    {
+      "seed": "1KSIU4UYU0WT",
+      "floor": 51,
+      "score": 723,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Toy Ornithopter",
+        "Juzu Bracelet",
+        "Anchor",
+        "Sozu",
+        "Bag of Marbles",
+        "Omamori",
+        "Warped Tongs",
+        "Akabeko",
+        "Sundial",
+        "Cursed Key",
+        "Blue Candle"
+      ],
+      "date": "2026-04-11"
+    },
+    {
+      "seed": "PQV70J63VYIM",
+      "floor": 51,
+      "score": 700,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Teardrop Locket",
+        "Molten Egg",
+        "Astrolabe",
+        "Red Mask",
+        "Omamori",
+        "Frozen Egg",
+        "Violet Lotus",
+        "Membership Card"
+      ],
+      "date": "2026-04-11"
+    },
+    {
+      "seed": "431CFYWH7IKA",
+      "floor": 51,
+      "score": 834,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Slime Boss"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Omamori",
+        "Toy Ornithopter",
+        "Tungsten Rod",
+        "Runic Pyramid",
+        "Meal Ticket",
+        "Du-Vu Doll",
+        "Red Mask",
+        "War Paint",
+        "Philosopher's Stone",
+        "Girya",
+        "Anchor"
+      ],
+      "date": "2026-04-11"
+    },
+    {
+      "seed": "PYWHUN5Z27SV",
+      "floor": 19,
+      "score": 169,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Byrd",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Pure Water"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Dream Catcher",
+        "Strike Dummy",
+        "Singing Bowl",
+        "Ink Bottle",
+        "Bag of Preparation",
+        "Art of War",
+        "Calling Bell",
+        "Blood Vial",
+        "Pantograph"
+      ],
+      "date": "2026-04-11"
+    },
+    {
+      "seed": "MGSS10FGYJ6N",
+      "floor": 51,
+      "score": 753,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Kunai",
+        "Sundial",
+        "Snecko Eye",
+        "Bag of Preparation",
+        "Pen Nib",
+        "Matryoshka",
+        "Cursed Key",
+        "Mango",
+        "Juzu Bracelet",
+        "Pear",
+        "Meal Ticket",
+        "Membership Card"
+      ],
+      "date": "2026-04-11"
     }
   ],
   "stats": {
-    "total_runs": 1601,
+    "total_runs": 1607,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 1164,
-        "wins": 320,
-        "win_rate": 27.5,
+        "runs": 1170,
+        "wins": 324,
+        "win_rate": 27.7,
         "avg_floor": 43.3,
-        "avg_score": 508.8
+        "avg_score": 509.3
       },
       "REQUESTED_STRIKE": {
         "runs": 437,
