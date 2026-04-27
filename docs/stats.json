@@ -60678,10 +60678,37 @@
         "Old Coin"
       ],
       "date": "2026-04-25"
+    },
+    {
+      "seed": "Z59N8C97TFXR",
+      "floor": 51,
+      "score": 692,
+      "strategy": "CLAW_IS_LAW",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Symbiotic Virus",
+        "Mercury Hourglass",
+        "Letter Opener",
+        "Sozu",
+        "Orichalcum",
+        "Ink Bottle",
+        "Black Star",
+        "Calipers",
+        "Ceramic Fish"
+      ],
+      "date": "2026-04-26"
     }
   ],
   "stats": {
-    "total_runs": 2275,
+    "total_runs": 2276,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 1838,
@@ -60696,6 +60723,13 @@
         "win_rate": 15.1,
         "avg_floor": 31.2,
         "avg_score": 320.6
+      },
+      "CLAW_IS_LAW": {
+        "runs": 1,
+        "wins": 1,
+        "win_rate": 100.0,
+        "avg_floor": 51.0,
+        "avg_score": 692.0
       }
     }
   }
