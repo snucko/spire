@@ -98113,10 +98113,549 @@
         "Preserved Insect"
       ],
       "date": "2026-05-18"
+    },
+    {
+      "seed": "13W82TGACZM2H",
+      "floor": 21,
+      "score": 181,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Centurion",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Gremlin Horn",
+        "Happy Flower",
+        "Bag of Marbles",
+        "Black Star",
+        "Data Disk"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "R0IJXFBZISF4",
+      "floor": 6,
+      "score": 38,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Lagavulin",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Regal Pillow"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "1G8M6CG4RUEX",
+      "floor": 55,
+      "score": 662,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Slaver"
+      ],
+      "relics": [
+        "Runic Pyramid",
+        "Orichalcum",
+        "Vajra",
+        "Kunai",
+        "Fusion Hammer",
+        "Pen Nib",
+        "Shovel",
+        "Potion Belt",
+        "Molten Egg",
+        "Nuclear Battery",
+        "Blood Vial",
+        "White Beast Statue",
+        "Ornamental Fan",
+        "Nunchaku"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "13G2BJAVSL3V7",
+      "floor": 33,
+      "score": 247,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Orb",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Bronze Scales",
+        "Akabeko",
+        "Bloody Idol",
+        "Omamori",
+        "Vajra",
+        "Calling Bell",
+        "Data Disk",
+        "Mummified Hand",
+        "Calipers",
+        "Dream Catcher"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "DDDQCL5IVVH6",
+      "floor": 33,
+      "score": 251,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Orb",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Darkstone Periapt",
+        "Meat on the Bone",
+        "Inserter",
+        "Gremlin Horn",
+        "Vajra"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "11A4RHFWSA44S",
+      "floor": 33,
+      "score": 251,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Bloody Idol",
+        "Question Card",
+        "Symbiotic Virus",
+        "Odd Mushroom",
+        "Cursed Key",
+        "Vajra"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "9AGHVEX02JIX",
+      "floor": 50,
+      "score": 450,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "The Boot",
+        "Data Disk",
+        "Bag of Marbles",
+        "Vajra",
+        "Cursed Key",
+        "Juzu Bracelet",
+        "Wing Boots",
+        "Philosopher's Stone",
+        "Meal Ticket"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "UXB36VMZ5Q4",
+      "floor": 33,
+      "score": 251,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Lagavulin Relics: Sozu"
+      ],
+      "elites": [
+        "Lagavulin Relics: Sozu"
+      ],
+      "relics": [
+        "Sozu",
+        "Lantern",
+        "Happy Flower",
+        "Sacred Bark",
+        "Warped Tongs",
+        "Pen Nib",
+        "Data Disk"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "ALTYG04FY6SS",
+      "floor": 47,
+      "score": 455,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "The Maw",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Preserved Insect",
+        "Thread and Needle",
+        "Symbiotic Virus",
+        "Nuclear Battery",
+        "Mutagenic Strength",
+        "Whetstone",
+        "Cursed Key",
+        "Bird-Faced Urn",
+        "Pear"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "EYBR9X1YD50E",
+      "floor": 22,
+      "score": 194,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Snecko",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Bag of Marbles",
+        "Preserved Insect",
+        "Centennial Puzzle",
+        "Omamori",
+        "Sozu"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "IQ1NZDLBIXY",
+      "floor": 50,
+      "score": 464,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Oddly Smooth Stone",
+        "Orichalcum",
+        "Cursed Key",
+        "Vajra",
+        "Singing Bowl",
+        "Lantern",
+        "Ink Bottle",
+        "Nuclear Battery",
+        "Emotion Chip",
+        "Sundial"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "15RT6E1FQTPS7",
+      "floor": 27,
+      "score": 240,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Snecko",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Toy Ornithopter",
+        "Omamori",
+        "Emotion Chip",
+        "Strawberry",
+        "Golden Idol",
+        "Inserter",
+        "Warped Tongs",
+        "Meal Ticket"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "RAYXAMNGYKHX",
+      "floor": 33,
+      "score": 255,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Orb",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Bronze Scales",
+        "Blood Vial",
+        "Fossilized Helix",
+        "Empty Cage",
+        "Mutagenic Strength",
+        "Meal Ticket",
+        "Preserved Insect"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "PHP84TNNH21F",
+      "floor": 33,
+      "score": 251,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Gambling Chip",
+        "Letter Opener",
+        "Philosopher's Stone",
+        "Horn Cleat"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "BVB3U05JXNXE",
+      "floor": 33,
+      "score": 249,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Ceramic Fish",
+        "Mercury Hourglass",
+        "Pen Nib",
+        "Potion Belt",
+        "Bag of Preparation",
+        "Philosopher's Stone",
+        "Symbiotic Virus"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "6P6MXMCQ92SM",
+      "floor": 51,
+      "score": 696,
+      "strategy": "CLAW_SLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Ink Bottle",
+        "Singing Bowl",
+        "Empty Cage",
+        "Regal Pillow",
+        "Horn Cleat",
+        "Ornamental Fan",
+        "Maw Bank",
+        "Inserter",
+        "Pen Nib",
+        "Fossilized Helix"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "5G61VS89XX81",
+      "floor": 55,
+      "score": 665,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Shuriken",
+        "Sundial",
+        "Nuclear Battery",
+        "Gold-Plated Cables",
+        "Omamori",
+        "Eternal Feather",
+        "Membership Card",
+        "Bag of Marbles",
+        "Runic Pyramid",
+        "Calipers",
+        "Girya",
+        "Shovel",
+        "Vajra",
+        "Turnip"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "VWWS4YDR0L6Q",
+      "floor": 51,
+      "score": 680,
+      "strategy": "CLAW_SLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Blood Vial",
+        "Shuriken",
+        "Prayer Wheel",
+        "Cursed Key",
+        "Sundial",
+        "Nunchaku",
+        "Inserter",
+        "Question Card"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "QV4MKZ0HD4P6",
+      "floor": 33,
+      "score": 267,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Meal Ticket",
+        "Question Card",
+        "Meat on the Bone",
+        "Empty Cage",
+        "Red Mask",
+        "Nunchaku",
+        "Sundial"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "EG92L44IYQHN",
+      "floor": 51,
+      "score": 703,
+      "strategy": "CLAW_SLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Pantograph",
+        "Warped Tongs",
+        "Strike Dummy",
+        "Philosopher's Stone",
+        "Dream Catcher",
+        "Potion Belt",
+        "Sozu",
+        "Red Mask",
+        "Bird-Faced Urn"
+      ],
+      "date": "2026-05-18"
+    },
+    {
+      "seed": "N5W6WY3DYMYY",
+      "floor": 7,
+      "score": 39,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Gremlin Nob",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Vajra"
+      ],
+      "date": "2026-05-18"
     }
   ],
   "stats": {
-    "total_runs": 3768,
+    "total_runs": 3789,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 1838,
@@ -98140,11 +98679,11 @@
         "avg_score": 382.8
       },
       "CLAW_SLAYER": {
-        "runs": 1471,
-        "wins": 161,
-        "win_rate": 10.9,
-        "avg_floor": 33.2,
-        "avg_score": 323.7
+        "runs": 1492,
+        "wins": 164,
+        "win_rate": 11.0,
+        "avg_floor": 33.3,
+        "avg_score": 324.2
       }
     }
   }
