@@ -100328,10 +100328,111 @@
         "Bird-Faced Urn"
       ],
       "date": "2026-05-19"
+    },
+    {
+      "seed": "DM4HP9RCKGAY",
+      "floor": 33,
+      "score": 251,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Happy Flower",
+        "Ceramic Fish",
+        "Vajra",
+        "Data Disk"
+      ],
+      "date": "2026-05-19"
+    },
+    {
+      "seed": "LGXVCT4L3ZC9",
+      "floor": 42,
+      "score": 412,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Jaw Worm",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Book of Stabbing Relics: Frozen Core"
+      ],
+      "relics": [
+        "Frozen Core",
+        "Bronze Scales",
+        "Preserved Insect",
+        "Meal Ticket",
+        "Smiling Mask",
+        "Potion Belt",
+        "Prayer Wheel",
+        "Vajra",
+        "Philosopher's Stone"
+      ],
+      "date": "2026-05-19"
+    },
+    {
+      "seed": "158ECZS9EL0DN",
+      "floor": 33,
+      "score": 257,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Orb",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Bird-Faced Urn",
+        "Question Card",
+        "Preserved Insect",
+        "Strike Dummy",
+        "Nuclear Battery",
+        "Vajra"
+      ],
+      "date": "2026-05-19"
+    },
+    {
+      "seed": "HHGNVI23BR0J",
+      "floor": 47,
+      "score": 497,
+      "strategy": "CLAW_SLAYER",
+      "died_to": "Orb Walker",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Bag of Marbles",
+        "Data Disk",
+        "Emotion Chip",
+        "Bloody Idol",
+        "Fusion Hammer",
+        "Symbiotic Virus",
+        "Matryoshka",
+        "Wing Boots",
+        "Bird-Faced Urn",
+        "Sozu",
+        "Happy Flower"
+      ],
+      "date": "2026-05-19"
     }
   ],
   "stats": {
-    "total_runs": 3856,
+    "total_runs": 3860,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 1838,
@@ -100355,11 +100456,11 @@
         "avg_score": 382.8
       },
       "CLAW_SLAYER": {
-        "runs": 1559,
+        "runs": 1563,
         "wins": 169,
         "win_rate": 10.8,
         "avg_floor": 33.2,
-        "avg_score": 323.6
+        "avg_score": 323.7
       }
     }
   }
