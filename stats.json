@@ -100429,17 +100429,406 @@
         "Happy Flower"
       ],
       "date": "2026-05-19"
+    },
+    {
+      "seed": "HXJBRDXPQ517",
+      "floor": 50,
+      "score": 525,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Ancient Tea Set",
+        "Darkstone Periapt",
+        "Turnip",
+        "Philosopher's Stone",
+        "Pen Nib",
+        "White Beast Statue",
+        "Lantern",
+        "Black Star",
+        "Ginger",
+        "Du-Vu Doll",
+        "Omamori",
+        "Anchor"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "15UVVR3VH5MX9",
+      "floor": 51,
+      "score": 747,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Smiling Mask",
+        "Toxic Egg",
+        "Slaver's Collar",
+        "Red Mask",
+        "The Courier",
+        "Philosopher's Stone",
+        "Pocketwatch"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "266FHC5TFXYB",
+      "floor": 50,
+      "score": 506,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Nunchaku",
+        "Molten Egg",
+        "Cursed Key",
+        "Thread and Needle",
+        "Vajra",
+        "Philosopher's Stone",
+        "Damaru",
+        "Bag of Preparation"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "QABSWB7NFKMS",
+      "floor": 44,
+      "score": 497,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Writhing Mass",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Calipers",
+        "Wing Boots",
+        "Membership Card",
+        "Mango",
+        "Art of War",
+        "Philosopher's Stone",
+        "Molten Egg",
+        "Empty Cage"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "GKGYFS6LYK62",
+      "floor": 28,
+      "score": 232,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L) Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Pear",
+        "Gremlin Horn",
+        "Ceramic Fish",
+        "Violet Lotus",
+        "Oddly Smooth Stone"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "FYTHNBE44EQK",
+      "floor": 46,
+      "score": 430,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spiker",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Golden Idol",
+        "Question Card",
+        "Strike Dummy",
+        "Ceramic Fish",
+        "Ectoplasm",
+        "Strawberry",
+        "White Beast Statue",
+        "Philosopher's Stone",
+        "Singing Bowl",
+        "Ice Cream"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "BCAJUY13CCIS",
+      "floor": 25,
+      "score": 221,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost Elites: Sentry"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Blue Candle",
+        "Ancient Tea Set",
+        "Pantograph",
+        "Odd Mushroom",
+        "Ectoplasm",
+        "Strawberry"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "12UZJKSNN4ATB",
+      "floor": 42,
+      "score": 550,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spire Growth",
+      "won": false,
+      "bosses": [
+        "Slime Boss"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "White Beast Statue",
+        "Pear",
+        "Golden Eye",
+        "Calling Bell",
+        "Blood Vial",
+        "Meat on the Bone",
+        "Wing Boots",
+        "Membership Card",
+        "Eternal Feather",
+        "Mutagenic Strength",
+        "Bronze Scales",
+        "Toxic Egg",
+        "Toy Ornithopter",
+        "Slaver's Collar",
+        "Prayer Wheel"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "FVZM4MNAUIYF",
+      "floor": 55,
+      "score": 720,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Omamori",
+        "Sundial",
+        "Meat on the Bone",
+        "Letter Opener",
+        "Strawberry",
+        "Calling Bell",
+        "Nunchaku",
+        "Kunai",
+        "Turnip",
+        "Meal Ticket",
+        "Mercury Hourglass",
+        "Snecko Eye",
+        "Bag of Preparation",
+        "Regal Pillow",
+        "Tungsten Rod",
+        "Shuriken"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "U18QMF50A8LR",
+      "floor": 50,
+      "score": 498,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Deca",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "War Paint",
+        "Maw Bank",
+        "Gremlin Horn",
+        "Shuriken",
+        "Cursed Key",
+        "Lantern",
+        "Meal Ticket",
+        "Sozu",
+        "Mango",
+        "Meat on the Bone"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "USDNTUVQNM2F",
+      "floor": 55,
+      "score": 677,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Question Card",
+        "Pear",
+        "Tiny Chest",
+        "Damaru",
+        "Snecko Eye",
+        "Lantern",
+        "Stone Calendar",
+        "Coffee Dripper",
+        "Membership Card",
+        "Turnip",
+        "Ice Cream",
+        "Mercury Hourglass",
+        "Strawberry",
+        "Nunchaku"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "YTJT0QG1X52J",
+      "floor": 51,
+      "score": 745,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Damaru",
+        "Duality",
+        "Odd Mushroom",
+        "Slaver's Collar",
+        "Strawberry",
+        "Molten Egg",
+        "Singing Bowl",
+        "Fusion Hammer",
+        "Regal Pillow",
+        "Peace Pipe",
+        "Red Mask",
+        "Horn Cleat",
+        "Toxic Egg"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "QGXB8HW8SG00",
+      "floor": 50,
+      "score": 568,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Toy Ornithopter",
+        "Bronze Scales",
+        "Wing Boots",
+        "Meat on the Bone",
+        "Cursed Key",
+        "Ceramic Fish",
+        "Regal Pillow",
+        "Shuriken",
+        "Ancient Tea Set",
+        "Violet Lotus"
+      ],
+      "date": "2026-05-21"
+    },
+    {
+      "seed": "QW0Q8ZHNY1MF",
+      "floor": 6,
+      "score": 38,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Lagavulin",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Pure Water"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Golden Idol"
+      ],
+      "date": "2026-05-21"
     }
   ],
   "stats": {
-    "total_runs": 3860,
+    "total_runs": 3874,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 1838,
-        "wins": 521,
+        "runs": 1852,
+        "wins": 524,
         "win_rate": 28.3,
         "avg_floor": 43.7,
-        "avg_score": 518.6
+        "avg_score": 518.5
       },
       "REQUESTED_STRIKE": {
         "runs": 437,
