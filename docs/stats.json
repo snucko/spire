@@ -108758,17 +108758,71 @@
         "Gambling Chip"
       ],
       "date": "2026-05-25"
+    },
+    {
+      "seed": "2BH6M4E8VLMV",
+      "floor": 51,
+      "score": 734,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Omamori",
+        "Lantern",
+        "Bag of Preparation",
+        "Vajra",
+        "Philosopher's Stone",
+        "Red Mask",
+        "Ornamental Fan",
+        "Fusion Hammer",
+        "Mango"
+      ],
+      "date": "2026-05-25"
+    },
+    {
+      "seed": "14P2KA8SZEDHS",
+      "floor": 48,
+      "score": 508,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Writhing Mass",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Preserved Insect",
+        "Darkstone Periapt",
+        "Violet Lotus",
+        "Centennial Puzzle",
+        "Strawberry",
+        "Bottled Lightning",
+        "Snecko Eye",
+        "Lizard Tail"
+      ],
+      "date": "2026-05-25"
     }
   ],
   "stats": {
-    "total_runs": 4170,
+    "total_runs": 4172,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 2148,
-        "wins": 614,
+        "runs": 2150,
+        "wins": 615,
         "win_rate": 28.6,
-        "avg_floor": 43.5,
-        "avg_score": 519.3
+        "avg_floor": 43.6,
+        "avg_score": 519.4
       },
       "REQUESTED_STRIKE": {
         "runs": 437,
