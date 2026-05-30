@@ -116517,10 +116517,115 @@
         "Runic Pyramid"
       ],
       "date": "2026-05-29"
+    },
+    {
+      "seed": "X9EU5RUCEK2A",
+      "floor": 51,
+      "score": 696,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Sundial",
+        "Bronze Scales",
+        "Bag of Preparation",
+        "Empty Cage",
+        "Oddly Smooth Stone",
+        "Preserved Insect",
+        "The Courier",
+        "Membership Card",
+        "Runic Pyramid",
+        "Captain's Wheel",
+        "Bottled Lightning"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "UZU2IEZ1J7AT",
+      "floor": 16,
+      "score": 100,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Maw Bank",
+        "Darkstone Periapt",
+        "Potion Belt"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "WHN008MLUYC2",
+      "floor": 51,
+      "score": 711,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Serpent",
+        "Neow's Lament",
+        "Mango",
+        "Ninja Scroll",
+        "Bag of Marbles",
+        "Pen Nib",
+        "Ink Bottle",
+        "Toxic Egg",
+        "Slaver's Collar",
+        "Lizard Tail",
+        "Shuriken",
+        "Akabeko"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "RHJ5073MEBBM",
+      "floor": 51,
+      "score": 820,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Vajra",
+        "Orichalcum",
+        "Philosopher's Stone",
+        "Strike Dummy",
+        "Mutagenic Strength",
+        "Cursed Key",
+        "Bag of Marbles",
+        "Old Coin"
+      ],
+      "date": "2026-05-30"
     }
   ],
   "stats": {
-    "total_runs": 4457,
+    "total_runs": 4461,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 2435,
@@ -116549,6 +116654,13 @@
         "win_rate": 10.8,
         "avg_floor": 33.2,
         "avg_score": 323.7
+      },
+      "SHIVS_AND_GIGGLES": {
+        "runs": 4,
+        "wins": 3,
+        "win_rate": 75.0,
+        "avg_floor": 42.2,
+        "avg_score": 581.8
       }
     }
   }
