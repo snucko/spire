@@ -117023,10 +117023,371 @@
         "Meal Ticket"
       ],
       "date": "2026-05-30"
+    },
+    {
+      "seed": "MRIT8ZEH2YL2",
+      "floor": 51,
+      "score": 663,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Pen Nib",
+        "Juzu Bracelet",
+        "Snecko Eye",
+        "Akabeko",
+        "Bronze Scales",
+        "Hovering Kite",
+        "Thread and Needle",
+        "Fossilized Helix",
+        "Omamori",
+        "Horn Cleat",
+        "Membership Card"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "QVNKBRKY93L6",
+      "floor": 50,
+      "score": 442,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Juzu Bracelet",
+        "Ornamental Fan",
+        "Orichalcum",
+        "Smiling Mask",
+        "The Courier",
+        "Calling Bell",
+        "Preserved Insect",
+        "Horn Cleat",
+        "Mango",
+        "Ninja Scroll",
+        "Warped Tongs",
+        "Red Mask",
+        "Sozu",
+        "Ginger",
+        "Paper Krane"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "9ETEE81AURMT",
+      "floor": 50,
+      "score": 492,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "Ornamental Fan",
+        "Molten Egg",
+        "Stone Calendar",
+        "Snecko Eye",
+        "Mutagenic Strength",
+        "Red Mask",
+        "Bottled Tornado",
+        "Paper Krane",
+        "Eternal Feather",
+        "Fusion Hammer",
+        "Gambling Chip",
+        "Lantern",
+        "Girya"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "9D9TKE45FQXT",
+      "floor": 51,
+      "score": 703,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Centennial Puzzle",
+        "Bag of Marbles",
+        "Nunchaku",
+        "Hovering Kite",
+        "War Paint",
+        "Wrist Blade",
+        "Old Coin",
+        "Membership Card",
+        "Meal Ticket",
+        "Torii"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "HPAYR6Q490UD",
+      "floor": 51,
+      "score": 641,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Tiny Chest",
+        "Regal Pillow",
+        "Nunchaku",
+        "Cursed Key",
+        "Happy Flower",
+        "Blood Vial",
+        "Maw Bank",
+        "Slaver's Collar",
+        "Pen Nib",
+        "Girya"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "15BB68XWRDM8W",
+      "floor": 50,
+      "score": 480,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Ancient Tea Set",
+        "Blood Vial",
+        "Strawberry",
+        "Runic Pyramid",
+        "Vajra",
+        "Busted Crown",
+        "Red Mask",
+        "Letter Opener",
+        "Omamori",
+        "Potion Belt"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "TZGNELV4HD97",
+      "floor": 50,
+      "score": 466,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "War Paint",
+        "Frozen Egg",
+        "Meal Ticket",
+        "Hovering Kite",
+        "Centennial Puzzle",
+        "Preserved Insect",
+        "Whetstone",
+        "Runic Pyramid",
+        "Unceasing Top",
+        "Sundial",
+        "Red Mask"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "FJ8RUAM3UYV5",
+      "floor": 12,
+      "score": 80,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Omamori",
+        "Golden Idol",
+        "Anchor",
+        "Ink Bottle",
+        "Mummified Hand"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "GS2CFNIREGY2",
+      "floor": 51,
+      "score": 664,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Question Card",
+        "Philosopher's Stone",
+        "Membership Card",
+        "Meat on the Bone",
+        "Shuriken",
+        "Wrist Blade",
+        "Juzu Bracelet",
+        "Meal Ticket",
+        "Anchor"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "JGHTRJEG7KRT",
+      "floor": 51,
+      "score": 653,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Lagavulin Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "Strawberry",
+        "Stone Calendar",
+        "Golden Idol",
+        "Matryoshka",
+        "Lizard Tail",
+        "Tiny House",
+        "Pen Nib",
+        "Warped Tongs",
+        "Toy Ornithopter",
+        "Ceramic Fish",
+        "Sozu",
+        "Akabeko",
+        "Shuriken"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "10L166XUM2JAM",
+      "floor": 51,
+      "score": 684,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "The Boot",
+        "Frozen Egg",
+        "Bronze Scales",
+        "Runic Pyramid",
+        "Warped Tongs",
+        "Bag of Preparation",
+        "Wrist Blade",
+        "Lizard Tail",
+        "Ceramic Fish"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "L3I4X3UA8HHI",
+      "floor": 16,
+      "score": 104,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Spike Slime (M)",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Omamori",
+        "Question Card",
+        "Juzu Bracelet",
+        "Odd Mushroom",
+        "Sundial"
+      ],
+      "date": "2026-05-30"
+    },
+    {
+      "seed": "WZ3KDI52WNQB",
+      "floor": 16,
+      "score": 104,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Spike Slime (L)",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "Strawberry",
+        "Blue Candle"
+      ],
+      "date": "2026-05-30"
     }
   ],
   "stats": {
-    "total_runs": 4477,
+    "total_runs": 4490,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 2435,
@@ -117057,11 +117418,11 @@
         "avg_score": 323.7
       },
       "SHIVS_AND_GIGGLES": {
-        "runs": 20,
-        "wins": 8,
-        "win_rate": 40.0,
-        "avg_floor": 32.4,
-        "avg_score": 382.1
+        "runs": 33,
+        "wins": 15,
+        "win_rate": 45.5,
+        "avg_floor": 36.3,
+        "avg_score": 418.7
       }
     }
   }
