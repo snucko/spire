@@ -118511,10 +118511,407 @@
         "Ceramic Fish"
       ],
       "date": "2026-05-31"
+    },
+    {
+      "seed": "8IQTK7YA6WDR",
+      "floor": 51,
+      "score": 708,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Mad Gremlin"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Torii",
+        "Lizard Tail",
+        "Slaver's Collar",
+        "Bottled Tornado",
+        "Mango",
+        "Lantern",
+        "Cursed Key",
+        "Regal Pillow"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "2YHS0NRUPX9G",
+      "floor": 16,
+      "score": 110,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Spike Slime (L)",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Preserved Insect",
+        "Strike Dummy",
+        "Blood Vial",
+        "Toy Ornithopter"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "X8KQTK7CRCLT",
+      "floor": 16,
+      "score": 98,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Du-Vu Doll",
+        "Peace Pipe"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "PE6RT7RCSUQ5",
+      "floor": 33,
+      "score": 245,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Sentry Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Dream Catcher",
+        "Shuriken",
+        "Prayer Wheel",
+        "Akabeko",
+        "Bag of Marbles",
+        "Calling Bell",
+        "Bag of Preparation",
+        "Kunai",
+        "Incense Burner",
+        "Potion Belt"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "4T4BGH9YJ056",
+      "floor": 16,
+      "score": 104,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "The Courier",
+        "Anchor",
+        "Golden Idol"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "45HCVG9KC5RY",
+      "floor": 51,
+      "score": 690,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Pen Nib",
+        "Whetstone",
+        "Vajra",
+        "Slaver's Collar",
+        "Oddly Smooth Stone",
+        "Art of War",
+        "Sozu",
+        "Orichalcum",
+        "Strike Dummy",
+        "Strawberry"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "E8DU2MNKYW60",
+      "floor": 27,
+      "score": 219,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Book of Stabbing",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Lagavulin Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Lagavulin Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "The Boot",
+        "Bag of Preparation",
+        "Membership Card",
+        "Ceramic Fish",
+        "Sacred Bark",
+        "Vajra",
+        "Anchor",
+        "Juzu Bracelet"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "BXBISJKE5GP7",
+      "floor": 33,
+      "score": 300,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Busted Crown",
+        "Ginger",
+        "Matryoshka",
+        "Philosopher's Stone",
+        "Anchor",
+        "Gremlin Horn",
+        "Art of War",
+        "The Boot",
+        "Snecko Skull",
+        "Strike Dummy"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "M16R6VRL64EI",
+      "floor": 51,
+      "score": 710,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Book of Stabbing"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Toy Ornithopter",
+        "Bag of Preparation",
+        "Gremlin Horn",
+        "Golden Idol",
+        "Wrist Blade",
+        "Regal Pillow",
+        "Bottled Tornado",
+        "Mutagenic Strength",
+        "Calling Bell",
+        "Meal Ticket",
+        "The Courier",
+        "Stone Calendar",
+        "White Beast Statue",
+        "Oddly Smooth Stone"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "T90PLK2B68TV",
+      "floor": 30,
+      "score": 230,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Book of Stabbing",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Blood Vial",
+        "Lantern",
+        "Black Star",
+        "Nunchaku"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "4S5Z6PKQQQZ8",
+      "floor": 51,
+      "score": 701,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Strawberry",
+        "Letter Opener",
+        "Wrist Blade",
+        "Mutagenic Strength",
+        "Kunai",
+        "Snecko Skull",
+        "Runic Pyramid",
+        "Preserved Insect",
+        "Pen Nib"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "K0FPYMCLSYD8",
+      "floor": 48,
+      "score": 482,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "The Maw",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Astrolabe"
+      ],
+      "relics": [
+        "Astrolabe",
+        "The Specimen",
+        "Toy Ornithopter",
+        "Hovering Kite",
+        "Dead Branch",
+        "Shuriken",
+        "Sozu",
+        "Gremlin Horn"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "C1EVZLULSCUV",
+      "floor": 50,
+      "score": 533,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Nunchaku",
+        "Pen Nib",
+        "Membership Card",
+        "Bag of Preparation",
+        "Cursed Key",
+        "The Boot",
+        "Anchor",
+        "Bag of Marbles",
+        "Sozu",
+        "Stone Calendar",
+        "Captain's Wheel"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "AFA43E2Q3CV1",
+      "floor": 50,
+      "score": 446,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Matryoshka",
+        "Pantograph",
+        "Hovering Kite",
+        "Toxic Egg",
+        "Gremlin Horn",
+        "Anchor",
+        "Calling Bell",
+        "Akabeko",
+        "Horn Cleat",
+        "Calipers",
+        "Orichalcum",
+        "Maw Bank",
+        "Oddly Smooth Stone",
+        "Bag of Marbles"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "VJWDA8X4XEE5",
+      "floor": 50,
+      "score": 507,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Bag of Marbles",
+        "Mercury Hourglass",
+        "Golden Idol",
+        "Philosopher's Stone",
+        "Mutagenic Strength",
+        "Vajra",
+        "Meal Ticket",
+        "Calling Bell",
+        "Lantern",
+        "Blue Candle",
+        "Prayer Wheel",
+        "Mummified Hand",
+        "Preserved Insect",
+        "Akabeko"
+      ],
+      "date": "2026-05-31"
     }
   ],
   "stats": {
-    "total_runs": 4531,
+    "total_runs": 4546,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 2435,
@@ -118545,11 +118942,11 @@
         "avg_score": 323.7
       },
       "SHIVS_AND_GIGGLES": {
-        "runs": 74,
-        "wins": 30,
-        "win_rate": 40.5,
-        "avg_floor": 39.2,
-        "avg_score": 438.5
+        "runs": 89,
+        "wins": 34,
+        "win_rate": 38.2,
+        "avg_floor": 39.0,
+        "avg_score": 433.0
       }
     }
   }
