@@ -119061,10 +119061,357 @@
         "Calipers"
       ],
       "date": "2026-06-01"
+    },
+    {
+      "seed": "DBSRTYULQDG7",
+      "floor": 50,
+      "score": 444,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Deca",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Regal Pillow",
+        "Ancient Tea Set",
+        "Slaver's Collar",
+        "Mercury Hourglass",
+        "Bronze Scales",
+        "Mutagenic Strength",
+        "Bag of Marbles",
+        "Meal Ticket",
+        "Fusion Hammer",
+        "Oddly Smooth Stone"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "6J9J4CCGA4M6",
+      "floor": 50,
+      "score": 550,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "The Boot",
+        "Maw Bank",
+        "Meal Ticket",
+        "Mercury Hourglass",
+        "Centennial Puzzle",
+        "Fusion Hammer",
+        "Mutagenic Strength",
+        "Bag of Preparation",
+        "Omamori",
+        "Orichalcum",
+        "Red Mask",
+        "Wrist Blade",
+        "Fossilized Helix",
+        "Ink Bottle"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "M7PCG882UR3G",
+      "floor": 41,
+      "score": 459,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "The Maw",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Snecko Eye",
+        "The Specimen",
+        "Stone Calendar",
+        "Membership Card",
+        "Mercury Hourglass",
+        "Fusion Hammer",
+        "Preserved Insect",
+        "Orichalcum",
+        "Sozu",
+        "Bird-Faced Urn"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "CWVSRJ3JIKYI",
+      "floor": 51,
+      "score": 718,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "Bloody Idol",
+        "Pocketwatch",
+        "Dead Branch",
+        "Peace Pipe",
+        "Juzu Bracelet",
+        "Wrist Blade",
+        "Blood Vial",
+        "Kunai",
+        "Philosopher's Stone",
+        "Bottled Lightning",
+        "Torii",
+        "Toxic Egg"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "FJQQRVCEVY80",
+      "floor": 51,
+      "score": 686,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "Ornamental Fan",
+        "Mercury Hourglass",
+        "Letter Opener",
+        "Slaver's Collar",
+        "Blue Candle",
+        "Mutagenic Strength",
+        "Hovering Kite",
+        "Paper Krane",
+        "Bird-Faced Urn"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "1M3V6DFWU2Q7",
+      "floor": 51,
+      "score": 788,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Runic Pyramid",
+        "Ninja Scroll",
+        "Sundial",
+        "Juzu Bracelet",
+        "Membership Card",
+        "Empty Cage",
+        "Orichalcum",
+        "Torii",
+        "Pen Nib",
+        "Lantern",
+        "Happy Flower",
+        "Wrist Blade",
+        "Turnip",
+        "Toxic Egg",
+        "The Courier",
+        "Prayer Wheel"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "KYJC5GWZ0JD0",
+      "floor": 41,
+      "score": 405,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Writhing Mass",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Slaver Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Peace Pipe",
+        "Fusion Hammer",
+        "Sundial",
+        "Turnip",
+        "Strike Dummy",
+        "Calling Bell",
+        "Preserved Insect",
+        "Shuriken",
+        "Old Coin",
+        "Orichalcum"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "BBL89AHV4FAB",
+      "floor": 33,
+      "score": 276,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Sentry Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Oddly Smooth Stone",
+        "Horn Cleat",
+        "Golden Idol",
+        "Odd Mushroom",
+        "Wrist Blade",
+        "Ceramic Fish"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "13AFETXRB5LUT",
+      "floor": 33,
+      "score": 245,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Lagavulin Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Lagavulin Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "Omamori",
+        "Nunchaku",
+        "Anchor",
+        "Sozu",
+        "Paper Krane",
+        "Snecko Skull"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "13CS371GI5BT6",
+      "floor": 31,
+      "score": 303,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Centurion",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Sentry"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "The Boot",
+        "Pantograph",
+        "Smiling Mask",
+        "Preserved Insect",
+        "Slaver's Collar",
+        "Frozen Egg",
+        "Toxic Egg"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "JHKAH6D3XXJE",
+      "floor": 51,
+      "score": 697,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Calling Bell"
+      ],
+      "relics": [
+        "Calling Bell",
+        "Tiny Chest",
+        "Ninja Scroll",
+        "Girya",
+        "Mango",
+        "Wing Boots",
+        "Orichalcum",
+        "Shovel",
+        "Toy Ornithopter",
+        "Kunai",
+        "Hovering Kite",
+        "Preserved Insect",
+        "Regal Pillow",
+        "Runic Pyramid",
+        "Horn Cleat",
+        "Red Mask",
+        "Oddly Smooth Stone",
+        "Akabeko",
+        "Lizard Tail"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "HB3212T771W7",
+      "floor": 51,
+      "score": 672,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Snecko Skull",
+        "Ninja Scroll",
+        "Turnip",
+        "Philosopher's Stone",
+        "Du-Vu Doll",
+        "Shuriken",
+        "Mutagenic Strength",
+        "Bag of Preparation",
+        "Hovering Kite",
+        "Bottled Tornado",
+        "Shovel"
+      ],
+      "date": "2026-06-01"
     }
   ],
   "stats": {
-    "total_runs": 4552,
+    "total_runs": 4564,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 2435,
@@ -119095,11 +119442,11 @@
         "avg_score": 323.7
       },
       "SHIVS_AND_GIGGLES": {
-        "runs": 95,
-        "wins": 35,
-        "win_rate": 36.8,
-        "avg_floor": 38.6,
-        "avg_score": 425.7
+        "runs": 107,
+        "wins": 40,
+        "win_rate": 37.4,
+        "avg_floor": 39.2,
+        "avg_score": 436.3
       }
     }
   }
