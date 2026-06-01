@@ -118908,10 +118908,163 @@
         "Akabeko"
       ],
       "date": "2026-05-31"
+    },
+    {
+      "seed": "1IHN8M329BNZ",
+      "floor": 22,
+      "score": 186,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Snake Plant",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Whetstone",
+        "Preserved Insect",
+        "Anchor",
+        "Philosopher's Stone"
+      ],
+      "date": "2026-05-31"
+    },
+    {
+      "seed": "2IYFTLT6YUUJ",
+      "floor": 16,
+      "score": 100,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Neow's Lament",
+        "Golden Idol",
+        "Lantern",
+        "Incense Burner"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "7N6AF8634VZ8",
+      "floor": 33,
+      "score": 273,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Sentry"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Bag of Marbles",
+        "Wing Boots",
+        "Strike Dummy",
+        "Philosopher's Stone",
+        "Preserved Insect",
+        "Meat on the Bone",
+        "Centennial Puzzle",
+        "Toxic Egg"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "NL4CCNH97YNK",
+      "floor": 29,
+      "score": 277,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Lagavulin Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Lagavulin Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Meal Ticket",
+        "Regal Pillow",
+        "Sundial",
+        "Strike Dummy",
+        "Hovering Kite",
+        "Blue Candle",
+        "Mutagenic Strength",
+        "Pen Nib",
+        "Shovel"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "TAQ4J3SCX2CA",
+      "floor": 51,
+      "score": 656,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Happy Flower",
+        "Bronze Scales",
+        "Sundial",
+        "Sozu",
+        "Vajra",
+        "Toxic Egg",
+        "Torii",
+        "Snecko Eye",
+        "Centennial Puzzle",
+        "Nunchaku",
+        "Fossilized Helix"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "WFF01UPIJDW9",
+      "floor": 41,
+      "score": 413,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Giant Head",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Lantern",
+        "Ink Bottle",
+        "Preserved Insect",
+        "Shovel",
+        "Mutagenic Strength",
+        "Pantograph",
+        "Nunchaku",
+        "Snecko Eye",
+        "Calipers"
+      ],
+      "date": "2026-06-01"
     }
   ],
   "stats": {
-    "total_runs": 4546,
+    "total_runs": 4552,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 2435,
@@ -118942,11 +119095,11 @@
         "avg_score": 323.7
       },
       "SHIVS_AND_GIGGLES": {
-        "runs": 89,
-        "wins": 34,
-        "win_rate": 38.2,
-        "avg_floor": 39.0,
-        "avg_score": 433.0
+        "runs": 95,
+        "wins": 35,
+        "win_rate": 36.8,
+        "avg_floor": 38.6,
+        "avg_score": 425.7
       }
     }
   }
