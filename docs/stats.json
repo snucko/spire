@@ -119777,10 +119777,617 @@
         "Singing Bowl"
       ],
       "date": "2026-06-01"
+    },
+    {
+      "seed": "E1DKE5Y1IU54",
+      "floor": 33,
+      "score": 253,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Sentry Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Omamori",
+        "Eternal Feather",
+        "Happy Flower",
+        "Art of War",
+        "Philosopher's Stone",
+        "Bag of Marbles",
+        "Dream Catcher",
+        "Meal Ticket"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "9295NBCWAQIV",
+      "floor": 27,
+      "score": 235,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "Snecko",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Tiny Chest",
+        "Toy Ornithopter",
+        "Ornamental Fan",
+        "Pen Nib",
+        "Cursed Key",
+        "Ink Bottle",
+        "Nunchaku",
+        "Wing Boots"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "DU5BRRV0H1V9",
+      "floor": 51,
+      "score": 729,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Bloody Idol",
+        "Shuriken",
+        "Orichalcum",
+        "Calling Bell",
+        "Potion Belt",
+        "Ink Bottle",
+        "Old Coin",
+        "Toxic Egg",
+        "Anchor",
+        "Sozu",
+        "Art of War",
+        "Vajra",
+        "Smiling Mask",
+        "Ornamental Fan"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "PGUS88U6P9MI",
+      "floor": 33,
+      "score": 274,
+      "strategy": "SHIVS_AND_GIGGLES",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Lagavulin Relics: Ring of the Snake"
+      ],
+      "elites": [
+        "Lagavulin Relics: Ring of the Snake"
+      ],
+      "relics": [
+        "Ring of the Snake",
+        "Omamori",
+        "Golden Idol",
+        "Letter Opener",
+        "Prayer Wheel",
+        "Pen Nib",
+        "Eternal Feather",
+        "Du-Vu Doll",
+        "Philosopher's Stone",
+        "Turnip",
+        "Bag of Marbles"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "UFNZQ3HLMKU1",
+      "floor": 8,
+      "score": 46,
+      "strategy": "NEON_FARMER",
+      "died_to": "Gremlin Nob",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Black Star"
+      ],
+      "elites": [
+        "Relics: Black Star"
+      ],
+      "relics": [
+        "Black Star",
+        "War Paint"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "DJWEAC16ILZU",
+      "floor": 16,
+      "score": 94,
+      "strategy": "NEON_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Golden Idol",
+        "Bag of Preparation"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "CJ0K3FDEKB0U",
+      "floor": 16,
+      "score": 102,
+      "strategy": "NEON_FARMER",
+      "died_to": "The Guardian",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Strike Dummy",
+        "Preserved Insect",
+        "Smiling Mask"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "HV3631PTZIM3",
+      "floor": 16,
+      "score": 102,
+      "strategy": "NEON_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Meat on the Bone",
+        "Wing Boots",
+        "Preserved Insect"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "F7XQNJ9301GG",
+      "floor": 20,
+      "score": 178,
+      "strategy": "NEON_FARMER",
+      "died_to": "Centurion",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Juzu Bracelet",
+        "Letter Opener",
+        "Clockwork Souvenir",
+        "Runic Pyramid"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "QQ7I6MCUV2L9",
+      "floor": 14,
+      "score": 90,
+      "strategy": "NEON_FARMER",
+      "died_to": "Louse",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Golden Idol",
+        "The Courier",
+        "Horn Cleat",
+        "Runic Capacitor",
+        "Eternal Feather",
+        "Potion Belt"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "GIZT95ENSNGS",
+      "floor": 16,
+      "score": 104,
+      "strategy": "NEON_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Turnip",
+        "Du-Vu Doll"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "FWG9BYRVQFAE",
+      "floor": 24,
+      "score": 204,
+      "strategy": "NEON_FARMER",
+      "died_to": "Snake Plant",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Toy Ornithopter",
+        "Bloody Idol",
+        "Tiny Chest",
+        "Blue Candle",
+        "Lantern",
+        "Clockwork Souvenir",
+        "Fusion Hammer",
+        "Vajra"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "AR6S4S0JZYFU",
+      "floor": 33,
+      "score": 249,
+      "strategy": "NEON_FARMER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Bronze Scales",
+        "Toy Ornithopter",
+        "Meal Ticket",
+        "Happy Flower",
+        "Membership Card",
+        "Sozu",
+        "Blue Candle",
+        "Red Mask"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "101N3630M2RPL",
+      "floor": 16,
+      "score": 100,
+      "strategy": "NEON_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Vajra",
+        "Golden Idol",
+        "Omamori",
+        "Strawberry",
+        "Membership Card"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "77RLCST8E6Q5",
+      "floor": 27,
+      "score": 211,
+      "strategy": "NEON_FARMER",
+      "died_to": "Pointy",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Maw Bank",
+        "Strawberry",
+        "Golden Idol",
+        "Philosopher's Stone",
+        "Mutagenic Strength",
+        "Data Disk",
+        "Whetstone"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "131B722BMLYA7",
+      "floor": 28,
+      "score": 206,
+      "strategy": "NEON_FARMER",
+      "died_to": "Byrd",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M) Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Darkstone Periapt",
+        "Golden Idol",
+        "Philosopher's Stone",
+        "Question Card",
+        "Omamori"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "VSC07DCARKLB",
+      "floor": 16,
+      "score": 102,
+      "strategy": "NEON_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Meal Ticket",
+        "Frozen Egg",
+        "Kunai"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "FD8HEWVV0L2R",
+      "floor": 11,
+      "score": 71,
+      "strategy": "NEON_FARMER",
+      "died_to": "Fungi Beast",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Meal Ticket",
+        "Omamori",
+        "Anchor",
+        "Orichalcum"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "1561YUKKL39F0",
+      "floor": 21,
+      "score": 177,
+      "strategy": "NEON_FARMER",
+      "died_to": "Snecko",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Kunai",
+        "Runic Capacitor",
+        "Black Star",
+        "Membership Card"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "5JDGBB17SXHE",
+      "floor": 16,
+      "score": 110,
+      "strategy": "NEON_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Strike Dummy",
+        "Wing Boots",
+        "Ornamental Fan",
+        "Letter Opener",
+        "Odd Mushroom"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "51DQ3H8BZTDL",
+      "floor": 16,
+      "score": 100,
+      "strategy": "NEON_FARMER",
+      "died_to": "The Guardian",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Akabeko",
+        "Question Card",
+        "Golden Idol",
+        "Matryoshka",
+        "Oddly Smooth Stone",
+        "Sundial"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "5Z84E4T5MKZ6",
+      "floor": 31,
+      "score": 231,
+      "strategy": "NEON_FARMER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Strawberry",
+        "Symbiotic Virus",
+        "Odd Mushroom",
+        "Sacred Bark",
+        "Incense Burner",
+        "Mutagenic Strength"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "8W55MQ8W6K06",
+      "floor": 16,
+      "score": 125,
+      "strategy": "NEON_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Tiny Chest",
+        "Preserved Insect",
+        "Golden Idol"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "11KLM6WS8Z132",
+      "floor": 13,
+      "score": 91,
+      "strategy": "NEON_FARMER",
+      "died_to": "Sneaky Gremlin",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Darkstone Periapt",
+        "Matryoshka",
+        "Gold-Plated Cables"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "4L9ZE06GQJGZ",
+      "floor": 16,
+      "score": 102,
+      "strategy": "NEON_FARMER",
+      "died_to": "The Guardian",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Golden Idol",
+        "Juzu Bracelet",
+        "Potion Belt"
+      ],
+      "date": "2026-06-01"
+    },
+    {
+      "seed": "T39PWZFQ77CW",
+      "floor": 22,
+      "score": 182,
+      "strategy": "NEON_FARMER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Strike Dummy",
+        "Slaver's Collar",
+        "Clockwork Souvenir"
+      ],
+      "date": "2026-06-01"
     }
   ],
   "stats": {
-    "total_runs": 4577,
+    "total_runs": 4603,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 2435,
@@ -119811,11 +120418,18 @@
         "avg_score": 323.7
       },
       "SHIVS_AND_GIGGLES": {
-        "runs": 120,
-        "wins": 50,
-        "win_rate": 41.7,
-        "avg_floor": 39.9,
-        "avg_score": 454.8
+        "runs": 124,
+        "wins": 51,
+        "win_rate": 41.1,
+        "avg_floor": 39.8,
+        "avg_score": 452.1
+      },
+      "NEON_FARMER": {
+        "runs": 22,
+        "wins": 0,
+        "win_rate": 0.0,
+        "avg_floor": 18.7,
+        "avg_score": 135.3
       }
     }
   }
