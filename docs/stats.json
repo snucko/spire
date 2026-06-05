@@ -120995,7 +120995,7 @@
         "Torii",
         "Potion Belt"
       ],
-      "date": "Unknown"
+      "date": "2026-06-02"
     },
     {
       "seed": "13MC9JRP0GIZ7",
@@ -121021,7 +121021,7 @@
         "Fossilized Helix",
         "Clockwork Souvenir"
       ],
-      "date": "Unknown"
+      "date": "2026-06-02"
     },
     {
       "seed": "AG65AJQ57HM9",
@@ -121041,7 +121041,7 @@
         "Golden Idol",
         "The Boot"
       ],
-      "date": "Unknown"
+      "date": "2026-06-02"
     },
     {
       "seed": "13NNNVIZZT7T4",
@@ -121064,11 +121064,672 @@
         "Vajra",
         "Golden Idol"
       ],
-      "date": "Unknown"
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "NT74MF7XJSTI",
+      "floor": 6,
+      "score": 36,
+      "strategy": "NEON_FARMER",
+      "died_to": "Lagavulin",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "VPIGNY0JL64X",
+      "floor": 16,
+      "score": 100,
+      "strategy": "NEON_FARMER",
+      "died_to": "Spike Slime (L)",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Golden Idol",
+        "Calipers",
+        "Preserved Insect"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "AF0ES9TPKRCN",
+      "floor": 6,
+      "score": 36,
+      "strategy": "NEON_FARMER",
+      "died_to": "Lagavulin",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "B7X8DRGEJJXL",
+      "floor": 6,
+      "score": 38,
+      "strategy": "NEON_FARMER",
+      "died_to": "Lagavulin",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Cracked Core"
+      ],
+      "elites": [
+        "Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Runic Capacitor"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "15YXZTVJ0VS11",
+      "floor": 16,
+      "score": 104,
+      "strategy": "NEON_FARMER",
+      "died_to": "The Guardian",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Darkstone Periapt",
+        "Letter Opener"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "919DJESKQTUP",
+      "floor": 16,
+      "score": 102,
+      "strategy": "NEON_FARMER",
+      "died_to": "The Guardian",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Cracked Core"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Ginger",
+        "Membership Card",
+        "Gambling Chip",
+        "Fossilized Helix",
+        "Odd Mushroom"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "3U4XGF0L8QUL",
+      "floor": 16,
+      "score": 100,
+      "strategy": "NEON_FARMER",
+      "died_to": "Spike Slime (M)",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Orange Pellets",
+        "Blue Candle",
+        "White Beast Statue"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "I0E8QX9FNYPQ",
+      "floor": 12,
+      "score": 80,
+      "strategy": "NEON_FARMER",
+      "died_to": "Gremlin Wizard",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Membership Card",
+        "Whetstone",
+        "Ink Bottle"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "1638HR2ZYSW18",
+      "floor": 8,
+      "score": 56,
+      "strategy": "NEON_FARMER",
+      "died_to": "Louse",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Bottled Lightning"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "160C6SMX1FYU1",
+      "floor": 16,
+      "score": 104,
+      "strategy": "NEON_FARMER",
+      "died_to": "Spike Slime (L)",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Bottled Lightning",
+        "Mummified Hand"
+      ],
+      "date": "2026-06-02"
+    },
+    {
+      "seed": "XSED",
+      "floor": 33,
+      "score": 272,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "Slime Boss Elites: Lagavulin Relics: Inserter"
+      ],
+      "elites": [
+        "Lagavulin Relics: Inserter"
+      ],
+      "relics": [
+        "Inserter",
+        "Symbiotic Virus",
+        "Bag of Preparation",
+        "Runic Pyramid",
+        "Singing Bowl",
+        "Ornamental Fan"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "XLHV",
+      "floor": 45,
+      "score": 471,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Transient",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Data Disk",
+        "Toxic Egg",
+        "Mercury Hourglass",
+        "Calipers",
+        "Inserter",
+        "Bag of Marbles",
+        "Nuclear Battery",
+        "Centennial Puzzle"
+      ],
+      "date": "2026-06-05"
+    },
+    {
+      "seed": "M36N",
+      "floor": 16,
+      "score": 131,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Data Disk",
+        "Bird-Faced Urn",
+        "Omamori"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "U6FX",
+      "floor": 51,
+      "score": 716,
+      "strategy": "FOCUS_FARMER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Art of War",
+        "Ornamental Fan",
+        "Warped Tongs",
+        "Runic Capacitor",
+        "Golden Idol",
+        "Black Star",
+        "Red Mask",
+        "Meal Ticket",
+        "Pen Nib",
+        "Cursed Key",
+        "Tungsten Rod",
+        "Membership Card",
+        "Clockwork Souvenir",
+        "Vajra",
+        "Happy Flower"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "TKS3",
+      "floor": 51,
+      "score": 701,
+      "strategy": "FOCUS_FARMER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry Relics: Frozen Core"
+      ],
+      "relics": [
+        "Frozen Core",
+        "Omamori",
+        "War Paint",
+        "Stone Calendar",
+        "White Beast Statue",
+        "Ceramic Fish",
+        "Runic Capacitor",
+        "Lantern",
+        "Kunai",
+        "Art of War"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "SHX9",
+      "floor": 22,
+      "score": 192,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Art of War",
+        "Meal Ticket",
+        "Blue Candle",
+        "Runic Capacitor",
+        "Nuclear Battery"
+      ],
+      "date": "2026-06-05"
+    },
+    {
+      "seed": "S2KD",
+      "floor": 28,
+      "score": 249,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Byrd",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Horn Cleat",
+        "Strike Dummy",
+        "Runic Capacitor",
+        "Nuclear Battery",
+        "Toy Ornithopter"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "JCVW",
+      "floor": 44,
+      "score": 443,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "The Maw",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Frozen Core"
+      ],
+      "relics": [
+        "Frozen Core",
+        "Incense Burner",
+        "Prayer Wheel",
+        "Runic Capacitor",
+        "Red Mask",
+        "Orange Pellets",
+        "Blood Vial",
+        "Frozen Egg",
+        "Slaver's Collar",
+        "Emotion Chip",
+        "The Courier"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "HUYH",
+      "floor": 33,
+      "score": 264,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites:  Relics: Frozen Core"
+      ],
+      "elites": [
+        "Relics: Frozen Core"
+      ],
+      "relics": [
+        "Frozen Core",
+        "Runic Capacitor",
+        "Vajra",
+        "Peace Pipe",
+        "Red Mask",
+        "The Courier",
+        "Meal Ticket"
+      ],
+      "date": "2026-06-05"
+    },
+    {
+      "seed": "A67L",
+      "floor": 36,
+      "score": 393,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Orb Walker",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Bag of Preparation",
+        "Maw Bank",
+        "The Courier",
+        "Cursed Key",
+        "Runic Capacitor",
+        "Pen Nib",
+        "Slaver's Collar"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "XSED",
+      "floor": 33,
+      "score": 272,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "Slime Boss Elites: Lagavulin Relics: Inserter"
+      ],
+      "elites": [
+        "Lagavulin Relics: Inserter"
+      ],
+      "relics": [
+        "Inserter",
+        "Symbiotic Virus",
+        "Bag of Preparation",
+        "Runic Pyramid",
+        "Singing Bowl",
+        "Ornamental Fan"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "XLHV",
+      "floor": 45,
+      "score": 471,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Transient",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Data Disk",
+        "Toxic Egg",
+        "Mercury Hourglass",
+        "Calipers",
+        "Inserter",
+        "Bag of Marbles",
+        "Nuclear Battery",
+        "Centennial Puzzle"
+      ],
+      "date": "2026-06-05"
+    },
+    {
+      "seed": "M36N",
+      "floor": 16,
+      "score": 131,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Data Disk",
+        "Bird-Faced Urn",
+        "Omamori"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "U6FX",
+      "floor": 51,
+      "score": 716,
+      "strategy": "FOCUS_FARMER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Art of War",
+        "Ornamental Fan",
+        "Warped Tongs",
+        "Runic Capacitor",
+        "Golden Idol",
+        "Black Star",
+        "Red Mask",
+        "Meal Ticket",
+        "Pen Nib",
+        "Cursed Key",
+        "Tungsten Rod",
+        "Membership Card",
+        "Clockwork Souvenir",
+        "Vajra",
+        "Happy Flower"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "TKS3",
+      "floor": 51,
+      "score": 701,
+      "strategy": "FOCUS_FARMER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry Relics: Frozen Core"
+      ],
+      "relics": [
+        "Frozen Core",
+        "Omamori",
+        "War Paint",
+        "Stone Calendar",
+        "White Beast Statue",
+        "Ceramic Fish",
+        "Runic Capacitor",
+        "Lantern",
+        "Kunai",
+        "Art of War"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "SHX9",
+      "floor": 22,
+      "score": 192,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Lagavulin Relics: Cracked Core"
+      ],
+      "elites": [
+        "Lagavulin Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Art of War",
+        "Meal Ticket",
+        "Blue Candle",
+        "Runic Capacitor",
+        "Nuclear Battery"
+      ],
+      "date": "2026-06-05"
+    },
+    {
+      "seed": "S2KD",
+      "floor": 28,
+      "score": 249,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "Byrd",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Cracked Core"
+      ],
+      "elites": [
+        "Sentry Relics: Cracked Core"
+      ],
+      "relics": [
+        "Cracked Core",
+        "Neow's Lament",
+        "Horn Cleat",
+        "Strike Dummy",
+        "Runic Capacitor",
+        "Nuclear Battery",
+        "Toy Ornithopter"
+      ],
+      "date": "2026-06-04"
+    },
+    {
+      "seed": "JCVW",
+      "floor": 44,
+      "score": 443,
+      "strategy": "FOCUS_FARMER",
+      "died_to": "The Maw",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Frozen Core"
+      ],
+      "relics": [
+        "Frozen Core",
+        "Incense Burner",
+        "Prayer Wheel",
+        "Runic Capacitor",
+        "Red Mask",
+        "Orange Pellets",
+        "Blood Vial",
+        "Frozen Egg",
+        "Slaver's Collar",
+        "Emotion Chip",
+        "The Courier"
+      ],
+      "date": "2026-06-04"
     }
   ],
   "stats": {
-    "total_runs": 4633,
+    "total_runs": 4661,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
         "runs": 2435,
@@ -121106,41 +121767,396 @@
         "avg_score": 452.1
       },
       "NEON_FARMER": {
-        "runs": 47,
+        "runs": 57,
         "wins": 0,
         "win_rate": 0.0,
-        "avg_floor": 19.8,
-        "avg_score": 147.9
+        "avg_floor": 18.4,
+        "avg_score": 135.2
       },
       "FOCUS_FARMER": {
-        "runs": 5,
-        "wins": 0,
-        "win_rate": 0.0,
-        "avg_floor": 23.8,
-        "avg_score": 189.8
+        "runs": 23,
+        "wins": 4,
+        "win_rate": 17.4,
+        "avg_floor": 33.4,
+        "avg_score": 345.9
       }
     }
   },
   "achievement_strategy_monitoring": {
     "summary": {
       "FOCUS_FARMER": {
-        "runs": 8,
-        "key_card_runs": 2,
-        "key_card_rate": 25.0,
-        "best_floor": 33,
+        "runs": 26,
+        "key_card_runs": 12,
+        "key_card_rate": 46.2,
+        "best_floor": 51,
         "wins": 0,
         "max_focus_seen": 0
       },
       "NEON_FARMER": {
-        "runs": 48,
-        "key_card_runs": 10,
-        "key_card_rate": 20.8,
+        "runs": 60,
+        "key_card_runs": 12,
+        "key_card_rate": 20.0,
         "best_floor": 33,
         "wins": 0,
         "max_fusion_cards_seen": 1
       }
     },
     "runs": [
+      {
+        "log": "logs/runs/2026-06-05-02-13-06--TKS3.log.gz",
+        "seed": "1225948",
+        "strategy": "FOCUS_FARMER",
+        "floor": 51,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 2,
+        "target_cards": {
+          "biased cognition": 1,
+          "capacitor": 1,
+          "consume": 2,
+          "coolheaded": 2,
+          "defragment": 2,
+          "echo form": 1,
+          "hologram": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 2,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-14-47-44--TKS3.log.gz",
+        "seed": "1225948",
+        "strategy": "FOCUS_FARMER",
+        "floor": 51,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 2,
+        "target_cards": {
+          "biased cognition": 1,
+          "capacitor": 1,
+          "consume": 2,
+          "coolheaded": 2,
+          "defragment": 2,
+          "echo form": 1,
+          "hologram": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 2,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-05-01-38-22--U6FX.log.gz",
+        "seed": "1251282",
+        "strategy": "FOCUS_FARMER",
+        "floor": 51,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "capacitor": 1,
+          "coolheaded": 2,
+          "core surge": 1,
+          "defragment": 4,
+          "equilibrium": 1,
+          "hologram": 2,
+          "seek": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-14-12-32--U6FX.log.gz",
+        "seed": "1251282",
+        "strategy": "FOCUS_FARMER",
+        "floor": 51,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "capacitor": 1,
+          "coolheaded": 2,
+          "core surge": 1,
+          "defragment": 4,
+          "equilibrium": 1,
+          "hologram": 2,
+          "seek": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-05-00-46-56--XLHV.log.gz",
+        "seed": "1398350",
+        "strategy": "FOCUS_FARMER",
+        "floor": 45,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "buffer": 1,
+          "capacitor": 3,
+          "coolheaded": 2,
+          "defragment": 2,
+          "glacier": 1,
+          "hologram": 1,
+          "seek": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-13-21-08--XLHV.log.gz",
+        "seed": "1398350",
+        "strategy": "FOCUS_FARMER",
+        "floor": 45,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "buffer": 1,
+          "capacitor": 3,
+          "coolheaded": 2,
+          "defragment": 2,
+          "glacier": 1,
+          "hologram": 1,
+          "seek": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-05-03-17-23--JCVW.log.gz",
+        "seed": "830406",
+        "strategy": "FOCUS_FARMER",
+        "floor": 44,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "capacitor": 1,
+          "consume": 1,
+          "coolheaded": 2,
+          "core surge": 2,
+          "echo form": 1,
+          "glacier": 2,
+          "hologram": 4
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 1,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-15-52-17--JCVW.log.gz",
+        "seed": "830406",
+        "strategy": "FOCUS_FARMER",
+        "floor": 44,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "capacitor": 1,
+          "consume": 1,
+          "coolheaded": 2,
+          "core surge": 2,
+          "echo form": 1,
+          "glacier": 2,
+          "hologram": 4
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 1,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-17-09-25--A67L.log.gz",
+        "seed": "436366",
+        "strategy": "FOCUS_FARMER",
+        "floor": 36,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "biased cognition": 1,
+          "capacitor": 1,
+          "coolheaded": 2,
+          "defragment": 1,
+          "equilibrium": 2,
+          "glacier": 1,
+          "seek": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-05-00-28-57--XSED.log.gz",
+        "seed": "1405578",
+        "strategy": "FOCUS_FARMER",
+        "floor": 33,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "capacitor": 1,
+          "consume": 1,
+          "defragment": 1,
+          "hologram": 1,
+          "seek": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 1,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-13-03-13--XSED.log.gz",
+        "seed": "1405578",
+        "strategy": "FOCUS_FARMER",
+        "floor": 33,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "capacitor": 1,
+          "consume": 1,
+          "defragment": 1,
+          "hologram": 1,
+          "seek": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 1,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-05-04-10-39--HUYH.log.gz",
+        "seed": "765572",
+        "strategy": "FOCUS_FARMER",
+        "floor": 33,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "consume": 1,
+          "defragment": 3,
+          "equilibrium": 2,
+          "hologram": 2
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 1,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-16-45-18--HUYH.log.gz",
+        "seed": "765572",
+        "strategy": "FOCUS_FARMER",
+        "floor": 33,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "consume": 1,
+          "defragment": 4,
+          "equilibrium": 2,
+          "hologram": 3
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 1,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-09-26-48--A7T6D386D0G.log.gz",
+        "seed": "28200645619875066",
+        "strategy": "FOCUS_FARMER",
+        "floor": 33,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "consume": 1,
+          "coolheaded": 1,
+          "equilibrium": 1,
+          "hologram": 1
+        },
+        "target_potions": [
+          "liquid memories"
+        ],
+        "target_relics": [
+          "nuclear battery"
+        ],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 1,
+        "commands": {}
+      },
       {
         "log": "logs/runs/2026-06-01-21-05-22--AR6S4S0JZYFU.log.gz",
         "seed": "1037747806409823104",
@@ -121189,7 +122205,7 @@
         "commands": {}
       },
       {
-        "log": "logs/runs/2026-06-02-06-28-34--13MC9JRP0GIZ7.log",
+        "log": "logs/runs/2026-06-02-06-28-34--13MC9JRP0GIZ7.log.gz",
         "seed": "3730523347998484247",
         "strategy": "FOCUS_FARMER",
         "floor": 33,
@@ -121233,32 +122249,6 @@
         "max_focus_seen": 0,
         "max_fusion_cards_seen": 1,
         "max_consume_cards_seen": 0,
-        "commands": {}
-      },
-      {
-        "log": "logs/runs/2026-06-02-09-26-48--A7T6D386D0G.log",
-        "seed": "28200645619875066",
-        "strategy": "FOCUS_FARMER",
-        "floor": 31,
-        "won": null,
-        "died_to": null,
-        "key_card_found": true,
-        "key_card_count": 1,
-        "target_cards": {
-          "consume": 1,
-          "coolheaded": 1,
-          "hologram": 1
-        },
-        "target_potions": [
-          "liquid memories"
-        ],
-        "target_relics": [
-          "nuclear battery"
-        ],
-        "offered_key_card": true,
-        "max_focus_seen": 0,
-        "max_fusion_cards_seen": 0,
-        "max_consume_cards_seen": 1,
         "commands": {}
       },
       {
@@ -121337,6 +122327,78 @@
         "commands": {}
       },
       {
+        "log": "logs/runs/2026-06-02-18-47-53--RKDNEUT0LQ9E.log.gz",
+        "seed": "2566526390737653204",
+        "strategy": "NEON_FARMER",
+        "floor": 28,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "aggregate": 1,
+          "coolheaded": 2,
+          "glacier": 1,
+          "hologram": 1,
+          "recycle": 1
+        },
+        "target_potions": [],
+        "target_relics": [
+          "clockwork souvenir"
+        ],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-05-02-59-55--S2KD.log.gz",
+        "seed": "1160788",
+        "strategy": "FOCUS_FARMER",
+        "floor": 28,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "capacitor": 1,
+          "coolheaded": 2,
+          "equilibrium": 1,
+          "hologram": 2
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-15-34-52--S2KD.log.gz",
+        "seed": "1160788",
+        "strategy": "FOCUS_FARMER",
+        "floor": 28,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "capacitor": 1,
+          "coolheaded": 2,
+          "equilibrium": 1,
+          "hologram": 2
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
         "log": "logs/runs/2026-06-01-21-56-30--131B722BMLYA7.log.gz",
         "seed": "3672509395649242407",
         "strategy": "NEON_FARMER",
@@ -121382,7 +122444,7 @@
         "commands": {}
       },
       {
-        "log": "logs/runs/2026-06-02-05-48-56--DLPS3MXJFMIU.log",
+        "log": "logs/runs/2026-06-02-05-48-56--DLPS3MXJFMIU.log.gz",
         "seed": "1315021151406726359",
         "strategy": "FOCUS_FARMER",
         "floor": 27,
@@ -121406,7 +122468,7 @@
         "commands": {}
       },
       {
-        "log": "logs/runs/2026-06-02-06-13-28--WET9MW8QPHAN.log",
+        "log": "logs/runs/2026-06-02-06-13-28--WET9MW8QPHAN.log.gz",
         "seed": "3033872119184506448",
         "strategy": "FOCUS_FARMER",
         "floor": 27,
@@ -121568,6 +122630,56 @@
         "max_focus_seen": 0,
         "max_fusion_cards_seen": 1,
         "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-05-02-43-17--SHX9.log.gz",
+        "seed": "1179579",
+        "strategy": "FOCUS_FARMER",
+        "floor": 22,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 3,
+        "target_cards": {
+          "capacitor": 2,
+          "consume": 3,
+          "coolheaded": 1,
+          "defragment": 1,
+          "equilibrium": 1,
+          "hologram": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 3,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-15-18-15--SHX9.log.gz",
+        "seed": "1179579",
+        "strategy": "FOCUS_FARMER",
+        "floor": 22,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 3,
+        "target_cards": {
+          "capacitor": 2,
+          "consume": 3,
+          "coolheaded": 1,
+          "defragment": 1,
+          "equilibrium": 1,
+          "hologram": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 3,
         "commands": {}
       },
       {
@@ -121753,31 +122865,31 @@
         "commands": {}
       },
       {
-        "log": "logs/runs/2026-06-02-05-48-56--DLPS3MXJFMIU.log.gz",
-        "seed": "1315021151406726359",
-        "strategy": "FOCUS_FARMER",
-        "floor": 18,
+        "log": "logs/runs/2026-06-02-18-17-14--3U4XGF0L8QUL.log.gz",
+        "seed": "370033724972903411",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
         "won": null,
         "died_to": null,
-        "key_card_found": false,
-        "key_card_count": 0,
+        "key_card_found": true,
+        "key_card_count": 1,
         "target_cards": {
-          "coolheaded": 2,
-          "defragment": 1,
-          "hologram": 1
+          "aggregate": 1,
+          "coolheaded": 1,
+          "equilibrium": 1,
+          "fusion": 1,
+          "turbo": 1
         },
-        "target_potions": [
-          "liquid memories"
-        ],
+        "target_potions": [],
         "target_relics": [],
         "offered_key_card": true,
         "max_focus_seen": 0,
-        "max_fusion_cards_seen": 0,
+        "max_fusion_cards_seen": 1,
         "max_consume_cards_seen": 0,
         "commands": {}
       },
       {
-        "log": "logs/runs/2026-06-02-06-52-51--SP4BE3FCDY0P.log",
+        "log": "logs/runs/2026-06-02-06-52-51--SP4BE3FCDY0P.log.gz",
         "seed": "2673373325812011574",
         "strategy": "FOCUS_FARMER",
         "floor": 16,
@@ -121842,6 +122954,31 @@
         "commands": {}
       },
       {
+        "log": "logs/runs/2026-06-05-07-05-41--WJ0Y.log.gz",
+        "seed": "1352433",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "coolheaded": 1,
+          "hologram": 1,
+          "rebound": 2,
+          "seek": 1,
+          "skim": 1,
+          "turbo": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
         "log": "logs/runs/2026-06-02-01-39-41--TPU0TIEYMKC4.log.gz",
         "seed": "2771869031826060674",
         "strategy": "NEON_FARMER",
@@ -121855,6 +122992,29 @@
           "hologram": 1,
           "rebound": 1,
           "skim": 2,
+          "turbo": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-17-58-49--15YXZTVJ0VS11.log.gz",
+        "seed": "3955598879436188111",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "hologram": 1,
+          "rebound": 1,
+          "skim": 1,
           "turbo": 1
         },
         "target_potions": [],
@@ -122136,7 +123296,112 @@
         "commands": {}
       },
       {
-        "log": "logs/runs/2026-06-02-09-15-41--13NNNVIZZT7T4.log",
+        "log": "logs/runs/2026-06-05-01-30-20--M36N.log.gz",
+        "seed": "947158",
+        "strategy": "FOCUS_FARMER",
+        "floor": 16,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "defragment": 1,
+          "hologram": 4
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-04-14-04-31--M36N.log.gz",
+        "seed": "947158",
+        "strategy": "FOCUS_FARMER",
+        "floor": 16,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "defragment": 1,
+          "hologram": 4
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-18-39-26--160C6SMX1FYU1.log.gz",
+        "seed": "3959476530497072691",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "rebound": 2,
+          "skim": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-18-06-49--919DJESKQTUP.log.gz",
+        "seed": "872440828470632214",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "rebound": 1,
+          "turbo": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-17-40-25--VPIGNY0JL64X.log.gz",
+        "seed": "2964136109674138522",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "hologram": 1,
+          "skim": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-09-15-41--13NNNVIZZT7T4.log.gz",
         "seed": "3734181087235740684",
         "strategy": "FOCUS_FARMER",
         "floor": 16,
@@ -122262,7 +123527,7 @@
         "commands": {}
       },
       {
-        "log": "logs/runs/2026-06-02-09-07-37--AG65AJQ57HM9.log",
+        "log": "logs/runs/2026-06-02-09-07-37--AG65AJQ57HM9.log.gz",
         "seed": "1010113164236590479",
         "strategy": "FOCUS_FARMER",
         "floor": 16,
@@ -122326,6 +123591,28 @@
         "commands": {}
       },
       {
+        "log": "logs/runs/2026-06-02-18-27-30--I0E8QX9FNYPQ.log.gz",
+        "seed": "1739007934462530540",
+        "strategy": "NEON_FARMER",
+        "floor": 12,
+        "won": null,
+        "died_to": null,
+        "key_card_found": true,
+        "key_card_count": 1,
+        "target_cards": {
+          "coolheaded": 3,
+          "fission": 1,
+          "fusion": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": true,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 1,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
         "log": "logs/runs/2026-06-01-22-21-16--FD8HEWVV0L2R.log.gz",
         "seed": "1484768242539513321",
         "strategy": "NEON_FARMER",
@@ -122369,6 +123656,27 @@
         "commands": {}
       },
       {
+        "log": "logs/runs/2026-06-02-18-35-31--1638HR2ZYSW18.log.gz",
+        "seed": "3967461579681194393",
+        "strategy": "NEON_FARMER",
+        "floor": 8,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "rebound": 2,
+          "turbo": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
         "log": "logs/runs/2026-06-01-19-53-26--UFNZQ3HLMKU1.log.gz",
         "seed": "2843194712496400641",
         "strategy": "NEON_FARMER",
@@ -122380,6 +123688,70 @@
         "target_cards": {
           "skim": 1,
           "turbo": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-17-35-14--NT74MF7XJSTI.log.gz",
+        "seed": "2298432105905818698",
+        "strategy": "NEON_FARMER",
+        "floor": 6,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "double energy": 1,
+          "glacier": 1,
+          "turbo": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-17-54-05--B7X8DRGEJJXL.log.gz",
+        "seed": "1083891563086713416",
+        "strategy": "NEON_FARMER",
+        "floor": 6,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "seek": 1,
+          "turbo": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-02-17-49-56--AF0ES9TPKRCN.log.gz",
+        "seed": "1006903065501595418",
+        "strategy": "NEON_FARMER",
+        "floor": 6,
+        "won": null,
+        "died_to": null,
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "hologram": 1,
+          "turbo": 2
         },
         "target_potions": [],
         "target_relics": [],
