@@ -917,6 +917,15 @@
                     runProgress: r => `${Math.max(r.max_fusion_plays_single_turn || 0, r.max_plasma_increase_single_turn || 0)}/9 turn progress${r.neon_goal_hit ? ' ✅' : ''}`,
                     detail: s => `${s.goal_hits || 0} goal hits · ${s.max_plasma_orbs_visible || 0} max plasma visible`,
                 },
+                JAXXED: {
+                    title: 'Jaxxed',
+                    keyCard: 'Demon Form',
+                    target: 50,
+                    progressLabel: 'Strength',
+                    progressValue: s => s.max_strength_seen || 0,
+                    runProgress: r => `${r.max_strength_seen || 0}/50 Strength${r.jaxxed_goal_hit ? ' ✅' : ''}`,
+                    detail: s => `${s.goal_hits || 0} goal hits · best floor ${s.best_floor || 0}`,
+                },
             };
 
             function getAchievementConfig(strategy) {
@@ -951,7 +960,9 @@
                 const keyClass = run.key_card_found ? 'win' : 'loss';
                 const details = run.strategy === 'FOCUS_FARMER'
                     ? `floor ${run.max_focus_floor || 0}, turn ${run.max_focus_turn || 0}`
-                    : `Fusion plays ${run.max_fusion_plays_single_turn || 0}, plasma visible ${run.max_plasma_orbs_visible || 0}`;
+                    : run.strategy === 'JAXXED'
+                        ? `floor ${run.max_strength_floor || 0}, turn ${run.max_strength_turn || 0}`
+                        : `Fusion plays ${run.max_fusion_plays_single_turn || 0}, plasma visible ${run.max_plasma_orbs_visible || 0}`;
                 return `
                     <tr>
                         <td style="display: flex; align-items: center; gap: 8px;">
