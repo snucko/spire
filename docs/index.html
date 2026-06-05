@@ -898,38 +898,60 @@
                 return;
             }
 
-            const focus = summary.FOCUS_FARMER || {};
-            const neon = summary.NEON_FARMER || {};
-            summaryContainer.innerHTML = `
-                <div class="stat-card">
-                    <div class="stat-label">Focus Farmer Key Rate</div>
-                    <div class="stat-value">${focus.key_card_rate || 0}%</div>
-                    <div class="stat-sub">${focus.key_card_runs || 0}/${focus.runs || 0} runs found Consume</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Focus Best Floor</div>
-                    <div class="stat-value">${focus.best_floor || 0}</div>
-                    <div class="stat-sub">max focus seen: ${focus.max_focus_seen || 0}</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Neon Farmer Key Rate</div>
-                    <div class="stat-value">${neon.key_card_rate || 0}%</div>
-                    <div class="stat-sub">${neon.key_card_runs || 0}/${neon.runs || 0} runs found Fusion</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Neon Best Floor</div>
-                    <div class="stat-value">${neon.best_floor || 0}</div>
-                    <div class="stat-sub">max Fusion cards: ${neon.max_fusion_cards_seen || 0}</div>
-                </div>
-            `;
+            const achievementConfigs = {
+                FOCUS_FARMER: {
+                    title: 'Focus Farmer',
+                    keyCard: 'Consume',
+                    target: 25,
+                    progressLabel: 'Focus',
+                    progressValue: s => s.max_focus_seen || 0,
+                    runProgress: r => `${r.max_focus_seen || 0}/25 Focus${r.focus_goal_hit ? ' ✅' : ''}`,
+                    detail: s => `${s.goal_hits || 0} goal hits · best floor ${s.best_floor || 0}`,
+                },
+                NEON_FARMER: {
+                    title: 'Neon Farmer',
+                    keyCard: 'Fusion',
+                    target: 9,
+                    progressLabel: 'Plasma/Fusion turn',
+                    progressValue: s => Math.max(s.max_fusion_plays_single_turn || 0, s.max_plasma_increase_single_turn || 0),
+                    runProgress: r => `${Math.max(r.max_fusion_plays_single_turn || 0, r.max_plasma_increase_single_turn || 0)}/9 turn progress${r.neon_goal_hit ? ' ✅' : ''}`,
+                    detail: s => `${s.goal_hits || 0} goal hits · ${s.max_plasma_orbs_visible || 0} max plasma visible`,
+                },
+            };
+
+            function getAchievementConfig(strategy) {
+                return achievementConfigs[strategy] || {
+                    title: strategy.replaceAll('_', ' '),
+                    keyCard: 'key card',
+                    target: null,
+                    progressLabel: 'Progress',
+                    progressValue: () => 0,
+                    runProgress: () => 'not configured yet',
+                    detail: s => `${s.goal_hits || 0} goal hits · best floor ${s.best_floor || 0}`,
+                };
+            }
+
+            summaryContainer.innerHTML = Object.entries(summary).map(([strategy, strategySummary]) => {
+                const config = getAchievementConfig(strategy);
+                const progressValue = config.progressValue(strategySummary);
+                const targetText = config.target ? `/${config.target}` : '';
+                return `
+                    <div class="stat-card">
+                        <div class="stat-label">${config.title}</div>
+                        <div class="stat-value">${progressValue}${targetText}</div>
+                        <div class="stat-sub">${config.progressLabel}</div>
+                        <div class="stat-sub">${strategySummary.key_card_runs || 0}/${strategySummary.runs || 0} found ${config.keyCard} (${strategySummary.key_card_rate || 0}%)</div>
+                        <div class="stat-sub">${config.detail(strategySummary)}</div>
+                    </div>
+                `;
+            }).join('');
 
             const rows = runs.slice(0, 50).map(run => {
-                const isFocus = run.strategy === 'FOCUS_FARMER';
-                const keyName = isFocus ? 'Consume' : 'Fusion';
+                const config = getAchievementConfig(run.strategy);
                 const keyClass = run.key_card_found ? 'win' : 'loss';
-                const progress = isFocus
-                    ? `Max Focus Seen: <strong>${run.max_focus_seen || 0}</strong>`
-                    : `Max Fusion Cards: <strong>${run.max_fusion_cards_seen || 0}</strong>`;
+                const details = run.strategy === 'FOCUS_FARMER'
+                    ? `floor ${run.max_focus_floor || 0}, turn ${run.max_focus_turn || 0}`
+                    : `Fusion plays ${run.max_fusion_plays_single_turn || 0}, plasma visible ${run.max_plasma_orbs_visible || 0}`;
                 return `
                     <tr>
                         <td style="display: flex; align-items: center; gap: 8px;">
@@ -938,11 +960,11 @@
                         </td>
                         <td><strong>${run.seed}</strong></td>
                         <td>${run.floor || 0}</td>
-                        <td class="${keyClass}">${run.key_card_found ? '✓' : '✗'} ${keyName} ×${run.key_card_count || 0}</td>
+                        <td class="${keyClass}">${run.key_card_found ? '✓' : '✗'} ${config.keyCard} ×${run.key_card_count || 0}</td>
                         <td>${formatTargetCards(run.target_cards)}</td>
                         <td>${formatTagList(run.target_potions)}</td>
                         <td>${formatTagList(run.target_relics)}</td>
-                        <td class="neutral">${progress}</td>
+                        <td class="neutral"><strong>${config.runProgress(run)}</strong><br><span class="stat-sub">${details}</span></td>
                         <td>${run.won ? '<span class="win">WIN</span>' : (run.died_to ? `<span class="loss">${run.died_to}</span>` : '<span class="stat-sub">running/unknown</span>')}</td>
                     </tr>
                 `;
