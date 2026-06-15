@@ -150,6 +150,17 @@
         .tag-list { display: flex; flex-wrap: wrap; gap: 4px; }
         .tag { background: #333; border: 1px solid #555; border-radius: 999px; padding: 2px 8px; font-size: 11px; color: #ddd; white-space: nowrap; }
         .achievement-section { margin-bottom: 30px; }
+        .section-note { color: #bbb; font-size: 13px; margin-top: -12px; margin-bottom: 18px; }
+        .insight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .insight-card { background: #242424; border: 1px solid #3a3a3a; border-radius: 8px; padding: 15px; }
+        .insight-title { color: #ffd700; font-weight: 700; margin-bottom: 6px; }
+        .insight-metric { font-size: 22px; font-weight: 800; margin: 4px 0; }
+        .health-ok { color: #4ade80; }
+        .health-warn { color: #facc15; }
+        .health-bad { color: #ef4444; }
+        .progress-wrap { background: #171717; border: 1px solid #444; border-radius: 999px; height: 10px; overflow: hidden; margin: 8px 0; }
+        .progress-bar { background: linear-gradient(90deg, #06b6d4, #ffd700); height: 100%; border-radius: 999px; }
+        .wide-card { grid-column: 1 / -1; }
         
         .leaderboard {
             background: #2a2a2a;
@@ -230,9 +241,28 @@
         <h1>⚔️ Slay the Spire Bot Analytics</h1>
         
         <div class="info">
-            Tracking performance across <span id="total-runs">-</span> runs on <span id="total-strategies">-</span> strategies
+            Tracking performance across <span id="total-runs">-</span> runs on <span id="total-strategies">-</span> strategies · latest run date <span id="latest-run-date">-</span>
+        </div>
+
+        <h2>🩺 Operations & Data Freshness</h2>
+        <p class="section-note">Is the bot still producing data, is the dashboard current, and what changed recently?</p>
+        <div class="stats-grid" id="ops-health"></div>
+
+        <h2>🧪 Active Experiments</h2>
+        <p class="section-note">Compare strategies as experiments: sample size, recent volume, win rate, depth, and current trend.</p>
+        <div id="experiment-dashboard"></div>
+
+        <h2>🏅 Achievement Progress</h2>
+        <p class="section-note">Purpose-built signals for Focus, Neon, Jaxxed, and future achievement strategies. Goal hits are the primary KPI; depth and key-card discovery show whether the setup is working.</p>
+        <div class="achievement-section">
+            <div class="stats-grid" id="achievement-summary"></div>
+            <div id="achievement-runs-container">
+                <div class="loading">No achievement monitoring data yet</div>
+            </div>
         </div>
         
+        <h2>🔎 Run Explorer</h2>
+        <p class="section-note">Filter individual runs when investigating seeds, failures, or outliers.</p>
         <div class="search-box">
             <select id="strategy-filter">
                 <option value="">All Strategies</option>
@@ -253,11 +283,12 @@
         </div>
 
         <!-- Summary Stats -->
-        <h2>📊 Summary Statistics</h2>
+        <h2>📊 Portfolio Summary</h2>
+        <p class="section-note">Overall bot output across all historical strategy runs.</p>
         <div class="stats-grid" id="summary-stats"></div>
 
         <!-- Charts Section -->
-        <h2>📈 Performance Trends</h2>
+        <h2>📈 Performance Diagnostics</h2>
         <div class="chart-grid">
             <div class="chart-container">
                 <div class="chart-title">Win Rate Over Time (Last 100 Runs)</div>
@@ -310,15 +341,6 @@
         <h2>🔥 Strategy vs Boss Win Rate Heatmap</h2>
         <div class="heatmap" id="heatmap-container"></div>
 
-        <!-- Achievement Strategy Monitoring -->
-        <h2>🏅 Achievement Strategy Monitoring</h2>
-        <div class="achievement-section">
-            <div class="stats-grid" id="achievement-summary"></div>
-            <div id="achievement-runs-container">
-                <div class="loading">No achievement monitoring data yet</div>
-            </div>
-        </div>
-
         <!-- Run History Table -->
         <h2>📋 Run History</h2>
         <div id="runs-container">
@@ -342,6 +364,7 @@
             'CLAW_IS_LAW_HEART': { name: 'Defect', icon: 'https://slaythespire.wiki.gg/images/DefectBanner.jpg' },
             'FOCUS_FARMER': { name: 'Defect', icon: 'https://slaythespire.wiki.gg/images/DefectBanner.jpg' },
             'NEON_FARMER': { name: 'Defect', icon: 'https://slaythespire.wiki.gg/images/DefectBanner.jpg' },
+            'JAXXED': { name: 'Ironclad', icon: 'https://slaythespire.wiki.gg/images/IroncladBanner.jpg' },
             'PEACEFUL_PUMMELING': { name: 'Watcher', icon: 'https://slaythespire.wiki.gg/images/WatcherBanner.jpg' },
             'PEACEFUL_PUMMELING_HEART': { name: 'Watcher', icon: 'https://slaythespire.wiki.gg/images/WatcherBanner.jpg' },
             'OBSERVANT_HEARTSLAYER': { name: 'Watcher', icon: 'https://slaythespire.wiki.gg/images/WatcherBanner.jpg' },
@@ -365,8 +388,12 @@
                 document.getElementById('total-runs').textContent = allRuns.length;
                 document.getElementById('total-strategies').textContent = 
                     Object.keys(allStats.by_strategy || {}).length;
+                const latestRun = [...allRuns].reverse().find(r => r.date);
+                document.getElementById('latest-run-date').textContent = latestRun ? latestRun.date : 'unknown';
                 
                 populateStrategyFilter();
+                renderOpsHealth();
+                renderExperimentDashboard();
                 renderSummaryStats();
                 renderCharts();
                 renderEliteAnalysis();
@@ -380,6 +407,103 @@
                 document.getElementById('runs-container').innerHTML = 
                     '<div class="loading">Error loading data: ' + e.message + '</div>';
             }
+        }
+
+        function dateAgeDays(dateValue) {
+            if (!dateValue) return null;
+            const parsed = new Date(dateValue);
+            if (Number.isNaN(parsed.getTime())) return null;
+            return Math.max(0, Math.floor((Date.now() - parsed.getTime()) / 86400000));
+        }
+
+        function pct(n, d, digits = 1) {
+            return d > 0 ? ((n / d) * 100).toFixed(digits) : '0.0';
+        }
+
+        function strategyDisplayName(strategy) {
+            return strategy.replaceAll('_', ' ');
+        }
+
+        function recentRuns(days = 7) {
+            return allRuns.filter(r => {
+                const age = dateAgeDays(r.date);
+                return age !== null && age <= days;
+            });
+        }
+
+        function renderOpsHealth() {
+            const latestRun = [...allRuns].reverse().find(r => r.date);
+            const latestAge = latestRun ? dateAgeDays(latestRun.date) : null;
+            const last7 = recentRuns(7);
+            const last1 = recentRuns(1);
+            const recentStrategies = [...new Set(last7.map(r => r.strategy))];
+            const healthClass = latestAge === null ? 'health-bad' : latestAge <= 1 ? 'health-ok' : latestAge <= 3 ? 'health-warn' : 'health-bad';
+            const healthText = latestAge === null ? 'No dates' : latestAge <= 1 ? 'Fresh' : latestAge <= 3 ? 'Lagging' : 'Stale';
+            document.getElementById('ops-health').innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Data Health</div>
+                    <div class="stat-value ${healthClass}">${healthText}</div>
+                    <div class="stat-sub">latest run ${latestRun ? latestRun.date : 'unknown'}</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Runs Last 24h</div>
+                    <div class="stat-value">${last1.length}</div>
+                    <div class="stat-sub">dashboard should move daily</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Runs Last 7d</div>
+                    <div class="stat-value">${last7.length}</div>
+                    <div class="stat-sub">${recentStrategies.length} strategies active</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Current Strategy</div>
+                    <div class="stat-value" style="font-size:18px;">${latestRun ? latestRun.strategy : '-'}</div>
+                    <div class="stat-sub">latest seed ${latestRun ? latestRun.seed : '-'}</div>
+                </div>
+            `;
+        }
+
+        function renderExperimentDashboard() {
+            const byStrategy = {};
+            allRuns.forEach((r, idx) => {
+                if (!byStrategy[r.strategy]) byStrategy[r.strategy] = { runs: [], wins: 0, score: 0, floor: 0, lastIndex: idx };
+                const s = byStrategy[r.strategy];
+                s.runs.push(r);
+                s.lastIndex = idx;
+                if (r.won) s.wins++;
+                s.score += r.score || 0;
+                s.floor += r.floor || 0;
+            });
+            const rows = Object.entries(byStrategy).map(([strategy, s]) => {
+                const recent = s.runs.slice(-50);
+                const recentWins = recent.filter(r => r.won).length;
+                const avgFloor = s.runs.length ? s.floor / s.runs.length : 0;
+                const recentAvgFloor = recent.length ? recent.reduce((sum, r) => sum + (r.floor || 0), 0) / recent.length : 0;
+                const trend = recentAvgFloor - avgFloor;
+                const lastRun = s.runs[s.runs.length - 1] || {};
+                return { strategy, ...s, recent, recentWins, avgFloor, recentAvgFloor, trend, lastRun };
+            }).sort((a, b) => b.lastIndex - a.lastIndex);
+
+            document.getElementById('experiment-dashboard').innerHTML = `
+                <table class="runs-table">
+                    <thead><tr>
+                        <th>Strategy</th><th>Runs</th><th>Recent 50 WR</th><th>All-time WR</th><th>Avg Floor</th><th>Trend</th><th>Last Run</th>
+                    </tr></thead>
+                    <tbody>${rows.map(s => {
+                        const trendClass = s.trend >= 2 ? 'win' : s.trend <= -2 ? 'loss' : 'neutral';
+                        const trendText = `${s.trend >= 0 ? '+' : ''}${s.trend.toFixed(1)} floors`;
+                        return `<tr>
+                            <td style="display:flex;align-items:center;gap:8px;">${getStrategyIcon(s.strategy)}<span>${strategyDisplayName(s.strategy)}</span></td>
+                            <td>${s.runs.length}</td>
+                            <td>${pct(s.recentWins, s.recent.length)}% <span class="stat-sub">(${s.recentWins}/${s.recent.length})</span></td>
+                            <td>${pct(s.wins, s.runs.length)}% <span class="stat-sub">(${s.wins}/${s.runs.length})</span></td>
+                            <td>${s.avgFloor.toFixed(1)}</td>
+                            <td class="${trendClass}">${trendText}</td>
+                            <td>${s.lastRun.date || 'unknown'} · floor ${s.lastRun.floor || 0}</td>
+                        </tr>`;
+                    }).join('')}</tbody>
+                </table>
+            `;
         }
 
         function renderSummaryStats() {
@@ -958,6 +1082,8 @@
             const rows = runs.slice(0, 50).map(run => {
                 const config = getAchievementConfig(run.strategy);
                 const keyClass = run.key_card_found ? 'win' : 'loss';
+                const matchedRun = allRuns.find(historyRun => historyRun.seed === run.seed && historyRun.strategy === run.strategy) || allRuns.find(historyRun => historyRun.seed === run.seed) || {};
+                const runDate = run.date || matchedRun.date || 'unknown';
                 const details = run.strategy === 'FOCUS_FARMER'
                     ? `floor ${run.max_focus_floor || 0}, turn ${run.max_focus_turn || 0}`
                     : run.strategy === 'JAXXED'
@@ -965,7 +1091,7 @@
                         : `Fusion plays ${run.max_fusion_plays_single_turn || 0}, plasma visible ${run.max_plasma_orbs_visible || 0}`;
                 return `
                     <tr>
-                        <td>${run.date || 'unknown'}</td>
+                        <td>${runDate}</td>
                         <td style="display: flex; align-items: center; gap: 8px;">
                             ${getStrategyIcon(run.strategy)}
                             <span>${run.strategy}</span>
