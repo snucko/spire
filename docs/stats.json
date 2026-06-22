@@ -147694,14 +147694,98 @@
         "Toy Ornithopter"
       ],
       "date": "2026-06-22"
+    },
+    {
+      "seed": "11JFK2JQ2F6CJ",
+      "floor": 40,
+      "score": 452,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Dagger",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Juzu Bracelet",
+        "Ice Cream",
+        "Meat on the Bone",
+        "Fusion Hammer",
+        "Strawberry",
+        "Oddly Smooth Stone",
+        "Meal Ticket",
+        "Philosopher's Stone"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "PKRG80HGZKIQ",
+      "floor": 25,
+      "score": 292,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Snake Plant",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L) Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Lantern",
+        "Ceramic Fish",
+        "White Beast Statue",
+        "Philosopher's Stone"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "IQUWJXXQF51I",
+      "floor": 51,
+      "score": 759,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Meat on the Bone",
+        "Bag of Marbles",
+        "Happy Flower",
+        "The Boot",
+        "Astrolabe",
+        "Red Mask",
+        "Anchor",
+        "Strawberry",
+        "Pen Nib",
+        "Calling Bell",
+        "Juzu Bracelet",
+        "White Beast Statue",
+        "Prayer Wheel",
+        "Turnip",
+        "Dream Catcher",
+        "Meal Ticket",
+        "Bird-Faced Urn",
+        "Bag of Preparation"
+      ],
+      "date": "2026-06-22"
     }
   ],
   "stats": {
-    "total_runs": 5854,
+    "total_runs": 5857,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 2553,
-        "wins": 726,
+        "runs": 2556,
+        "wins": 727,
         "win_rate": 28.4,
         "avg_floor": 43.4,
         "avg_score": 517.6
