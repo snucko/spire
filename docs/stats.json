@@ -147778,17 +147778,199 @@
         "Bag of Preparation"
       ],
       "date": "2026-06-22"
+    },
+    {
+      "seed": "BX8UKQADBNWX",
+      "floor": 29,
+      "score": 262,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Sentry",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Lagavulin"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Sozu",
+        "Cloak Clasp",
+        "Lantern",
+        "Frozen Egg",
+        "Nunchaku",
+        "Du-Vu Doll",
+        "Violet Lotus",
+        "Bag of Preparation",
+        "Whetstone"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "57GSTAVJVA43",
+      "floor": 51,
+      "score": 782,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Smiling Mask",
+        "Warped Tongs",
+        "Molten Egg",
+        "Mummified Hand",
+        "Ink Bottle",
+        "Ectoplasm",
+        "Pen Nib",
+        "Pantograph",
+        "Philosopher's Stone"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "PQZ96R9ATCX3",
+      "floor": 16,
+      "score": 106,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spike Slime (M)",
+      "won": false,
+      "bosses": [
+        "Elites: Sentry Relics: Pure Water"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Letter Opener",
+        "Tiny Chest"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "PWACB45RDF8B",
+      "floor": 33,
+      "score": 286,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Orb",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Preserved Insect",
+        "Smiling Mask",
+        "Calling Bell",
+        "Strawberry",
+        "Gremlin Horn",
+        "Ice Cream",
+        "Membership Card",
+        "Meal Ticket",
+        "Pen Nib"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "TQW746DF6HPE",
+      "floor": 6,
+      "score": 34,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Lagavulin",
+      "won": false,
+      "bosses": [
+        "Elites:  Relics: Pure Water"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "NZIHF54DD441",
+      "floor": 55,
+      "score": 730,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Holy Water",
+        "Meal Ticket",
+        "War Paint",
+        "Vajra",
+        "Lantern",
+        "Kunai",
+        "Fusion Hammer",
+        "Bag of Marbles",
+        "Pear",
+        "Lizard Tail",
+        "Membership Card",
+        "Anchor",
+        "Nunchaku",
+        "Ink Bottle"
+      ],
+      "date": "2026-06-22"
+    },
+    {
+      "seed": "ZRBCIM5JWWYY",
+      "floor": 54,
+      "score": 691,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spire Shield",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Warped Tongs",
+        "Whetstone",
+        "Vajra",
+        "Snecko Eye",
+        "Pear",
+        "Regal Pillow",
+        "Tiny Chest",
+        "Blue Candle",
+        "Philosopher's Stone",
+        "Preserved Insect",
+        "Meal Ticket",
+        "Bottled Lightning",
+        "Eternal Feather"
+      ],
+      "date": "2026-06-22"
     }
   ],
   "stats": {
-    "total_runs": 5857,
+    "total_runs": 5864,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 2556,
-        "wins": 727,
+        "runs": 2563,
+        "wins": 728,
         "win_rate": 28.4,
         "avg_floor": 43.4,
-        "avg_score": 517.6
+        "avg_score": 517.3
       },
       "REQUESTED_STRIKE": {
         "runs": 437,
