@@ -121767,7 +121767,7 @@
         "Maw Bank",
         "Mercury Hourglass"
       ],
-      "date": "2026-06-30"
+      "date": "2026-06-05"
     },
     {
       "seed": "WPIC",
@@ -121955,7 +121955,7 @@
         "Maw Bank",
         "Mercury Hourglass"
       ],
-      "date": "2026-06-30"
+      "date": "2026-06-05"
     },
     {
       "seed": "WPIC",
@@ -122143,7 +122143,7 @@
         "Maw Bank",
         "Mercury Hourglass"
       ],
-      "date": "2026-06-30"
+      "date": "2026-06-05"
     },
     {
       "seed": "WPIC",
@@ -142323,7 +142323,7 @@
         "Maw Bank",
         "Mercury Hourglass"
       ],
-      "date": "2026-06-30"
+      "date": "2026-06-05"
     },
     {
       "seed": "WPIC",
@@ -142511,7 +142511,7 @@
         "Maw Bank",
         "Mercury Hourglass"
       ],
-      "date": "2026-06-30"
+      "date": "2026-06-05"
     },
     {
       "seed": "WPIC",
@@ -158805,7 +158805,7 @@
         "Maw Bank",
         "Mercury Hourglass"
       ],
-      "date": "2026-06-30"
+      "date": "2026-06-05"
     },
     {
       "seed": "WPIC",
@@ -158909,9 +158909,9 @@
         "goal_hits": 0
       },
       "NEON_FARMER": {
-        "runs": 30,
+        "runs": 31,
         "key_card_runs": 1,
-        "key_card_rate": 3.3,
+        "key_card_rate": 3.2,
         "best_floor": 22,
         "wins": 0,
         "max_meteor_cards_seen": 1,
@@ -158923,9 +158923,9 @@
         "goal_hits": 0
       },
       "JAXXED": {
-        "runs": 81,
-        "key_card_runs": 13,
-        "key_card_rate": 16.0,
+        "runs": 80,
+        "key_card_runs": 12,
+        "key_card_rate": 15.0,
         "best_floor": 44,
         "wins": 0,
         "max_strength_seen": 56,
@@ -159791,57 +159791,6 @@
         "max_block_seen": 37,
         "max_block_floor": 24,
         "max_block_turn": 4,
-        "barricaded_goal_hit": false,
-        "max_plasma_orbs_visible": 0,
-        "max_plasma_orbs_floor": 0,
-        "max_plasma_orbs_turn": 0,
-        "max_plasma_increase_single_turn": 0,
-        "max_plasma_increase_floor": 0,
-        "max_plasma_increase_turn": 0,
-        "max_fusion_plays_single_turn": 0,
-        "max_fusion_plays_floor": 0,
-        "max_fusion_plays_turn": 0,
-        "max_meteor_plays_single_turn": 0,
-        "max_meteor_plays_floor": 0,
-        "max_meteor_plays_turn": 0,
-        "neon_goal_hit": false,
-        "max_meteor_cards_seen": 0,
-        "max_fusion_cards_seen": 0,
-        "max_consume_cards_seen": 0,
-        "commands": {}
-      },
-      {
-        "log": "logs/runs/2026-06-14-23-34-08--G02B.log.gz",
-        "date": "2026-06-14",
-        "seed": "686081",
-        "strategy": "JAXXED",
-        "floor": 24,
-        "won": false,
-        "died_to": "Slaver",
-        "key_card_found": true,
-        "key_card_count": 1,
-        "target_cards": {
-          "battle trance": 1,
-          "demon form": 1,
-          "exhume": 1,
-          "headbutt": 1,
-          "inflame": 2,
-          "shrug it off": 3
-        },
-        "target_potions": [],
-        "target_relics": [],
-        "offered_key_card": true,
-        "max_focus_seen": 0,
-        "max_focus_floor": 0,
-        "max_focus_turn": 0,
-        "focus_goal_hit": false,
-        "max_strength_seen": 17,
-        "max_strength_floor": 16,
-        "max_strength_turn": 8,
-        "jaxxed_goal_hit": false,
-        "max_block_seen": 21,
-        "max_block_floor": 24,
-        "max_block_turn": 1,
         "barricaded_goal_hit": false,
         "max_plasma_orbs_visible": 0,
         "max_plasma_orbs_floor": 0,
@@ -162959,6 +162908,55 @@
         "max_block_seen": 30,
         "max_block_floor": 16,
         "max_block_turn": 4,
+        "barricaded_goal_hit": false,
+        "max_plasma_orbs_visible": 0,
+        "max_plasma_orbs_floor": 0,
+        "max_plasma_orbs_turn": 0,
+        "max_plasma_increase_single_turn": 0,
+        "max_plasma_increase_floor": 0,
+        "max_plasma_increase_turn": 0,
+        "max_fusion_plays_single_turn": 0,
+        "max_fusion_plays_floor": 0,
+        "max_fusion_plays_turn": 0,
+        "max_meteor_plays_single_turn": 0,
+        "max_meteor_plays_floor": 0,
+        "max_meteor_plays_turn": 0,
+        "neon_goal_hit": false,
+        "max_meteor_cards_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-06-30-17-56-30--WJ0Y.log.gz",
+        "date": "2026-06-30",
+        "seed": "1352433",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
+        "won": false,
+        "died_to": "The Guardian",
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {
+          "coolheaded": 1,
+          "hologram": 1,
+          "rebound": 1,
+          "skim": 1
+        },
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_focus_floor": 0,
+        "max_focus_turn": 0,
+        "focus_goal_hit": false,
+        "max_strength_seen": 0,
+        "max_strength_floor": 0,
+        "max_strength_turn": 0,
+        "jaxxed_goal_hit": false,
+        "max_block_seen": 15,
+        "max_block_floor": 6,
+        "max_block_turn": 3,
         "barricaded_goal_hit": false,
         "max_plasma_orbs_visible": 0,
         "max_plasma_orbs_floor": 0,
