@@ -121747,7 +121747,7 @@
         "Empty Cage",
         "Orange Pellets"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -121935,7 +121935,7 @@
         "Empty Cage",
         "Orange Pellets"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -122123,7 +122123,7 @@
         "Empty Cage",
         "Orange Pellets"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -142303,7 +142303,7 @@
         "Empty Cage",
         "Orange Pellets"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -142491,7 +142491,7 @@
         "Empty Cage",
         "Orange Pellets"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -158785,7 +158785,7 @@
         "Eternal Feather",
         "Meal Ticket"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -158847,7 +158847,7 @@
         "Eternal Feather",
         "Meal Ticket"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -164880,7 +164880,7 @@
         "Cracked Core",
         "Omamori"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "FW8M",
@@ -164899,7 +164899,7 @@
         "Cracked Core",
         "Horn Cleat"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     },
     {
       "seed": "FR4J",
@@ -164921,7 +164921,7 @@
         "Slaver's Collar",
         "Frozen Egg"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "FK6R",
@@ -164943,7 +164943,7 @@
         "Odd Mushroom",
         "Tiny Chest"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     },
     {
       "seed": "EUD1",
@@ -165027,7 +165027,7 @@
         "Anchor",
         "Chemical X"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "CU3D",
@@ -165087,7 +165087,7 @@
         "Membership Card",
         "Empty Cage"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     },
     {
       "seed": "CGQF",
@@ -165180,7 +165180,7 @@
         "Question Card",
         "Bottled Tornado"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "AIPW",
@@ -165221,7 +165221,7 @@
         "Singing Bowl",
         "Kunai"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     },
     {
       "seed": "WJ0Y",
@@ -165242,7 +165242,7 @@
         "Eternal Feather",
         "Meal Ticket"
       ],
-      "date": "2026-06-15"
+      "date": "2026-07-05"
     },
     {
       "seed": "GZUM",
@@ -171277,7 +171277,7 @@
         "Cracked Core",
         "Omamori"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "FW8M",
@@ -171296,7 +171296,7 @@
         "Cracked Core",
         "Horn Cleat"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     },
     {
       "seed": "FR4J",
@@ -171318,7 +171318,7 @@
         "Slaver's Collar",
         "Frozen Egg"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "FK6R",
@@ -171340,7 +171340,7 @@
         "Odd Mushroom",
         "Tiny Chest"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     },
     {
       "seed": "EUD1",
@@ -171424,7 +171424,7 @@
         "Anchor",
         "Chemical X"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "CU3D",
@@ -171484,7 +171484,7 @@
         "Membership Card",
         "Empty Cage"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     },
     {
       "seed": "CGQF",
@@ -171577,7 +171577,7 @@
         "Question Card",
         "Bottled Tornado"
       ],
-      "date": "2026-07-02"
+      "date": "2026-07-05"
     },
     {
       "seed": "AIPW",
@@ -171618,7 +171618,7 @@
         "Singing Bowl",
         "Kunai"
       ],
-      "date": "2026-07-05"
+      "date": "2026-07-02"
     }
   ],
   "stats": {
@@ -171702,8 +171702,8 @@
       },
       "NEON_FARMER": {
         "runs": 200,
-        "key_card_runs": 28,
-        "key_card_rate": 14.0,
+        "key_card_runs": 27,
+        "key_card_rate": 13.5,
         "best_floor": 50,
         "wins": 2,
         "max_meteor_cards_seen": 2,
@@ -173687,58 +173687,6 @@
         "max_meteor_plays_turn": 0,
         "neon_goal_hit": false,
         "max_meteor_cards_seen": 0,
-        "max_fusion_cards_seen": 0,
-        "max_consume_cards_seen": 0,
-        "commands": {}
-      },
-      {
-        "log": "logs/runs/2026-07-04-02-35-39--S8UN.log.gz",
-        "date": "2026-07-04",
-        "seed": "1168463",
-        "strategy": "NEON_FARMER",
-        "floor": 22,
-        "won": false,
-        "died_to": "Snecko",
-        "key_card_found": true,
-        "key_card_count": 1,
-        "target_cards": {
-          "aggregate": 1,
-          "hologram": 2,
-          "meteor strike": 1,
-          "rebound": 2,
-          "recursion": 1,
-          "skim": 2,
-          "turbo": 1
-        },
-        "target_potions": [],
-        "target_relics": [],
-        "offered_key_card": true,
-        "max_focus_seen": 0,
-        "max_focus_floor": 0,
-        "max_focus_turn": 0,
-        "focus_goal_hit": false,
-        "max_strength_seen": 6,
-        "max_strength_floor": 16,
-        "max_strength_turn": 7,
-        "jaxxed_goal_hit": false,
-        "max_block_seen": 15,
-        "max_block_floor": 4,
-        "max_block_turn": 6,
-        "barricaded_goal_hit": false,
-        "max_plasma_orbs_visible": 0,
-        "max_plasma_orbs_floor": 0,
-        "max_plasma_orbs_turn": 0,
-        "max_plasma_increase_single_turn": 0,
-        "max_plasma_increase_floor": 0,
-        "max_plasma_increase_turn": 0,
-        "max_fusion_plays_single_turn": 0,
-        "max_fusion_plays_floor": 0,
-        "max_fusion_plays_turn": 0,
-        "max_meteor_plays_single_turn": 0,
-        "max_meteor_plays_floor": 0,
-        "max_meteor_plays_turn": 0,
-        "neon_goal_hit": false,
-        "max_meteor_cards_seen": 1,
         "max_fusion_cards_seen": 0,
         "max_consume_cards_seen": 0,
         "commands": {}
@@ -177981,6 +177929,50 @@
         "max_block_seen": 17,
         "max_block_floor": 16,
         "max_block_turn": 2,
+        "barricaded_goal_hit": false,
+        "max_plasma_orbs_visible": 0,
+        "max_plasma_orbs_floor": 0,
+        "max_plasma_orbs_turn": 0,
+        "max_plasma_increase_single_turn": 0,
+        "max_plasma_increase_floor": 0,
+        "max_plasma_increase_turn": 0,
+        "max_fusion_plays_single_turn": 0,
+        "max_fusion_plays_floor": 0,
+        "max_fusion_plays_turn": 0,
+        "max_meteor_plays_single_turn": 0,
+        "max_meteor_plays_floor": 0,
+        "max_meteor_plays_turn": 0,
+        "neon_goal_hit": false,
+        "max_meteor_cards_seen": 0,
+        "max_fusion_cards_seen": 0,
+        "max_consume_cards_seen": 0,
+        "commands": {}
+      },
+      {
+        "log": "logs/runs/2026-07-05-23-08-59--WJ0Y.log.gz",
+        "date": "2026-07-05",
+        "seed": "1352433",
+        "strategy": "NEON_FARMER",
+        "floor": 16,
+        "won": false,
+        "died_to": "The Guardian",
+        "key_card_found": false,
+        "key_card_count": 0,
+        "target_cards": {},
+        "target_potions": [],
+        "target_relics": [],
+        "offered_key_card": false,
+        "max_focus_seen": 0,
+        "max_focus_floor": 0,
+        "max_focus_turn": 0,
+        "focus_goal_hit": false,
+        "max_strength_seen": 0,
+        "max_strength_floor": 0,
+        "max_strength_turn": 0,
+        "jaxxed_goal_hit": false,
+        "max_block_seen": 0,
+        "max_block_floor": 0,
+        "max_block_turn": 0,
         "barricaded_goal_hit": false,
         "max_plasma_orbs_visible": 0,
         "max_plasma_orbs_floor": 0,
