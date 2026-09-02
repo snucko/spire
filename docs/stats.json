@@ -261904,14 +261904,176 @@
         "Pen Nib"
       ],
       "date": "2026-09-01"
+    },
+    {
+      "seed": "F7YZQ7CN0D9K",
+      "floor": 51,
+      "score": 670,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bloody Idol",
+        "Regal Pillow",
+        "Damaru",
+        "Cursed Key",
+        "Centennial Puzzle",
+        "Pen Nib",
+        "Tiny Chest",
+        "Orichalcum",
+        "Slaver's Collar",
+        "Sundial",
+        "Membership Card"
+      ],
+      "date": "2026-09-01"
+    },
+    {
+      "seed": "XNHL1K5GIWXM",
+      "floor": 50,
+      "score": 551,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Membership Card",
+        "Juzu Bracelet",
+        "Slaver's Collar",
+        "Orichalcum",
+        "Horn Cleat",
+        "Busted Crown"
+      ],
+      "date": "2026-09-02"
+    },
+    {
+      "seed": "BZ87JEIPMWYL",
+      "floor": 50,
+      "score": 496,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Preserved Insect",
+        "Pantograph",
+        "Teardrop Locket",
+        "Bag of Preparation",
+        "Bloody Idol",
+        "Lantern",
+        "Philosopher's Stone",
+        "Bronze Scales",
+        "Tiny Chest",
+        "Violet Lotus",
+        "Calipers",
+        "Thread and Needle",
+        "Strawberry"
+      ],
+      "date": "2026-09-02"
+    },
+    {
+      "seed": "1CCV84RZ52LN",
+      "floor": 18,
+      "score": 154,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spheric Guardian",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites:  Relics: Pure Water"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Golden Idol",
+        "Orichalcum",
+        "Pear",
+        "Calling Bell",
+        "Bag of Marbles",
+        "Question Card",
+        "Fossilized Helix"
+      ],
+      "date": "2026-09-02"
+    },
+    {
+      "seed": "135LIE2QKF8IL",
+      "floor": 51,
+      "score": 722,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Ancient Tea Set",
+        "Preserved Insect",
+        "Runic Pyramid",
+        "Damaru",
+        "Bag of Marbles",
+        "Busted Crown",
+        "Duality"
+      ],
+      "date": "2026-09-02"
+    },
+    {
+      "seed": "14KZWSHFEK2ST",
+      "floor": 50,
+      "score": 473,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Time Eater",
+      "won": false,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Anchor",
+        "Orichalcum",
+        "Philosopher's Stone",
+        "Membership Card",
+        "Vajra",
+        "Red Mask",
+        "Violet Lotus",
+        "Eternal Feather",
+        "Strawberry",
+        "Horn Cleat"
+      ],
+      "date": "2026-09-02"
     }
   ],
   "stats": {
-    "total_runs": 10955,
+    "total_runs": 10961,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 3596,
-        "wins": 1010,
+        "runs": 3602,
+        "wins": 1012,
         "win_rate": 28.1,
         "avg_floor": 43.2,
         "avg_score": 514.7
