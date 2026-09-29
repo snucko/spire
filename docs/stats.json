@@ -289030,17 +289030,95 @@
         "Slaver's Collar"
       ],
       "date": "2026-09-28"
+    },
+    {
+      "seed": "4E3E6FMNC2C0",
+      "floor": 51,
+      "score": 769,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Dagger Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bronze Scales",
+        "Tiny Chest",
+        "Nunchaku",
+        "Sozu",
+        "Akabeko",
+        "Letter Opener",
+        "Kunai",
+        "Cursed Key",
+        "Blood Vial",
+        "Centennial Puzzle",
+        "Blue Candle"
+      ],
+      "date": "2026-09-28"
+    },
+    {
+      "seed": "SAUW0LCVF5VX",
+      "floor": 50,
+      "score": 452,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Cultist",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Strawberry",
+        "War Paint",
+        "Centennial Puzzle",
+        "Snecko Eye",
+        "Toy Ornithopter",
+        "Red Mask",
+        "Violet Lotus"
+      ],
+      "date": "2026-09-28"
+    },
+    {
+      "seed": "TZ9DWE54NXW0",
+      "floor": 23,
+      "score": 193,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Book of Stabbing",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Gremlin Nob Relics: Pure Water"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Eternal Feather",
+        "Meat on the Bone",
+        "Omamori",
+        "Black Star",
+        "Kunai"
+      ],
+      "date": "2026-09-28"
     }
   ],
   "stats": {
-    "total_runs": 11970,
+    "total_runs": 11973,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 4611,
-        "wins": 1306,
+        "runs": 4614,
+        "wins": 1307,
         "win_rate": 28.3,
         "avg_floor": 43.0,
-        "avg_score": 512.1
+        "avg_score": 512.0
       },
       "REQUESTED_STRIKE": {
         "runs": 437,
