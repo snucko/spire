@@ -289108,15 +289108,272 @@
         "Kunai"
       ],
       "date": "2026-09-28"
+    },
+    {
+      "seed": "DJ96AFQX080T",
+      "floor": 51,
+      "score": 749,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Whetstone",
+        "Blue Candle",
+        "Cursed Key",
+        "Horn Cleat",
+        "Pandora's Box",
+        "Fossilized Helix",
+        "Molten Egg"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "GDFZFX2M06T",
+      "floor": 21,
+      "score": 175,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Sentry",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites:  Relics: Pure Water"
+      ],
+      "elites": [
+        "Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Smiling Mask",
+        "Regal Pillow",
+        "Philosopher's Stone"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "8J7YKLS6JMU",
+      "floor": 51,
+      "score": 738,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Membership Card",
+        "Bag of Preparation",
+        "Kunai",
+        "Ectoplasm",
+        "Tiny Chest",
+        "Calling Bell",
+        "Oddly Smooth Stone",
+        "Horn Cleat",
+        "Stone Calendar",
+        "Question Card"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "14IJG8RG11HAL",
+      "floor": 33,
+      "score": 305,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Ancient Tea Set",
+        "Toxic Egg",
+        "Calipers",
+        "Philosopher's Stone",
+        "Wing Boots",
+        "Warped Tongs",
+        "Potion Belt",
+        "Whetstone"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "TPGQ0YMPBGV5",
+      "floor": 16,
+      "score": 104,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Hexaghost",
+      "won": false,
+      "bosses": [
+        "Elites: Lagavulin Relics: Pure Water"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Meal Ticket",
+        "War Paint"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "DGWPW759L2XL",
+      "floor": 51,
+      "score": 801,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Pantograph",
+        "Blue Candle",
+        "Kunai",
+        "Sozu",
+        "Art of War",
+        "Mutagenic Strength",
+        "Shuriken",
+        "Strawberry",
+        "Snecko Eye"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "EHDD43N2FVJQ",
+      "floor": 33,
+      "score": 292,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "The Champ",
+      "won": false,
+      "bosses": [
+        "Hexaghost Elites: Gremlin Nob"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Gremlin Horn",
+        "Bag of Preparation",
+        "Girya",
+        "Cursed Key",
+        "Red Mask",
+        "Strawberry",
+        "Darkstone Periapt",
+        "Old Coin"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "6N1NJKMXGT16",
+      "floor": 55,
+      "score": 724,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Neow's Lament",
+        "Incense Burner",
+        "Preserved Insect",
+        "The Courier",
+        "Bronze Scales",
+        "Cursed Key",
+        "Pen Nib",
+        "Bag of Marbles",
+        "Girya",
+        "Slaver's Collar",
+        "Ancient Tea Set",
+        "Stone Calendar",
+        "Mango"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "D8TIQ2P6RS47",
+      "floor": 33,
+      "score": 274,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Pure Water"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Maw Bank",
+        "Oddly Smooth Stone",
+        "Sozu",
+        "Meal Ticket",
+        "Red Mask",
+        "Darkstone Periapt"
+      ],
+      "date": "2026-11-13"
+    },
+    {
+      "seed": "M9QFZHZ0MU0U",
+      "floor": 51,
+      "score": 748,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bag of Preparation",
+        "Odd Mushroom",
+        "Orichalcum",
+        "Ectoplasm",
+        "Toxic Egg",
+        "Regal Pillow",
+        "Pen Nib",
+        "Mercury Hourglass",
+        "Cursed Key",
+        "Red Mask"
+      ],
+      "date": "2026-11-13"
     }
   ],
   "stats": {
-    "total_runs": 11973,
+    "total_runs": 11983,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 4614,
-        "wins": 1307,
-        "win_rate": 28.3,
+        "runs": 4624,
+        "wins": 1311,
+        "win_rate": 28.4,
         "avg_floor": 43.0,
         "avg_score": 512.0
       },
