@@ -304206,17 +304206,288 @@
         "Philosopher's Stone"
       ],
       "date": "2026-11-25"
+    },
+    {
+      "seed": "T4TTDJY99RJ4",
+      "floor": 36,
+      "score": 427,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "The Guardian"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Pure Water",
+        "Nunchaku",
+        "Ancient Tea Set",
+        "Bronze Scales",
+        "Tiny Chest",
+        "Omamori",
+        "Cursed Key",
+        "Mutagenic Strength",
+        "Centennial Puzzle",
+        "Meat on the Bone",
+        "Mango",
+        "Sozu"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "XBQYT5Y5V5VG",
+      "floor": 55,
+      "score": 739,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Fusion Hammer",
+        "War Paint",
+        "Preserved Insect",
+        "Horn Cleat",
+        "Dream Catcher",
+        "Ectoplasm",
+        "Kunai",
+        "Happy Flower",
+        "Regal Pillow",
+        "Cursed Key",
+        "Bronze Scales"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "C0X6KN1ZWYZV",
+      "floor": 51,
+      "score": 749,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Bloody Idol",
+        "Question Card",
+        "Kunai",
+        "Violet Lotus",
+        "Membership Card",
+        "Lantern",
+        "Happy Flower",
+        "Cursed Key",
+        "Girya"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "1V1G3Q2X1IKM",
+      "floor": 33,
+      "score": 247,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Torch Head",
+      "won": false,
+      "bosses": [
+        "The Guardian Elites: Sentry Relics: Pure Water"
+      ],
+      "elites": [
+        "Sentry Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Turnip",
+        "Membership Card",
+        "Pantograph",
+        "Philosopher's Stone",
+        "Bronze Scales",
+        "Bag of Marbles",
+        "Centennial Puzzle"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "ZZUV96RKILX8",
+      "floor": 36,
+      "score": 362,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Orb Walker",
+      "won": false,
+      "bosses": [
+        "Spike Slime (M)"
+      ],
+      "elites": [
+        "Relics: Holy Water"
+      ],
+      "relics": [
+        "Holy Water",
+        "Happy Flower",
+        "Omamori",
+        "Bag of Marbles",
+        "Membership Card",
+        "Philosopher's Stone",
+        "Captain's Wheel",
+        "Horn Cleat"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "7LKR2JVNSZ49",
+      "floor": 55,
+      "score": 820,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin"
+      ],
+      "relics": [
+        "Pure Water",
+        "Blue Candle",
+        "The Boot",
+        "Fossilized Helix",
+        "Thread and Needle",
+        "Teardrop Locket",
+        "Empty Cage",
+        "Tiny Chest",
+        "Red Mask",
+        "Oddly Smooth Stone",
+        "Question Card",
+        "Regal Pillow",
+        "Philosopher's Stone",
+        "Pocketwatch",
+        "Mercury Hourglass"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "NT76SQ9F2EJ2",
+      "floor": 55,
+      "score": 886,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Spike Slime (L)"
+      ],
+      "elites": [
+        "Gremlin Nob"
+      ],
+      "relics": [
+        "Holy Water",
+        "Bag of Preparation",
+        "Gremlin Horn",
+        "Strawberry",
+        "Odd Mushroom",
+        "Mutagenic Strength",
+        "Membership Card",
+        "Pen Nib",
+        "Anchor",
+        "Philosopher's Stone",
+        "Lantern",
+        "Captain's Wheel",
+        "Ice Cream",
+        "Singing Bowl",
+        "Kunai",
+        "Gambling Chip"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "CFJST3BZLR7X",
+      "floor": 11,
+      "score": 73,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Spike Slime (M)",
+      "won": false,
+      "bosses": [
+        "Elites: Gremlin Nob Relics: Pure Water"
+      ],
+      "elites": [
+        "Gremlin Nob Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Molten Egg",
+        "Happy Flower"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "IVLWXQI6H0WL",
+      "floor": 55,
+      "score": 627,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": "Corrupt Heart",
+      "won": false,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Sentry"
+      ],
+      "relics": [
+        "Holy Water",
+        "Smiling Mask",
+        "Bag of Preparation",
+        "Meal Ticket",
+        "Mutagenic Strength",
+        "Omamori",
+        "Sozu",
+        "Old Coin",
+        "Kunai",
+        "White Beast Statue"
+      ],
+      "date": "2026-11-25"
+    },
+    {
+      "seed": "I0YK3MIIFH9U",
+      "floor": 51,
+      "score": 647,
+      "strategy": "OBSERVANT_HEARTSLAYER",
+      "died_to": null,
+      "won": true,
+      "bosses": [
+        "Hexaghost"
+      ],
+      "elites": [
+        "Lagavulin Relics: Pure Water"
+      ],
+      "relics": [
+        "Pure Water",
+        "Art of War",
+        "Smiling Mask",
+        "Cursed Key",
+        "Bag of Marbles",
+        "Pear",
+        "Runic Pyramid",
+        "Ginger"
+      ],
+      "date": "2026-11-25"
     }
   ],
   "stats": {
-    "total_runs": 12530,
+    "total_runs": 12540,
     "by_strategy": {
       "OBSERVANT_HEARTSLAYER": {
-        "runs": 5171,
-        "wins": 1481,
+        "runs": 5181,
+        "wins": 1484,
         "win_rate": 28.6,
         "avg_floor": 43.1,
-        "avg_score": 513.2
+        "avg_score": 513.3
       },
       "REQUESTED_STRIKE": {
         "runs": 437,
